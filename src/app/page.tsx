@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { siteConfig } from '@/lib/siteConfig';
 import { assetPath } from '@/lib/assetPath';
+import Link from 'next/link';
 
 const HomePage = () => {
   return (
@@ -24,19 +25,19 @@ const HomePage = () => {
             </p>
 
             <div className='mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4'>
-              <a
-                href='#courses'
+              <Link
+                href='/#courses'
                 className='w-full sm:w-auto rounded-full bg-[#24C6D9] px-6 py-3 font-medium text-[#07101A] transition hover:opacity-90'
               >
                 View courses
-              </a>
+              </Link>
 
-              <a
-                href='#contact'
+              <Link
+                href='/#contact'
                 className='w-full sm:w-auto rounded-full border border-white/20 px-6 py-3 font-medium text-white transition hover:bg-white/5'
               >
                 Contact me
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -71,11 +72,12 @@ const HomePage = () => {
       </section>
       <section className='mt-10 md:mt-12'>
         <div className='mx-auto max-w-[90%] text-center px-2'>
-          <div className="mx-auto mb-10 h-px w-16 bg-white/15" />
+          <div className='mx-auto mb-10 h-px w-16 bg-white/15' />
           <blockquote className='text-lg italic leading-relaxed text-white/80 md:text-xl'>
             “Safety underwater is born at the surface — in preparation,
-            knowledge, and respect for your own limits.<br/>Only then does every
-            dive become true freedom.”
+            knowledge, and respect for your own limits.
+            <br />
+            Only then does every dive become true freedom.”
           </blockquote>
         </div>
       </section>
@@ -96,12 +98,12 @@ const HomePage = () => {
             </p>
           </div>
 
-          <a
-            href='#contact'
+          <Link
+            href='/#contact'
             className='hidden rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium text-white/85 transition hover:bg-white/10 md:inline-flex'
           >
             Ask about availability
-          </a>
+          </Link>
         </div>
 
         <div className='relative mt-10 -mx-6 md:mx-0'>
@@ -115,23 +117,26 @@ const HomePage = () => {
                 desc: 'Start from zero. Learn the basics, build confidence, get certified.',
                 tag: 'Perfect first step',
                 imageSrc: '/images/courses-beginner.jpg',
+                link: '/beginner',
               },
               {
                 title: 'Specialty',
                 desc: 'Improve skills with focused courses like buoyancy, navigation or night diving.',
                 tag: 'Build experience',
                 imageSrc: '/images/courses-specialty.jpg',
+                link: '#',
               },
               {
                 title: 'Technical',
                 desc: 'Advanced training for deeper dives, procedures and serious planning.',
                 tag: 'Go beyond limits',
                 imageSrc: '/images/courses-technical.jpg',
+                link: '#',
               },
             ].map((card) => (
-              <a
+              <Link
                 key={card.title}
-                href='#'
+                href={card.link}
                 className='group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition hover:bg-white/10 hover:border-white/20 min-w-[88%] snap-start sm:min-w-[75%] md:min-w-0'
               >
                 <div className='relative aspect-[16/9] w-full'>
@@ -162,7 +167,7 @@ const HomePage = () => {
                 <div className='pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100'>
                   <div className='absolute -right-20 -top-24 h-56 w-56 rounded-full bg-[#24C6D9]/20 blur-3xl' />
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
           <div className='pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#0B1220] to-transparent md:hidden' />
@@ -170,12 +175,12 @@ const HomePage = () => {
 
         {/* Mobile CTA */}
         <div className='mt-8 md:hidden'>
-          <a
-            href='#contact'
+          <Link
+            href='/#contact'
             className='inline-flex w-full items-center justify-center rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white/85 transition hover:bg-white/10'
           >
             Ask about availability
-          </a>
+          </Link>
         </div>
       </section>
       {/* ABOUT */}
@@ -286,12 +291,12 @@ const HomePage = () => {
             </div>
 
             <div className='mt-8'>
-              <a
-                href='#contact'
+              <Link
+                href='/#contact'
                 className='w-full sm:w-auto rounded-full border border-white/20 px-6 py-3 font-medium text-white transition hover:bg-white/5'
               >
                 Contact me
-              </a>
+              </Link>
             </div>
           </div>
         </div>
