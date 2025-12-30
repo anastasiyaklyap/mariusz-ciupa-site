@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 
 import { siteConfig } from '@/lib/siteConfig';
 import Image from 'next/image';
+import { assetPath } from '@/lib/assetPath';
 
 type CourseCard = {
   title: string;
@@ -108,7 +109,7 @@ const BeginnerCoursesPage = () => {
                 <div className='relative'>
                   <div className='aspect-[16/10]'>
                     <Image
-                      src={course.imageSrc}
+                      src={assetPath(course.imageSrc)}
                       alt={course.title}
                       fill
                       className='object-cover'
