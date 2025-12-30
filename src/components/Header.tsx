@@ -3,6 +3,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { siteConfig } from '@/lib/siteConfig';
+import { linkPath } from '@/lib/linkPath';
+import { link } from 'fs';
 
 export const Header = () => {
   const menuRef = useRef<HTMLDivElement | null>(null);
@@ -79,14 +81,14 @@ export const Header = () => {
   return (
     <header className='sticky top-0 z-50 border-b border-white/10 bg-[#0B1220]/80 backdrop-blur'>
       <div className='mx-auto flex max-w-6xl items-center gap-6 px-6 py-4'>
-        <a href='/' className='leading-tight'>
+        <a href={linkPath("/")} className='leading-tight'>
           <p className='text-sm font-semibold'>{siteConfig.name}</p>
           <p className='text-xs text-white/60'>{siteConfig.role}</p>
         </a>
         <div className='ml-auto flex items-center gap-3'>
           <nav className='hidden items-center gap-8 text-sm text-white/80 md:flex'>
             <a
-              href='/#courses'
+              href={linkPath('/#courses')}
               className={[
                 'bg-[linear-gradient(#24C6D9,#24C6D9)] bg-left-bottom bg-no-repeat pb-1',
                 'bg-[length:0%_2px] text-white/75 transition-[background-size,color] duration-300',
@@ -100,7 +102,7 @@ export const Header = () => {
               Courses
             </a>
             <a
-              href='/#about'
+              href={linkPath('/#about')}
               className={[
                 'bg-[linear-gradient(#24C6D9,#24C6D9)] bg-left-bottom bg-no-repeat pb-1',
                 'bg-[length:0%_2px] text-white/75 transition-[background-size,color] duration-300',
@@ -114,7 +116,7 @@ export const Header = () => {
               About
             </a>
             <a
-              href='/#contact'
+              href={linkPath('/#contact')}
               className={[
                 'bg-[linear-gradient(#24C6D9,#24C6D9)] bg-left-bottom bg-no-repeat pb-1',
                 'bg-[length:0%_2px] text-white/75 transition-[background-size,color] duration-300',
@@ -131,7 +133,7 @@ export const Header = () => {
 
           <div className='hidden md:flex'>
             <a
-              href='/#contact'
+              href={linkPath('/#contact')}
               className='rounded-full bg-[#24C6D9] px-5 py-2.5 text-sm font-medium text-[#07101A] transition hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#24C6D9]/50 focus:ring-offset-0'
             >
               Book / Ask
@@ -177,14 +179,14 @@ export const Header = () => {
           <div className='mx-auto max-w-6xl px-6 py-5'>
             <div className='flex flex-col gap-2 text-sm text-white/85'>
               <a
-                href='/#courses'
+                href={linkPath('/#courses')}
                 className='rounded-xl px-3 py-3 transition hover:bg-white/5'
                 onClick={() => setIsMenuOpen(false)}
               >
                 Courses
               </a>
               <a
-                href='/#about'
+                href={linkPath('/#about')}
                 className='rounded-xl px-3 py-3 transition hover:bg-white/5'
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -192,7 +194,7 @@ export const Header = () => {
               </a>
 
               <a
-                href='/#contact'
+                href={linkPath('/#contact')}
                 className='rounded-xl px-3 py-3 transition hover:bg-white/5'
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -201,7 +203,7 @@ export const Header = () => {
 
               <div className='mt-3'>
                 <a
-                  href='/#contact'
+                  href={linkPath('/#contact')}
                   className='inline-flex w-full items-center justify-center rounded-full bg-[#24C6D9] px-4 py-3 font-medium text-[#07101A] transition hover:opacity-90'
                   onClick={() => setIsMenuOpen(false)}
                 >
