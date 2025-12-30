@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import { siteConfig } from '@/lib/siteConfig';
 import Image from 'next/image';
 import { assetPath } from '@/lib/assetPath';
+import { linkPath } from '@/lib/linkPath';
 
 type CourseCard = {
   title: string;
@@ -160,7 +161,7 @@ const BeginnerCoursesPage = () => {
 
                   <div className='mt-auto pt-6'>
                     <a
-                      href='#contact'
+                      href={linkPath('#contact')}
                       className='inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium text-white/90 transition hover:bg-white/10'
                     >
                       Ask about availability{' '}

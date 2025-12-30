@@ -4,7 +4,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { siteConfig } from '@/lib/siteConfig';
 import { linkPath } from '@/lib/linkPath';
-import { link } from 'fs';
 
 export const Header = () => {
   const menuRef = useRef<HTMLDivElement | null>(null);

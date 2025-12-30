@@ -4,6 +4,7 @@
 import Image from 'next/image';
 import { siteConfig } from '@/lib/siteConfig';
 import { assetPath } from '@/lib/assetPath';
+import { linkPath } from '@/lib/linkPath';
 
 const HomePage = () => {
   return (
@@ -26,14 +27,14 @@ const HomePage = () => {
 
             <div className='mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4'>
               <a
-                href='/#courses'
+                href={linkPath('/#courses')}
                 className='w-full sm:w-auto rounded-full bg-[#24C6D9] px-6 py-3 font-medium text-[#07101A] transition hover:opacity-90'
               >
                 View courses
               </a>
 
               <a
-                href='/#contact'
+                href={linkPath('/#contact')}
                 className='w-full sm:w-auto rounded-full border border-white/20 px-6 py-3 font-medium text-white transition hover:bg-white/5'
               >
                 Contact me
@@ -99,7 +100,7 @@ const HomePage = () => {
           </div>
 
           <a
-            href='/#contact'
+            href={linkPath('/#contact')}
             className='hidden rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium text-white/85 transition hover:bg-white/10 md:inline-flex'
           >
             Ask about availability
@@ -136,7 +137,7 @@ const HomePage = () => {
             ].map((card) => (
               <a
                 key={card.title}
-                href={card.link}
+                href={linkPath(card.link)}
                 className='group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition hover:bg-white/10 hover:border-white/20 min-w-[88%] snap-start sm:min-w-[75%] md:min-w-0'
               >
                 <div className='relative aspect-[16/9] w-full'>
@@ -176,7 +177,7 @@ const HomePage = () => {
         {/* Mobile CTA */}
         <div className='mt-8 md:hidden'>
           <a
-            href='/#contact'
+            href={linkPath('/#contact')}
             className='inline-flex w-full items-center justify-center rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white/85 transition hover:bg-white/10'
           >
             Ask about availability
@@ -292,7 +293,7 @@ const HomePage = () => {
 
             <div className='mt-8'>
               <a
-                href='/#contact'
+                href={linkPath('/#contact')}
                 className='w-full sm:w-auto rounded-full border border-white/20 px-6 py-3 font-medium text-white transition hover:bg-white/5'
               >
                 Contact me
