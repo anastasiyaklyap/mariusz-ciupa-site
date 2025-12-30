@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.courses-scroll {
+  scrollbar-width: none; /* Firefox */
+}
+
+.courses-scroll::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
