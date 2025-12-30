@@ -1,9 +1,9 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 'use client';
 
 import Image from 'next/image';
 import { siteConfig } from '@/lib/siteConfig';
 import { assetPath } from '@/lib/assetPath';
-import Link from 'next/link';
 
 const HomePage = () => {
   return (
@@ -25,19 +25,19 @@ const HomePage = () => {
             </p>
 
             <div className='mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4'>
-              <Link
+              <a
                 href='/#courses'
                 className='w-full sm:w-auto rounded-full bg-[#24C6D9] px-6 py-3 font-medium text-[#07101A] transition hover:opacity-90'
               >
                 View courses
-              </Link>
+              </a>
 
-              <Link
+              <a
                 href='/#contact'
                 className='w-full sm:w-auto rounded-full border border-white/20 px-6 py-3 font-medium text-white transition hover:bg-white/5'
               >
                 Contact me
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -98,12 +98,12 @@ const HomePage = () => {
             </p>
           </div>
 
-          <Link
+          <a
             href='/#contact'
             className='hidden rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium text-white/85 transition hover:bg-white/10 md:inline-flex'
           >
             Ask about availability
-          </Link>
+          </a>
         </div>
 
         <div className='relative mt-10 -mx-6 md:mx-0'>
@@ -134,7 +134,7 @@ const HomePage = () => {
                 link: '#',
               },
             ].map((card) => (
-              <Link
+              <a
                 key={card.title}
                 href={card.link}
                 className='group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition hover:bg-white/10 hover:border-white/20 min-w-[88%] snap-start sm:min-w-[75%] md:min-w-0'
@@ -167,7 +167,7 @@ const HomePage = () => {
                 <div className='pointer-events-none absolute inset-0 opacity-0 transition group-hover:opacity-100'>
                   <div className='absolute -right-20 -top-24 h-56 w-56 rounded-full bg-[#24C6D9]/20 blur-3xl' />
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
           <div className='pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#0B1220] to-transparent md:hidden' />
@@ -175,12 +175,12 @@ const HomePage = () => {
 
         {/* Mobile CTA */}
         <div className='mt-8 md:hidden'>
-          <Link
+          <a
             href='/#contact'
             className='inline-flex w-full items-center justify-center rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white/85 transition hover:bg-white/10'
           >
             Ask about availability
-          </Link>
+          </a>
         </div>
       </section>
       {/* ABOUT */}
@@ -291,12 +291,12 @@ const HomePage = () => {
             </div>
 
             <div className='mt-8'>
-              <Link
+              <a
                 href='/#contact'
                 className='w-full sm:w-auto rounded-full border border-white/20 px-6 py-3 font-medium text-white transition hover:bg-white/5'
               >
                 Contact me
-              </Link>
+              </a>
             </div>
           </div>
         </div>
