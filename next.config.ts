@@ -3,7 +3,7 @@ import type { NextConfig } from 'next';
 const repo = 'mariusz-ciupa-site';
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: "export",
   images: { unoptimized: true },
   basePath: `/${repo}`,
   assetPrefix: `/${repo}/`,

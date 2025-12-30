@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { siteConfig } from '@/lib/siteConfig';
+import { assetPath } from '@/lib/assetPath';
 
 const HomePage = () => {
   return (
@@ -44,7 +45,7 @@ const HomePage = () => {
             {/* Fake “photo” placeholder */}
             <div className='relative aspect-[16/10] md:aspect-[4/5] w-full'>
               <Image
-                src='/images/hero.jpg'
+                src={assetPath('/images/hero.jpg')}
                 alt='Scuba diving training'
                 fill
                 className='object-cover'
@@ -124,7 +125,7 @@ const HomePage = () => {
               >
                 <div className='relative aspect-[16/9] w-full'>
                   <Image
-                    src={card.imageSrc}
+                    src={assetPath(card.imageSrc)}
                     alt={`${card.title} diving courses`}
                     fill
                     className='object-cover'
@@ -173,7 +174,7 @@ const HomePage = () => {
           <div className='relative overflow-hidden rounded-3xl border border-white/10 bg-white/5'>
             <div className='relative aspect-[3/2] w-full md:aspect-[4/5]'>
               <Image
-                src='/images/mariusz-ciupa.jpg'
+                src={assetPath('/images/mariusz-ciupa.jpg')}
                 alt='Mariusz Ciupa'
                 fill
                 className='object-cover'
@@ -261,7 +262,7 @@ const HomePage = () => {
                     >
                       <div className='relative h-14 w-full max-w-[180px] opacity-85'>
                         <Image
-                          src={logo.src}
+                          src={assetPath(logo.src)}
                           alt={logo.alt}
                           fill
                           className='object-contain'
