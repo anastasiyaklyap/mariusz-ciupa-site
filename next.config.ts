@@ -1,10 +1,12 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
+
+const repo = 'mariusz-ciupa-site';
 
 const nextConfig: NextConfig = {
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
+  output: 'export',
+  images: { unoptimized: true },
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
 };
 
 export default nextConfig;
