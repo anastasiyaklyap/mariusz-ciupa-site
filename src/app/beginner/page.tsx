@@ -161,7 +161,7 @@ const BeginnerCoursesPage = () => {
 
                   <div className='mt-auto pt-6'>
                     <a
-                      href={linkPath('#contact')}
+                      href='#contact'
                       className='inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium text-white/90 transition hover:bg-white/10'
                     >
                       Ask about availability{' '}
