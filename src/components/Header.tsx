@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
 import { siteConfig } from '@/lib/siteConfig';
-import Link from 'next/link';
 
 export const Header = () => {
   const menuRef = useRef<HTMLDivElement | null>(null);
@@ -79,13 +79,13 @@ export const Header = () => {
   return (
     <header className='sticky top-0 z-50 border-b border-white/10 bg-[#0B1220]/80 backdrop-blur'>
       <div className='mx-auto flex max-w-6xl items-center gap-6 px-6 py-4'>
-        <Link href='/' className='leading-tight'>
+        <a href='/' className='leading-tight'>
           <p className='text-sm font-semibold'>{siteConfig.name}</p>
           <p className='text-xs text-white/60'>{siteConfig.role}</p>
-        </Link>
+        </a>
         <div className='ml-auto flex items-center gap-3'>
           <nav className='hidden items-center gap-8 text-sm text-white/80 md:flex'>
-            <Link
+            <a
               href='/#courses'
               className={[
                 'bg-[linear-gradient(#24C6D9,#24C6D9)] bg-left-bottom bg-no-repeat pb-1',
@@ -98,8 +98,8 @@ export const Header = () => {
               ].join(' ')}
             >
               Courses
-            </Link>
-            <Link
+            </a>
+            <a
               href='/#about'
               className={[
                 'bg-[linear-gradient(#24C6D9,#24C6D9)] bg-left-bottom bg-no-repeat pb-1',
@@ -112,8 +112,8 @@ export const Header = () => {
               ].join(' ')}
             >
               About
-            </Link>
-            <Link
+            </a>
+            <a
               href='/#contact'
               className={[
                 'bg-[linear-gradient(#24C6D9,#24C6D9)] bg-left-bottom bg-no-repeat pb-1',
@@ -126,16 +126,16 @@ export const Header = () => {
               ].join(' ')}
             >
               Contact
-            </Link>
+            </a>
           </nav>
 
           <div className='hidden md:flex'>
-            <Link
+            <a
               href='/#contact'
               className='rounded-full bg-[#24C6D9] px-5 py-2.5 text-sm font-medium text-[#07101A] transition hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#24C6D9]/50 focus:ring-offset-0'
             >
               Book / Ask
-            </Link>
+            </a>
           </div>
         </div>
         <button
@@ -176,37 +176,37 @@ export const Header = () => {
         >
           <div className='mx-auto max-w-6xl px-6 py-5'>
             <div className='flex flex-col gap-2 text-sm text-white/85'>
-              <Link
+              <a
                 href='/#courses'
                 className='rounded-xl px-3 py-3 transition hover:bg-white/5'
                 onClick={() => setIsMenuOpen(false)}
               >
                 Courses
-              </Link>
-              <Link
+              </a>
+              <a
                 href='/#about'
                 className='rounded-xl px-3 py-3 transition hover:bg-white/5'
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </Link>
+              </a>
 
-              <Link
+              <a
                 href='/#contact'
                 className='rounded-xl px-3 py-3 transition hover:bg-white/5'
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
-              </Link>
+              </a>
 
               <div className='mt-3'>
-                <Link
+                <a
                   href='/#contact'
                   className='inline-flex w-full items-center justify-center rounded-full bg-[#24C6D9] px-4 py-3 font-medium text-[#07101A] transition hover:opacity-90'
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Book / Ask
-                </Link>
+                </a>
               </div>
             </div>
           </div>
