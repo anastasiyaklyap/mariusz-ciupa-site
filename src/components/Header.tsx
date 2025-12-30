@@ -11,6 +11,15 @@ export const Header = () => {
   >(null);
 
   useEffect(() => {
+    const handleTop = () => {
+      if (window.scrollY < 120) {
+        setActiveSection(null);
+      }
+    };
+
+    handleTop();
+    window.addEventListener('scroll', handleTop, { passive: true });
+
     const ids = ['courses', 'about', 'contact'] as const;
     const elements = ids
       .map((id) => document.getElementById(id))
@@ -44,7 +53,10 @@ export const Header = () => {
 
     elements.forEach((el) => observer.observe(el));
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('scroll', handleTop);
+    };
   }, []);
 
   useEffect(() => {

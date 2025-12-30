@@ -9,40 +9,33 @@ export const Footer = () => {
             <p className='mt-1 text-sm text-white/60'>{siteConfig.role}</p>
           </div>
 
-          <div className='flex flex-wrap items-center gap-3'>
+          <div className='flex flex-wrap items-center gap-6'>
             <a
               href={siteConfig.socials.instagram}
-              className='rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/80 transition hover:bg-white/10'
+              className='text-sm text-white/60 transition hover:text-white'
             >
               Instagram
             </a>
+
             <a
               href={siteConfig.socials.facebook}
-              className='rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/80 transition hover:bg-white/10'
+              className='text-sm text-white/60 transition hover:text-white'
             >
               Facebook
             </a>
             <a
               href={`mailto:${siteConfig.email}`}
-              className='rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/80 transition hover:bg-white/10'
+              className='text-sm text-white/60 transition hover:text-white'
             >
               Email
-            </a>
-
-            <a
-              href='#'
-              className='rounded-xl bg-[#24C6D9] px-4 py-2 text-sm font-medium text-[#07101A] transition hover:opacity-90'
-            >
-              Back to top ↑
             </a>
           </div>
         </div>
 
-        <div className='mt-8 flex flex-col gap-2 text-xs text-white/45 md:flex-row md:items-center md:justify-between'>
+        <div className='mt-8 flex flex-col gap-2 text-xs text-white/40 md:flex-row md:items-center md:justify-between'>
           <p>
             © {new Date().getFullYear()} Mariusz Ciupa. All rights reserved.
           </p>
-          <p>Cookies & privacy – placeholder (we’ll link real policy later).</p>
         </div>
       </div>
     </footer>

@@ -69,6 +69,17 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <section className='mt-10 md:mt-12'>
+        <div className='mx-auto max-w-[90%] text-center px-2'>
+          <div className="mx-auto mb-10 h-px w-16 bg-white/15" />
+          <blockquote className='text-lg italic leading-relaxed text-white/80 md:text-xl'>
+            “Safety underwater is born at the surface — in preparation,
+            knowledge, and respect for your own limits.<br/>Only then does every
+            dive become true freedom.”
+          </blockquote>
+        </div>
+      </section>
+
       <section id='courses' className='mt-24 md:mt-32'>
         <div className='flex items-end justify-between gap-6'>
           <div>
@@ -287,41 +298,54 @@ const HomePage = () => {
       </section>
 
       {/* CONTACT CTA */}
-      <section
-        id='contact'
-        className=' overflow-hidden rounded-3xl border border-white/10 bg-white/5 mt-24 md:mt-32'
-      >
-        <div className='relative p-8 md:p-12'>
-          <div className='pointer-events-none absolute -right-28 -top-28 h-72 w-72 rounded-full bg-[#24C6D9]/20 blur-3xl' />
-          <div className='pointer-events-none absolute -left-28 -bottom-28 h-72 w-72 rounded-full bg-white/10 blur-3xl' />
+      <section id='contact' className='mt-24 md:mt-32'>
+        <div className='mx-auto max-w-6xl px-6'>
+          <div className='relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 md:p-12'>
+            <div className='pointer-events-none absolute inset-0 bg-gradient-to-r from-[#24C6D9]/10 via-transparent to-transparent' />
 
-          <h2 className='text-2xl font-semibold md:text-3xl'>
-            Ready to start your diving journey?
-          </h2>
-          <p className='mt-4 max-w-2xl text-white/75'>
-            Tell me your level, preferred location and dates — I’ll suggest the
-            best course and the next steps.
-          </p>
+            <p className='text-xs font-medium tracking-[0.2em] text-white/50'>
+              CONTACT
+            </p>
 
-          <div className='mt-8 flex flex-wrap gap-4'>
-            <a
-              href={`mailto:${siteConfig.email}`}
-              className='rounded-xl bg-[#24C6D9] px-6 py-3 font-medium text-[#07101A] transition hover:opacity-90'
-            >
-              Email me
-            </a>
+            <h2 className='mt-3 text-2xl font-semibold tracking-tight md:text-3xl'>
+              Ready to start your diving journey?
+            </h2>
 
-            <a
-              href={siteConfig.socials.instagram}
-              className='rounded-xl border border-white/15 px-6 py-3 font-medium text-white/90 transition hover:bg-white/5'
-            >
-              Instagram
-            </a>
+            <p className='mt-3 max-w-2xl text-sm text-white/75 sm:text-base'>
+              Tell me your level, preferred location and dates — I’ll suggest
+              the best course and next steps.
+            </p>
+
+            <div className='mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4'>
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className='w-full sm:w-auto rounded-full bg-[#24C6D9] px-6 py-3 text-sm font-medium text-[#07101A] transition hover:opacity-90'
+              >
+                Email me
+              </a>
+
+              <a
+                href={siteConfig.socials.instagram}
+                className='w-full sm:w-auto rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-white/90 transition hover:bg-white/10'
+              >
+                Instagram
+              </a>
+
+              <a
+                href={siteConfig.socials.facebook}
+                className='w-full sm:w-auto rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-medium text-white/90 transition hover:bg-white/10'
+              >
+                Facebook
+              </a>
+            </div>
+
+            <div className='mt-8 h-px w-full bg-white/10' />
+
+            <div className='mt-6 flex flex-col gap-2 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between'>
+              <p>Typical response time: 24–48h</p>
+              <p>UK · Lanzarote · Poland</p>
+            </div>
           </div>
-
-          <p className='mt-6 text-sm text-white/50'>
-            (We’ll replace these links with real contact details later.)
-          </p>
         </div>
       </section>
     </div>

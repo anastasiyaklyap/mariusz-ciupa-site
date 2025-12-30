@@ -36,3 +36,10 @@ html {
 .courses-scroll::-webkit-scrollbar {
   display: none; /* Chrome/Safari */
 }
+
+
+#courses,
+#about,
+#contact {
+  scroll-margin-top: 96px;
+}
