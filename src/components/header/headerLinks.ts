@@ -1,3 +1,5 @@
+import { siteCopy } from '@/content/siteCopy';
+import { withLocaleHref, type Locale } from '@/lib/i18n';
 import { linkPath } from '@/lib/linkPath';
 
 export const headerSectionIds = ['courses', 'about', 'contact'] as const;
@@ -15,19 +17,19 @@ export type HeaderCtaLink = {
   href: string;
 };
 
-const headerLinkLabels: Record<HeaderSectionId, string> = {
-  courses: 'Courses',
-  about: 'About',
-  contact: 'Contact',
+const getHeaderLinkLabels = (locale: Locale): Record<HeaderSectionId, string> =>
+  siteCopy[locale].header.nav;
+
+export const getHeaderNavLinks = (locale: Locale): HeaderNavLink[] => {
+  const labels = getHeaderLinkLabels(locale);
+  return headerSectionIds.map((id) => ({
+    id,
+    label: labels[id],
+    href: withLocaleHref(linkPath(`/#${id}`), locale),
+  }));
 };
 
-export const headerNavLinks: HeaderNavLink[] = headerSectionIds.map((id) => ({
-  id,
-  label: headerLinkLabels[id],
-  href: linkPath(`/#${id}`),
-}));
-
-export const headerCtaLink: HeaderCtaLink = {
-  label: 'Book / Ask',
-  href: linkPath('/#contact'),
-};
+export const getHeaderCtaLink = (locale: Locale): HeaderCtaLink => ({
+  label: siteCopy[locale].header.ctaLabel,
+  href: withLocaleHref(linkPath('/#contact'), locale),
+});

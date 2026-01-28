@@ -3,7 +3,10 @@
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { assetPath } from '@/lib/assetPath';
-import { HomeCtaLink } from '@/components/home/HomeCtaLink';
+import { CtaLink } from '@/components/ui/CtaLink';
+import { siteCopy } from '@/content/siteCopy';
+import type { Locale } from '@/lib/i18n';
+import { withLocaleHref } from '@/lib/i18n';
 
 export type CourseCardData = {
   title: string;
@@ -13,16 +16,20 @@ export type CourseCardData = {
 };
 
 type CourseCardGridProps = {
-  courses: CourseCardData[];
+  courses: readonly CourseCardData[];
   ctaLabel?: string;
   ctaHref?: string;
+  locale: Locale;
 };
 
 export const CourseCardGrid = ({
   courses,
-  ctaLabel = 'Ask about availability',
+  ctaLabel,
   ctaHref = '#contact',
+  locale,
 }: CourseCardGridProps) => {
+  const copy = siteCopy[locale].courses.card;
+  const label = ctaLabel ?? copy.ctaLabel;
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const descRefs = useRef<Record<string, HTMLParagraphElement | null>>({});
   const [canExpand, setCanExpand] = useState<Record<string, boolean>>({});
@@ -74,7 +81,7 @@ export const CourseCardGrid = ({
 
                 <div className='absolute left-5 top-5'>
                   <span className='rounded-full border border-white/20 bg-black/30 px-3 py-1 text-xs font-medium text-white/90 backdrop-blur-md shadow-sm'>
-                    {course.tag ?? 'Course'}
+                    {course.tag ?? copy.defaultTag}
                   </span>
                 </div>
 
@@ -106,19 +113,19 @@ export const CourseCardGrid = ({
                     }
                     className='mt-3 inline-flex w-fit cursor-pointer items-center gap-2 text-sm font-medium text-white/70 transition hover:text-white hover:underline underline-offset-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#24C6D9]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B1220]'
                   >
-                    {isOpen ? 'Show less' : 'Read more'}
+                    {isOpen ? copy.showLess : copy.readMore}
                   </button>
                 ) : null}
 
                 <div className='mt-auto pt-6'>
-                  <HomeCtaLink
-                    href={ctaHref}
+                  <CtaLink
+                    href={withLocaleHref(ctaHref, locale)}
                     variant='ghost'
                     size='sm'
                     className='gap-2 text-white/90'
                   >
-                    {ctaLabel} <span className='text-white/60'>→</span>
-                  </HomeCtaLink>
+                    {label} <span className='text-white/60'>→</span>
+                  </CtaLink>
                 </div>
               </div>
             </article>

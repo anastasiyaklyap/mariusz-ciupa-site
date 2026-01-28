@@ -1,20 +1,37 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { usePathname, useSearchParams } from 'next/navigation';
 import { linkPath } from '@/lib/linkPath';
+import { withLocaleHref } from '@/lib/i18n';
 import { HeaderBrand } from './header/HeaderBrand';
 import { HeaderCta } from './header/HeaderCta';
+import { LanguageSwitcher } from './header/LanguageSwitcher';
 import { HeaderMenuButton } from './header/HeaderMenuButton';
 import { HeaderMobileMenu } from './header/HeaderMobileMenu';
 import { HeaderNavLink } from './header/HeaderNavLink';
 import {
-  headerCtaLink,
-  headerNavLinks,
+  getHeaderCtaLink,
+  getHeaderNavLinks,
   headerSectionIds,
   type HeaderSectionId,
 } from './header/headerLinks';
+import { useLocale } from '@/hooks/useLocale';
 
 export const Header = () => {
+  const locale = useLocale();
+  const headerNavLinks = getHeaderNavLinks(locale);
+  const headerCtaLink = getHeaderCtaLink(locale);
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const handleLocaleChange = (nextLocale: string) => {
+    const nextParams = new URLSearchParams(searchParams.toString());
+    nextParams.set('lang', nextLocale);
+    const hash = typeof window !== 'undefined' ? window.location.hash : '';
+    const nextQuery = nextParams.toString();
+    const nextUrl = `${pathname}${nextQuery ? `?${nextQuery}` : ''}${hash}`;
+    window.location.href = nextUrl;
+  };
   const menuRef = useRef<HTMLDivElement | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<HeaderSectionId | null>(
@@ -86,7 +103,7 @@ export const Header = () => {
   return (
     <header className='sticky top-0 z-50 border-b border-white/10 bg-[#0B1220]/80 backdrop-blur'>
       <div className='mx-auto flex max-w-6xl items-center gap-6 px-6 py-4'>
-        <HeaderBrand href={linkPath('/')} />
+        <HeaderBrand href={withLocaleHref(linkPath('/'), locale)} />
         <div className='ml-auto flex items-center gap-3'>
           <nav className='hidden items-center gap-8 text-sm text-white/80 md:flex'>
             {headerNavLinks.map((link) => (
@@ -99,14 +116,28 @@ export const Header = () => {
             ))}
           </nav>
 
-          <div className='hidden md:flex'>
+          <div className='hidden items-center gap-3 md:flex'>
             <HeaderCta href={headerCtaLink.href} label={headerCtaLink.label} />
+            <LanguageSwitcher
+              id='language-select'
+              locale={locale}
+              onChange={handleLocaleChange}
+            />
           </div>
         </div>
-        <HeaderMenuButton
-          isOpen={isMenuOpen}
-          onToggle={() => setIsMenuOpen((v) => !v)}
-        />
+        <div className='flex items-center gap-2 md:hidden'>
+          <HeaderMenuButton
+            isOpen={isMenuOpen}
+            onToggle={() => setIsMenuOpen((v) => !v)}
+            locale={locale}
+          />
+          <LanguageSwitcher
+            id='language-select-mobile'
+            locale={locale}
+            onChange={handleLocaleChange}
+            size='sm'
+          />
+        </div>
       </div>
 
       {isMenuOpen ? (
