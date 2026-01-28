@@ -108,6 +108,8 @@ export const siteCopy = {
         showLess: 'Show less',
         ctaLabel: 'Ask about availability',
         defaultTag: 'Course',
+        priceLabel: 'Price',
+        extrasLabel: 'Extras:',
       },
     },
     beginner: {
@@ -124,6 +126,7 @@ export const siteCopy = {
             'A first, guided experience underwater. Perfect if you want to try scuba before committing to a full certification course.',
           imageSrc: '/images/courses/try-scuba.jpg',
           tag: 'Intro',
+          price: { amount: 75, currency: 'GBP', extras: ['Pool only'] },
         },
         {
           title: 'SSI Open Water Diver',
@@ -131,6 +134,7 @@ export const siteCopy = {
             'Become a certified Open Water Diver with SSI. This globally recognized certification program is the best way to begin your lifelong adventures as a certified scuba diver. Personalized training is combined with in-water practice sessions to ensure you have the skills and experience required to become truly comfortable underwater. You will earn the SSI Open Water Diver certification.',
           imageSrc: '/images/courses/open-water.jpg',
           tag: 'Certification',
+          price: { amount: 550, currency: 'GBP' },
         },
         {
           title: 'Advanced Open Water Diver',
@@ -138,6 +142,7 @@ export const siteCopy = {
             'Build confidence and expand your skills with structured training dives focused on improving control, awareness and comfort in different conditions.',
           imageSrc: '/images/courses/advanced-open-water.jpg',
           tag: 'Next step',
+          price: { amount: 395, currency: 'GBP' },
         },
       ],
       contact: {
@@ -259,6 +264,8 @@ export const siteCopy = {
         showLess: 'Pokaż mniej',
         ctaLabel: 'Zapytaj o dostępność',
         defaultTag: 'Kurs',
+        priceLabel: 'Cena',
+        extrasLabel: 'Dodatkowo:',
       },
     },
     beginner: {
@@ -275,6 +282,7 @@ export const siteCopy = {
             'Pierwsze, prowadzone doświadczenie pod wodą. Idealne, jeśli chcesz spróbować nurkowania, zanim zdecydujesz się na pełny kurs certyfikacyjny.',
           imageSrc: '/images/courses/try-scuba.jpg',
           tag: 'Wprowadzenie',
+          price: { amount: 75, currency: 'GBP', extras: ['tylko basen'] },
         },
         {
           title: 'SSI Open Water Diver',
@@ -282,6 +290,7 @@ export const siteCopy = {
             'Zdobądź certyfikat Open Water Diver SSI. To uznawany na całym świecie program, który najlepiej rozpoczyna przygodę z nurkowaniem. Spersonalizowany trening łączy teorię i praktykę w wodzie, abyś czuł się pewnie i komfortowo pod wodą. Po ukończeniu otrzymasz certyfikat SSI Open Water Diver.',
           imageSrc: '/images/courses/open-water.jpg',
           tag: 'Certyfikacja',
+          price: { amount: 550, currency: 'GBP' },
         },
         {
           title: 'Advanced Open Water Diver',
@@ -289,6 +298,7 @@ export const siteCopy = {
             'Buduj pewność i rozwijaj umiejętności poprzez uporządkowane nurkowania szkoleniowe skoncentrowane na kontroli, świadomości i komforcie w różnych warunkach.',
           imageSrc: '/images/courses/advanced-open-water.jpg',
           tag: 'Kolejny krok',
+          price: { amount: 395, currency: 'GBP' },
         },
       ],
       contact: {
