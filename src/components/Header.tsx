@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 import { linkPath } from '@/lib/linkPath';
 import { withLocaleHref } from '@/lib/i18n';
 import { HeaderBrand } from './header/HeaderBrand';
@@ -21,6 +22,7 @@ export const Header = () => {
   const locale = useLocale();
   const headerNavLinks = getHeaderNavLinks(locale);
   const headerCtaLink = getHeaderCtaLink(locale);
+  const pathname = usePathname();
   const handleLocaleChange = (nextLocale: string) => {
     if (typeof window === 'undefined') return;
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
@@ -114,7 +116,11 @@ export const Header = () => {
                 key={link.id}
                 href={link.href}
                 label={link.label}
-                isActive={activeSection === link.id}
+                isActive={
+                  link.sectionId
+                    ? activeSection === link.sectionId
+                    : pathname.endsWith('/prices')
+                }
               />
             ))}
           </nav>

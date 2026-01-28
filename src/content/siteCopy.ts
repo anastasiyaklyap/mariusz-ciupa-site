@@ -14,6 +14,7 @@ export const siteCopy = {
     header: {
       nav: {
         courses: 'Courses',
+        prices: 'Prices',
         about: 'About',
         contact: 'Contact',
       },
@@ -154,6 +155,72 @@ export const siteCopy = {
     footer: {
       rights: 'All rights reserved.',
     },
+    prices: {
+      hero: {
+        eyebrow: 'PRICES',
+        title: 'Diving Courses',
+        description:
+          'See our scuba diving courses along with their prices and any additional costs.',
+        badges: ['Prices include VAT', 'Contact me for course details'],
+      },
+      table: {
+        course: 'Course',
+        price: 'Price',
+        extras: 'Extras',
+      },
+      groups: [
+        {
+          title: 'Beginner',
+          items: [
+            {
+              title: 'Try Dive',
+              price: { amount: 75, currency: 'GBP' },
+              extras: ['Pool only'],
+            },
+            {
+              title: 'Open Water Diver referral',
+              price: { amount: 350, currency: 'GBP' },
+              extras: ['Academics & Pool only'],
+            },
+            {
+              title: 'Open Water Diver - full',
+              price: { amount: 550, currency: 'GBP' },
+            },
+            {
+              title: 'Open Water Diver + Dry Suit',
+              price: { amount: 700, currency: 'GBP' },
+              extras: ['Dry suit rent'],
+            },
+          ],
+        },
+        {
+          title: 'Speciality',
+          items: [
+            { title: 'Advanced Open Water Diver', price: { amount: 395, currency: 'GBP' } },
+            { title: 'Dry Suit Diving', price: { amount: 230, currency: 'GBP' }, extras: ['Dry suit rent'] },
+            { title: 'Perfect Buoyancy', price: { amount: 175, currency: 'GBP' } },
+            { title: 'Enriched Air Nitrox Level 1 (32%)', price: { amount: 150, currency: 'GBP' } },
+            { title: 'Boat Diving', price: { amount: 150, currency: 'GBP' } },
+            { title: 'Wreck Diving', price: { amount: 175, currency: 'GBP' }, extras: ['10 dives'] },
+            { title: 'Advanced Wreck Diving', price: { amount: 300, currency: 'GBP' }, extras: ['10 dives'] },
+            { title: 'Deep Diving', price: { amount: 250, currency: 'GBP' } },
+          ],
+        },
+        {
+          title: 'Technical',
+          items: [
+            { title: 'Sidemount Diving', price: { amount: 450, currency: 'GBP' } },
+            { title: 'Deco Diving', price: { amount: 650, currency: 'GBP' } },
+            { title: 'Extended Range', price: { amount: 950, currency: 'GBP' } },
+          ],
+        },
+      ],
+      contact: {
+        title: 'Have questions about prices?',
+        description:
+          'Tell me your level, preferred location and dates — I’ll suggest the best course and the exact cost.',
+      },
+    },
   },
   pl: {
     common: {
@@ -170,6 +237,7 @@ export const siteCopy = {
     header: {
       nav: {
         courses: 'Kursy',
+        prices: 'Cennik',
         about: 'O mnie',
         contact: 'Kontakt',
       },
@@ -309,6 +377,73 @@ export const siteCopy = {
     },
     footer: {
       rights: 'Wszelkie prawa zastrzeżone.',
+    },
+    prices: {
+      hero: {
+        eyebrow: 'CENNIK',
+        title: 'Kursy nurkowe',
+        titleAccent: 'Cennik',
+        description:
+          'Sprawdź dostępne kursy nurkowe wraz z cenami i ewentualnymi dodatkowymi kosztami.',
+        badges: ['Ceny zawierają VAT', 'Skontaktuj się po szczegóły kursu'],
+      },
+      table: {
+        course: 'Kurs',
+        price: 'Cena',
+        extras: 'Dodatki',
+      },
+      groups: [
+        {
+          title: 'Początkujący',
+          items: [
+            {
+              title: 'Try Dive',
+              price: { amount: 75, currency: 'GBP' },
+              extras: ['Tylko basen'],
+            },
+            {
+              title: 'Open Water Diver referral',
+              price: { amount: 350, currency: 'GBP' },
+              extras: ['Teoria i basen'],
+            },
+            {
+              title: 'Open Water Diver - pełny',
+              price: { amount: 550, currency: 'GBP' },
+            },
+            {
+              title: 'Open Water Diver + Dry Suit',
+              price: { amount: 700, currency: 'GBP' },
+              extras: ['Wypożyczenie suchego skafandra'],
+            },
+          ],
+        },
+        {
+          title: 'Specjalizacje',
+          items: [
+            { title: 'Advanced Open Water Diver', price: { amount: 395, currency: 'GBP' } },
+            { title: 'Dry Suit Diving', price: { amount: 230, currency: 'GBP' }, extras: ['Wypożyczenie suchego skafandra'] },
+            { title: 'Perfect Buoyancy', price: { amount: 175, currency: 'GBP' } },
+            { title: 'Enriched Air Nitrox Level 1 (32%)', price: { amount: 150, currency: 'GBP' } },
+            { title: 'Boat Diving', price: { amount: 150, currency: 'GBP' } },
+            { title: 'Wreck Diving', price: { amount: 175, currency: 'GBP' }, extras: ['10 nurkowań'] },
+            { title: 'Advanced Wreck Diving', price: { amount: 300, currency: 'GBP' }, extras: ['10 nurkowań'] },
+            { title: 'Deep Diving', price: { amount: 250, currency: 'GBP' } },
+          ],
+        },
+        {
+          title: 'Techniczne',
+          items: [
+            { title: 'Sidemount Diving', price: { amount: 450, currency: 'GBP' } },
+            { title: 'Deco Diving', price: { amount: 650, currency: 'GBP' } },
+            { title: 'Extended Range', price: { amount: 950, currency: 'GBP' } },
+          ],
+        },
+      ],
+      contact: {
+        title: 'Masz pytania o ceny?',
+        description:
+          'Podaj poziom, preferowaną lokalizację i terminy — zaproponuję najlepszy kurs i dokładną wycenę.',
+      },
     },
   },
 } as const;
