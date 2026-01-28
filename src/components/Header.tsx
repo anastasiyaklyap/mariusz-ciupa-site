@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
 import { linkPath } from '@/lib/linkPath';
 import { withLocaleHref } from '@/lib/i18n';
 import { HeaderBrand } from './header/HeaderBrand';
@@ -22,15 +21,19 @@ export const Header = () => {
   const locale = useLocale();
   const headerNavLinks = getHeaderNavLinks(locale);
   const headerCtaLink = getHeaderCtaLink(locale);
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
   const handleLocaleChange = (nextLocale: string) => {
-    const nextParams = new URLSearchParams(searchParams.toString());
-    nextParams.set('lang', nextLocale);
-    const hash = typeof window !== 'undefined' ? window.location.hash : '';
-    const nextQuery = nextParams.toString();
-    const nextUrl = `${pathname}${nextQuery ? `?${nextQuery}` : ''}${hash}`;
-    window.location.href = nextUrl;
+    if (typeof window === 'undefined') return;
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+    const rawPathname = window.location.pathname;
+    const pathname = rawPathname.startsWith(basePath)
+      ? rawPathname.slice(basePath.length) || '/'
+      : rawPathname;
+    const url = new URL(linkPath(pathname), window.location.origin);
+    const params = new URLSearchParams(window.location.search);
+    params.set('lang', nextLocale);
+    url.search = params.toString();
+    url.hash = window.location.hash;
+    window.location.href = url.toString();
   };
   const menuRef = useRef<HTMLDivElement | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
