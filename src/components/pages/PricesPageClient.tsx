@@ -82,7 +82,7 @@ export const PricesPageClient = () => {
                         </span>
                         <div className='text-xs text-white/60'>
                           {extras?.length ? (
-                            <span className='rounded-full border border-white/15 bg-white/5 px-3 py-1'>
+                            <span>
                               {extras.join(', ')}
                             </span>
                           ) : (
