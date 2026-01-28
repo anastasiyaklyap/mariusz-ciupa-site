@@ -13,6 +13,11 @@ export type CourseCardData = {
   description: string;
   imageSrc: string;
   tag?: string;
+  price?: {
+    amount: number;
+    currency: 'GBP' | 'EUR' | 'PLN';
+    extras?: readonly string[];
+  };
 };
 
 type CourseCardGridProps = {
@@ -21,6 +26,17 @@ type CourseCardGridProps = {
   ctaHref?: string;
   locale: Locale;
 };
+
+const formatPrice = (
+  amount: number,
+  currency: 'GBP' | 'EUR' | 'PLN',
+  locale: Locale,
+) =>
+  new Intl.NumberFormat(locale === 'pl' ? 'pl-PL' : 'en-GB', {
+    style: 'currency',
+    currency,
+    maximumFractionDigits: 0,
+  }).format(amount);
 
 export const CourseCardGrid = ({
   courses,
@@ -115,6 +131,28 @@ export const CourseCardGrid = ({
                   >
                     {isOpen ? copy.showLess : copy.readMore}
                   </button>
+                ) : null}
+
+                {course.price ? (
+                  <div className='mt-4'>
+                    <div className='text-xs uppercase tracking-wide text-white/50'>
+                      {copy.priceLabel}
+                    </div>
+
+                    <div className='text-base font-semibold text-white'>
+                      {formatPrice(
+                        course.price.amount,
+                        course.price.currency,
+                        locale,
+                      )}
+                    </div>
+
+                    {course.price.extras?.length ? (
+                      <div className='mt-1 text-xs text-white/60'>
+                        {copy.extrasLabel} {course.price.extras.join(', ')}
+                      </div>
+                    ) : null}
+                  </div>
                 ) : null}
 
                 <div className='mt-auto pt-6'>
