@@ -149,4 +149,154 @@ export const siteCopy = {
       rights: 'All rights reserved.',
     },
   },
+  pl: {
+    common: {
+      locations: 'Wielka Brytania · Lanzarote · Polska',
+      responseTime: 'Zwykle odpowiadam w ciągu 24–48 h',
+      emailLabel: 'Napisz do mnie',
+      menuOpenLabel: 'Otwórz menu',
+      social: [
+        { key: 'instagram', label: 'Instagram' },
+        { key: 'facebook', label: 'Facebook' },
+      ],
+    },
+    header: {
+      nav: {
+        courses: 'Kursy',
+        about: 'O mnie',
+        contact: 'Kontakt',
+      },
+      ctaLabel: 'Zarezerwuj / Zapytaj',
+    },
+    home: {
+      hero: {
+        titlePrimary: 'Mariusz',
+        titleAccent: 'Ciupa',
+        subtitle:
+          'Trening nurkowy od pierwszego zanurzenia po zaawansowane kursy techniczne.',
+        ctaPrimary: 'Zobacz kursy',
+        ctaSecondary: 'Skontaktuj się',
+        imageAlt: 'Szkolenie nurkowe',
+        captionEyebrow: 'Szkolenie oparte na bezpieczeństwie',
+        captionTitle: 'Spokój. Klarowność. Pewność.',
+      },
+      quote: {
+        lines: [
+          '„Bezpieczeństwo pod wodą rodzi się na powierzchni — w przygotowaniu, wiedzy i szacunku do własnych granic.',
+          'Dopiero wtedy każde nurkowanie staje się prawdziwą wolnością.”',
+        ],
+      },
+      courses: {
+        eyebrow: 'KURSY',
+        title: 'Kursy nurkowe',
+        description:
+          'Wybierz poziom i rozwijaj się krok po kroku — od pierwszego certyfikatu po szkolenia techniczne.',
+        ctaLabel: 'Zapytaj o dostępność',
+        swipeHint: 'Przesuń, aby zobaczyć →',
+        exploreLabel: 'Zobacz →',
+        cards: [
+          {
+            title: 'Początkujący',
+            desc: 'Zacznij od zera. Naucz się podstaw, zbuduj pewność i zdobądź certyfikat.',
+            tag: 'Idealny start',
+            imageSrc: '/images/courses-beginner.jpg',
+            link: '/beginner',
+          },
+          {
+            title: 'Specjalizacje',
+            desc: 'Rozwijaj umiejętności na kursach takich jak pływalność, nawigacja czy nurkowanie nocne.',
+            tag: 'Buduj doświadczenie',
+            imageSrc: '/images/courses-specialty.jpg',
+            link: '#',
+          },
+          {
+            title: 'Techniczne',
+            desc: 'Zaawansowane szkolenia do głębszych nurkowań, procedur i poważnego planowania.',
+            tag: 'Przekrocz granice',
+            imageSrc: '/images/courses-technical.jpg',
+            link: '#',
+          },
+        ],
+      },
+      about: {
+        eyebrow: 'O MNIE',
+        title: 'Cześć, jestem Mariusz',
+        paragraphs: [
+          'Pomagam nurkom rozwijać umiejętności w spokojny i uporządkowany sposób — z dużym naciskiem na bezpieczeństwo, dobre nawyki i pewność pod wodą.',
+          'Niezależnie od tego, czy zaczynasz od zera, czy wchodzisz w szkolenia techniczne, dobierzemy właściwą ścieżkę i tempo.',
+        ],
+        highlights: [
+          '10+ lat doświadczenia',
+          'SSI PRO XR',
+          'Nurkowanie techniczne i rekreacyjne',
+          'Europa i Wyspy Kanaryjskie',
+        ],
+        imageAlt: 'Mariusz Ciupa',
+        imageCaptionEyebrow: 'O instruktorze',
+        imageCaptionTitle: 'Doświadczenie, któremu możesz zaufać',
+        locationTitle: 'Gdzie szkolę',
+        locationDescription:
+          'Współpracuję z wybranymi centrami nurkowymi w Wielkiej Brytanii, na Lanzarote i w Polsce — możesz szkolić się w różnych warunkach, zachowując ciągłość i zaufane wsparcie.',
+        locations: ['Wielka Brytania', 'Lanzarote', 'Polska'],
+        partnerLogos: [
+          { src: '/images/logo-bonito.png', alt: 'Bonito Diving Lanzarote' },
+          { src: '/images/logo-scuba-tech.png', alt: 'Scuba Tech' },
+          { src: '/images/logo-scubaelite.png', alt: 'Scuba Elite' },
+        ],
+        ctaLabel: 'Skontaktuj się',
+      },
+      contact: {
+        title: 'Gotowy, aby rozpocząć swoją nurkową przygodę?',
+        description:
+          'Podaj poziom, preferowaną lokalizację i terminy — zaproponuję najlepszy kurs i dalsze kroki.',
+      },
+    },
+    courses: {
+      card: {
+        readMore: 'Czytaj więcej',
+        showLess: 'Pokaż mniej',
+        ctaLabel: 'Zapytaj o dostępność',
+        defaultTag: 'Kurs',
+      },
+    },
+    beginner: {
+      hero: {
+        title: 'Kursy nurkowe dla początkujących',
+        description:
+          'Zacznij od zera, ucz się krok po kroku i buduj spokojne, pewne umiejętności nurkowe z naciskiem na bezpieczeństwo.',
+        tags: ['Nie wymaga doświadczenia', 'Małe grupy'],
+      },
+      courses: [
+        {
+          title: 'Try Scuba',
+          description:
+            'Pierwsze, prowadzone doświadczenie pod wodą. Idealne, jeśli chcesz spróbować nurkowania, zanim zdecydujesz się na pełny kurs certyfikacyjny.',
+          imageSrc: '/images/courses/try-scuba.jpg',
+          tag: 'Wprowadzenie',
+        },
+        {
+          title: 'SSI Open Water Diver',
+          description:
+            'Zdobądź certyfikat Open Water Diver SSI. To uznawany na całym świecie program, który najlepiej rozpoczyna przygodę z nurkowaniem. Spersonalizowany trening łączy teorię i praktykę w wodzie, abyś czuł się pewnie i komfortowo pod wodą. Po ukończeniu otrzymasz certyfikat SSI Open Water Diver.',
+          imageSrc: '/images/courses/open-water.jpg',
+          tag: 'Certyfikacja',
+        },
+        {
+          title: 'Advanced Open Water Diver',
+          description:
+            'Buduj pewność i rozwijaj umiejętności poprzez uporządkowane nurkowania szkoleniowe skoncentrowane na kontroli, świadomości i komforcie w różnych warunkach.',
+          imageSrc: '/images/courses/advanced-open-water.jpg',
+          tag: 'Kolejny krok',
+        },
+      ],
+      contact: {
+        title: 'Chcesz zacząć od kursów dla początkujących?',
+        description:
+          'Powiedz mi, jaki masz poziom, preferowaną lokalizację i terminy — zaproponuję najlepsze pierwsze kroki.',
+      },
+    },
+    footer: {
+      rights: 'Wszelkie prawa zastrzeżone.',
+    },
+  },
 } as const;
