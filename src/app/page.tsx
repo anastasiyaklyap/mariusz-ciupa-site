@@ -1,5 +1,6 @@
 'use client';
 
+import { Suspense } from 'react';
 import { HomeAbout } from '@/components/home/HomeAbout';
 import { HomeCourses } from '@/components/home/HomeCourses';
 import { HomeHero } from '@/components/home/HomeHero';
@@ -9,7 +10,7 @@ import { ContactCta } from '@/components/sections/ContactCta';
 import { siteCopy } from '@/content/siteCopy';
 import { useLocale } from '@/hooks/useLocale';
 
-const HomePage = () => {
+const HomePageContent = () => {
   const locale = useLocale();
   const copy = siteCopy[locale].home;
 
@@ -25,6 +26,14 @@ const HomePage = () => {
         locale={locale}
       />
     </PageContainer>
+  );
+};
+
+const HomePage = () => {
+  return (
+    <Suspense fallback={null}>
+      <HomePageContent />
+    </Suspense>
   );
 };
 

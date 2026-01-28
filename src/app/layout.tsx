@@ -9,6 +9,7 @@ const inter = Inter({
 
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { Suspense } from 'react';
 
 export const metadata: Metadata = {
   title: 'Mariusz Ciupa – SSI Scuba Diving Instructor',
@@ -31,9 +32,13 @@ export default function RootLayout({
           <div className='absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(36,198,217,0.12),transparent_60%)]' />
           <div className='absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(255,255,255,0.05),transparent_55%)]' />
         </div>
-        <Header />
+        <Suspense fallback={null}>
+          <Header />
+        </Suspense>
         <main>{children}</main>
-        <Footer />
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );
