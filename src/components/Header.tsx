@@ -6,6 +6,7 @@ import { linkPath } from '@/lib/linkPath';
 import { withLocaleHref } from '@/lib/i18n';
 import { HeaderBrand } from './header/HeaderBrand';
 import { HeaderCta } from './header/HeaderCta';
+import { LanguageSwitcher } from './header/LanguageSwitcher';
 import { HeaderMenuButton } from './header/HeaderMenuButton';
 import { HeaderMobileMenu } from './header/HeaderMobileMenu';
 import { HeaderNavLink } from './header/HeaderNavLink';
@@ -16,8 +17,6 @@ import {
   type HeaderSectionId,
 } from './header/headerLinks';
 import { useLocale } from '@/hooks/useLocale';
-import { locales } from '@/lib/i18n';
-import { siteCopy } from '@/content/siteCopy';
 
 export const Header = () => {
   const locale = useLocale();
@@ -25,7 +24,6 @@ export const Header = () => {
   const headerCtaLink = getHeaderCtaLink(locale);
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const commonCopy = siteCopy[locale].common;
   const handleLocaleChange = (nextLocale: string) => {
     const nextParams = new URLSearchParams(searchParams.toString());
     nextParams.set('lang', nextLocale);
@@ -119,48 +117,25 @@ export const Header = () => {
           </nav>
 
           <div className='hidden items-center gap-3 md:flex'>
-            <label className='sr-only' htmlFor='language-select'>
-              {commonCopy.languageLabel}
-            </label>
-            <select
-              id='language-select'
-              className='rounded-full border border-white/15 bg-white/5 px-3 py-2 text-xs font-medium text-white/80 transition hover:bg-white/10'
-              value={locale}
-              onChange={(event) => {
-                handleLocaleChange(event.target.value);
-              }}
-            >
-              {locales.map((value) => (
-                <option key={value} value={value}>
-                  {value.toUpperCase()}
-                </option>
-              ))}
-            </select>
             <HeaderCta href={headerCtaLink.href} label={headerCtaLink.label} />
+            <LanguageSwitcher
+              id='language-select'
+              locale={locale}
+              onChange={handleLocaleChange}
+            />
           </div>
         </div>
         <div className='flex items-center gap-2 md:hidden'>
-          <label className='sr-only' htmlFor='language-select-mobile'>
-            {commonCopy.languageLabel}
-          </label>
-          <select
-            id='language-select-mobile'
-            className='rounded-full border border-white/15 bg-white/5 px-2 py-2 text-xs font-medium text-white/80 transition hover:bg-white/10'
-            value={locale}
-            onChange={(event) => {
-              handleLocaleChange(event.target.value);
-            }}
-          >
-            {locales.map((value) => (
-              <option key={value} value={value}>
-                {value.toUpperCase()}
-              </option>
-            ))}
-          </select>
           <HeaderMenuButton
             isOpen={isMenuOpen}
             onToggle={() => setIsMenuOpen((v) => !v)}
             locale={locale}
+          />
+          <LanguageSwitcher
+            id='language-select-mobile'
+            locale={locale}
+            onChange={handleLocaleChange}
+            size='sm'
           />
         </div>
       </div>
