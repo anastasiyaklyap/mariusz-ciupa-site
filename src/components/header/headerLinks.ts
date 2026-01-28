@@ -1,3 +1,4 @@
+import { siteCopy } from '@/content/siteCopy';
 import { linkPath } from '@/lib/linkPath';
 
 export const headerSectionIds = ['courses', 'about', 'contact'] as const;
@@ -15,11 +16,8 @@ export type HeaderCtaLink = {
   href: string;
 };
 
-const headerLinkLabels: Record<HeaderSectionId, string> = {
-  courses: 'Courses',
-  about: 'About',
-  contact: 'Contact',
-};
+const headerLinkLabels: Record<HeaderSectionId, string> =
+  siteCopy.en.header.nav;
 
 export const headerNavLinks: HeaderNavLink[] = headerSectionIds.map((id) => ({
   id,
@@ -28,6 +26,6 @@ export const headerNavLinks: HeaderNavLink[] = headerSectionIds.map((id) => ({
 }));
 
 export const headerCtaLink: HeaderCtaLink = {
-  label: 'Book / Ask',
+  label: siteCopy.en.header.ctaLabel,
   href: linkPath('/#contact'),
 };

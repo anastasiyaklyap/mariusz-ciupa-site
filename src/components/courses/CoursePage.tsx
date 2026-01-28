@@ -18,7 +18,7 @@ type CoursePageContact = {
 
 type CoursePageProps = {
   hero: CoursePageHero;
-  courses: CourseCardData[];
+  courses: readonly CourseCardData[];
   contact: CoursePageContact;
   cardCtaLabel?: string;
   cardCtaHref?: string;

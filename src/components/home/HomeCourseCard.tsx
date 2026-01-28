@@ -11,7 +11,9 @@ type CourseCardData = {
   link: string;
 };
 
-type HomeCourseCardProps = CourseCardData;
+type HomeCourseCardProps = CourseCardData & {
+  exploreLabel: string;
+};
 
 export const HomeCourseCard = ({
   title,
@@ -19,6 +21,7 @@ export const HomeCourseCard = ({
   tag,
   imageSrc,
   link,
+  exploreLabel,
 }: HomeCourseCardProps) => {
   return (
     <a
@@ -40,7 +43,7 @@ export const HomeCourseCard = ({
           </div>
         </div>
         <div className='absolute right-4 top-4 rounded-full border border-white/20 bg-black/30 px-3 py-1 text-xs text-white/80 backdrop-blur transition group-hover:border-white/30'>
-          Explore →
+          {exploreLabel}
         </div>
       </div>
 

@@ -4,8 +4,11 @@ import { HomeAbout } from '@/components/home/HomeAbout';
 import { HomeCourses } from '@/components/home/HomeCourses';
 import { HomeHero } from '@/components/home/HomeHero';
 import { HomeQuote } from '@/components/home/HomeQuote';
+import { siteCopy } from '@/content/siteCopy';
 
 const HomePage = () => {
+  const copy = siteCopy.en.home;
+
   return (
     <PageContainer>
       <HomeHero />
@@ -13,8 +16,8 @@ const HomePage = () => {
       <HomeCourses />
       <HomeAbout />
       <ContactCta
-        title='Ready to start your diving journey?'
-        description='Tell me your level, preferred location and dates — I’ll suggest the best course and next steps.'
+        title={copy.contact.title}
+        description={copy.contact.description}
       />
     </PageContainer>
   );

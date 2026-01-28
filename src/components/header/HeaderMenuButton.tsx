@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { siteCopy } from '@/content/siteCopy';
 
 type HeaderMenuButtonProps = {
   isOpen: boolean;
@@ -9,11 +10,12 @@ export const HeaderMenuButton = ({
   isOpen,
   onToggle,
 }: HeaderMenuButtonProps) => {
+  const copy = siteCopy.en.common;
   return (
     <button
       type='button'
       className='inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white/80 transition hover:bg-white/10 md:hidden focus:outline-none focus:ring-2 focus:ring-[#24C6D9]/40 focus:ring-offset-0'
-      aria-label='Open menu'
+      aria-label={copy.menuOpenLabel}
       aria-expanded={isOpen}
       onClick={onToggle}
     >

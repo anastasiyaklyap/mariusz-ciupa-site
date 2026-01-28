@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { assetPath } from '@/lib/assetPath';
 import { CtaLink } from '@/components/ui/CtaLink';
+import { siteCopy } from '@/content/siteCopy';
 
 export type CourseCardData = {
   title: string;
@@ -13,14 +14,14 @@ export type CourseCardData = {
 };
 
 type CourseCardGridProps = {
-  courses: CourseCardData[];
+  courses: readonly CourseCardData[];
   ctaLabel?: string;
   ctaHref?: string;
 };
 
 export const CourseCardGrid = ({
   courses,
-  ctaLabel = 'Ask about availability',
+  ctaLabel = siteCopy.en.courses.card.ctaLabel,
   ctaHref = '#contact',
 }: CourseCardGridProps) => {
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
@@ -74,7 +75,7 @@ export const CourseCardGrid = ({
 
                 <div className='absolute left-5 top-5'>
                   <span className='rounded-full border border-white/20 bg-black/30 px-3 py-1 text-xs font-medium text-white/90 backdrop-blur-md shadow-sm'>
-                    {course.tag ?? 'Course'}
+                    {course.tag ?? siteCopy.en.courses.card.defaultTag}
                   </span>
                 </div>
 
@@ -106,7 +107,9 @@ export const CourseCardGrid = ({
                     }
                     className='mt-3 inline-flex w-fit cursor-pointer items-center gap-2 text-sm font-medium text-white/70 transition hover:text-white hover:underline underline-offset-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#24C6D9]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B1220]'
                   >
-                    {isOpen ? 'Show less' : 'Read more'}
+                    {isOpen
+                      ? siteCopy.en.courses.card.showLess
+                      : siteCopy.en.courses.card.readMore}
                   </button>
                 ) : null}
 

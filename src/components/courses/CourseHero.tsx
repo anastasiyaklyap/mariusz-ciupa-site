@@ -1,4 +1,5 @@
 import { SectionSurface } from '@/components/sections/SectionSurface';
+import { siteCopy } from '@/content/siteCopy';
 
 type CourseHeroProps = {
   eyebrow?: string;
@@ -8,7 +9,7 @@ type CourseHeroProps = {
 };
 
 export const CourseHero = ({
-  eyebrow = 'COURSES',
+  eyebrow = siteCopy.en.home.courses.eyebrow,
   title,
   description,
   tags,

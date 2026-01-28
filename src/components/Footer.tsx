@@ -1,9 +1,18 @@
 import { siteConfig } from '@/lib/siteConfig';
 import { FooterBrand } from './footer/FooterBrand';
 import { FooterLink } from './footer/FooterLink';
-import { footerLinks } from '@/lib/contactLinks';
+import { siteCopy } from '@/content/siteCopy';
 
 export const Footer = () => {
+  const copy = siteCopy.en;
+  const footerLinks = [
+    ...copy.common.social.map((link) => ({
+      label: link.label,
+      href: siteConfig.socials[link.key],
+    })),
+    { label: copy.common.emailLabel, href: `mailto:${siteConfig.email}` },
+  ];
+
   return (
     <footer className='mt-16 border-t border-white/10 md:mt-24'>
       <div className='mx-auto max-w-6xl px-6 py-10'>
@@ -21,7 +30,7 @@ export const Footer = () => {
         </div>
         <div className='mt-8 flex flex-col gap-2 text-xs text-white/40 md:flex-row md:items-center md:justify-between'>
           <p>
-            © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
+            © {new Date().getFullYear()} {siteConfig.name}. {copy.footer.rights}
           </p>
         </div>
       </div>
