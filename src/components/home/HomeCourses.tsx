@@ -1,11 +1,17 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { linkPath } from '@/lib/linkPath';
 import { siteCopy } from '@/content/siteCopy';
+import type { Locale } from '@/lib/i18n';
+import { withLocaleHref } from '@/lib/i18n';
 import { HomeCourseCard, type CourseCardData } from './HomeCourseCard';
 import { CtaLink } from '@/components/ui/CtaLink';
 
-export const HomeCourses = () => {
-  const copy = siteCopy.en.home.courses;
+type HomeCoursesProps = {
+  locale: Locale;
+};
+
+export const HomeCourses = ({ locale }: HomeCoursesProps) => {
+  const copy = siteCopy[locale].home.courses;
   const courses: readonly CourseCardData[] = copy.cards;
 
   return (
@@ -25,7 +31,7 @@ export const HomeCourses = () => {
         </div>
 
         <CtaLink
-          href={linkPath('/#contact')}
+          href={withLocaleHref(linkPath('/#contact'), locale)}
           variant='ghost'
           size='sm'
           className='hidden md:inline-flex'
@@ -43,6 +49,7 @@ export const HomeCourses = () => {
             <HomeCourseCard
               key={card.title}
               exploreLabel={copy.exploreLabel}
+              locale={locale}
               {...card}
             />
           ))}
@@ -52,7 +59,7 @@ export const HomeCourses = () => {
 
       <div className='mt-8 md:hidden'>
         <CtaLink
-          href={linkPath('/#contact')}
+          href={withLocaleHref(linkPath('/#contact'), locale)}
           variant='ghost'
           size='sm'
           className='w-full py-3'

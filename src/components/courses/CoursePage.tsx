@@ -2,6 +2,7 @@ import { CourseCardGrid, type CourseCardData } from './CourseCardGrid';
 import { CourseHero } from './CourseHero';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { ContactCta } from '@/components/sections/ContactCta';
+import type { Locale } from '@/lib/i18n';
 
 type CoursePageHero = {
   title: string;
@@ -22,6 +23,7 @@ type CoursePageProps = {
   contact: CoursePageContact;
   cardCtaLabel?: string;
   cardCtaHref?: string;
+  locale: Locale;
 };
 
 export const CoursePage = ({
@@ -30,19 +32,22 @@ export const CoursePage = ({
   contact,
   cardCtaLabel,
   cardCtaHref,
+  locale,
 }: CoursePageProps) => {
   return (
     <PageContainer>
-      <CourseHero {...hero} />
+      <CourseHero {...hero} locale={locale} />
       <CourseCardGrid
         courses={courses}
         ctaLabel={cardCtaLabel}
         ctaHref={cardCtaHref}
+        locale={locale}
       />
       <ContactCta
         title={contact.title}
         description={contact.description}
         className={contact.className}
+        locale={locale}
       />
     </PageContainer>
   );

@@ -1,24 +1,28 @@
 import { SectionSurface } from '@/components/sections/SectionSurface';
 import { siteCopy } from '@/content/siteCopy';
+import type { Locale } from '@/lib/i18n';
 
 type CourseHeroProps = {
   eyebrow?: string;
   title: string;
   description: string;
   tags: string[];
+  locale: Locale;
 };
 
 export const CourseHero = ({
-  eyebrow = siteCopy.en.home.courses.eyebrow,
+  eyebrow,
   title,
   description,
   tags,
+  locale,
 }: CourseHeroProps) => {
+  const defaultEyebrow = siteCopy[locale].home.courses.eyebrow;
   return (
     <section>
       <SectionSurface withGlow>
         <p className='text-xs font-medium tracking-[0.2em] text-white/50'>
-          {eyebrow}
+          {eyebrow ?? defaultEyebrow}
         </p>
         <h1 className='mt-3 text-3xl font-semibold tracking-tight md:text-4xl'>
           {title}

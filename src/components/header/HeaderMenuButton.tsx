@@ -1,16 +1,19 @@
 import classNames from 'classnames';
 import { siteCopy } from '@/content/siteCopy';
+import type { Locale } from '@/lib/i18n';
 
 type HeaderMenuButtonProps = {
   isOpen: boolean;
   onToggle: () => void;
+  locale: Locale;
 };
 
 export const HeaderMenuButton = ({
   isOpen,
   onToggle,
+  locale,
 }: HeaderMenuButtonProps) => {
-  const copy = siteCopy.en.common;
+  const copy = siteCopy[locale].common;
   return (
     <button
       type='button'

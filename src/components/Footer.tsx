@@ -1,10 +1,14 @@
+'use client';
+
 import { siteConfig } from '@/lib/siteConfig';
 import { FooterBrand } from './footer/FooterBrand';
 import { FooterLink } from './footer/FooterLink';
 import { siteCopy } from '@/content/siteCopy';
+import { useLocale } from '@/hooks/useLocale';
 
 export const Footer = () => {
-  const copy = siteCopy.en;
+  const locale = useLocale();
+  const copy = siteCopy[locale];
   const footerLinks = [
     ...copy.common.social.map((link) => ({
       label: link.label,

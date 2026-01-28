@@ -5,10 +5,16 @@ import { linkPath } from '@/lib/linkPath';
 import { siteConfig } from '@/lib/siteConfig';
 import { CtaLink } from '@/components/ui/CtaLink';
 import { siteCopy } from '@/content/siteCopy';
+import type { Locale } from '@/lib/i18n';
+import { withLocaleHref } from '@/lib/i18n';
 
-export const HomeHero = () => {
-  const copy = siteCopy.en.home.hero;
-  const common = siteCopy.en.common;
+type HomeHeroProps = {
+  locale: Locale;
+};
+
+export const HomeHero = ({ locale }: HomeHeroProps) => {
+  const copy = siteCopy[locale].home.hero;
+  const common = siteCopy[locale].common;
   return (
     <section className='relative overflow-hidden rounded-3xl'>
       <div className='relative grid gap-8 p-6 md:grid-cols-2 md:items-center md:gap-10 md:p-12'>
@@ -27,14 +33,14 @@ export const HomeHero = () => {
 
           <div className='mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4'>
             <CtaLink
-              href={linkPath('/#courses')}
+              href={withLocaleHref(linkPath('/#courses'), locale)}
               className='w-full sm:w-auto'
             >
               {copy.ctaPrimary}
             </CtaLink>
 
             <CtaLink
-              href={linkPath('/#contact')}
+              href={withLocaleHref(linkPath('/#contact'), locale)}
               variant='outline'
               className='w-full sm:w-auto'
             >

@@ -4,9 +4,15 @@ import { assetPath } from '@/lib/assetPath';
 import { linkPath } from '@/lib/linkPath';
 import { CtaLink } from '@/components/ui/CtaLink';
 import { siteCopy } from '@/content/siteCopy';
+import type { Locale } from '@/lib/i18n';
+import { withLocaleHref } from '@/lib/i18n';
 
-export const HomeAbout = () => {
-  const copy = siteCopy.en.home.about;
+type HomeAboutProps = {
+  locale: Locale;
+};
+
+export const HomeAbout = ({ locale }: HomeAboutProps) => {
+  const copy = siteCopy[locale].home.about;
   return (
     <section className='mt-24 md:mt-32' id='about'>
       <div className='grid gap-8 md:grid-cols-2 md:items-center md:gap-12'>
@@ -93,7 +99,7 @@ export const HomeAbout = () => {
 
           <div className='mt-8'>
             <CtaLink
-              href={linkPath('/#contact')}
+              href={withLocaleHref(linkPath('/#contact'), locale)}
               variant='outline'
               className='w-full sm:w-auto'
             >

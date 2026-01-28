@@ -2,6 +2,7 @@
 import classNames from 'classnames';
 import { siteConfig } from '@/lib/siteConfig';
 import { siteCopy } from '@/content/siteCopy';
+import type { Locale } from '@/lib/i18n';
 import { CtaLink } from '@/components/ui/CtaLink';
 import { SectionSurface } from './SectionSurface';
 
@@ -10,6 +11,7 @@ type ContactCtaProps = {
   description: string;
   className?: string;
   sectionId?: string;
+  locale: Locale;
 };
 
 export const ContactCta = ({
@@ -17,8 +19,9 @@ export const ContactCta = ({
   description,
   className,
   sectionId = 'contact',
+  locale,
 }: ContactCtaProps) => {
-  const copy = siteCopy.en.common;
+  const copy = siteCopy[locale].common;
   return (
     <section
       id={sectionId}

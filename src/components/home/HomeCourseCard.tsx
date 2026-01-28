@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { assetPath } from '@/lib/assetPath';
 import { linkPath } from '@/lib/linkPath';
+import { withLocaleHref, type Locale } from '@/lib/i18n';
 
 type CourseCardData = {
   title: string;
@@ -13,6 +14,7 @@ type CourseCardData = {
 
 type HomeCourseCardProps = CourseCardData & {
   exploreLabel: string;
+  locale: Locale;
 };
 
 export const HomeCourseCard = ({
@@ -21,11 +23,12 @@ export const HomeCourseCard = ({
   tag,
   imageSrc,
   link,
+  locale,
   exploreLabel,
 }: HomeCourseCardProps) => {
   return (
     <a
-      href={linkPath(link)}
+      href={withLocaleHref(linkPath(link), locale)}
       className='group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition hover:bg-white/10 hover:border-white/20 min-w-[88%] snap-start sm:min-w-[75%] md:min-w-0'
     >
       <div className='relative aspect-[16/9] w-full'>

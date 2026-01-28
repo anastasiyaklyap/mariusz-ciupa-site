@@ -1,7 +1,12 @@
 import { siteCopy } from '@/content/siteCopy';
+import type { Locale } from '@/lib/i18n';
 
-export const HomeQuote = () => {
-  const lines = siteCopy.en.home.quote.lines;
+type HomeQuoteProps = {
+  locale: Locale;
+};
+
+export const HomeQuote = ({ locale }: HomeQuoteProps) => {
+  const lines = siteCopy[locale].home.quote.lines;
   return (
     <section className='mt-10 md:mt-12'>
       <div className='mx-auto max-w-[90%] text-center px-2'>
