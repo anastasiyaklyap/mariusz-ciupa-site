@@ -1,18 +1,22 @@
+import { PageContainer } from '@/components/layout/PageContainer';
+import { ContactCta } from '@/components/sections/ContactCta';
 import { HomeAbout } from '@/components/home/HomeAbout';
-import { HomeContact } from '@/components/home/HomeContact';
 import { HomeCourses } from '@/components/home/HomeCourses';
 import { HomeHero } from '@/components/home/HomeHero';
 import { HomeQuote } from '@/components/home/HomeQuote';
 
 const HomePage = () => {
   return (
-    <div className='mx-auto max-w-6xl px-6 pt-20 pb-10 md:pt-28 md:pb-16'>
+    <PageContainer>
       <HomeHero />
       <HomeQuote />
       <HomeCourses />
       <HomeAbout />
-      <HomeContact />
-    </div>
+      <ContactCta
+        title='Ready to start your diving journey?'
+        description='Tell me your level, preferred location and dates — I’ll suggest the best course and next steps.'
+      />
+    </PageContainer>
   );
 };
 

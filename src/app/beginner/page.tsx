@@ -32,13 +32,18 @@ const BeginnerCoursesPage = () => {
         title: 'Beginner Diving Courses',
         description:
           'Start from zero, learn the basics step by step, and build calm, confident diving skills with a safety-first approach.',
-        tags: ['No experience needed', 'Small groups', 'UK · Lanzarote · Poland'],
+        tags: [
+          'No experience needed',
+          'Small groups',
+          'UK · Lanzarote · Poland',
+        ],
       }}
       courses={beginnerCourses}
       contact={{
         title: 'Want to start with beginner training?',
         description:
           'Tell me your level, preferred location and dates — I’ll suggest the best first steps for you.',
+        className: 'mt-16 md:mt-24',
       }}
     />
   );

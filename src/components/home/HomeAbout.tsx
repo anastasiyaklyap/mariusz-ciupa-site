@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { assetPath } from '@/lib/assetPath';
 import { linkPath } from '@/lib/linkPath';
-import { HomeCtaLink } from './HomeCtaLink';
+import { CtaLink } from '@/components/ui/CtaLink';
 
 const highlights = [
   '10+ years experience',
@@ -108,13 +108,13 @@ export const HomeAbout = () => {
           </div>
 
           <div className='mt-8'>
-            <HomeCtaLink
+            <CtaLink
               href={linkPath('/#contact')}
               variant='outline'
               className='w-full sm:w-auto'
             >
               Contact me
-            </HomeCtaLink>
+            </CtaLink>
           </div>
         </div>
       </div>

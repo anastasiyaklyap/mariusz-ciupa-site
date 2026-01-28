@@ -1,7 +1,7 @@
 import { siteConfig } from '@/lib/siteConfig';
 import { FooterBrand } from './footer/FooterBrand';
 import { FooterLink } from './footer/FooterLink';
-import { footerLinks } from './footer/footerLinks';
+import { footerLinks } from '@/lib/contactLinks';
 
 export const Footer = () => {
   return (

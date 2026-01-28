@@ -1,6 +1,7 @@
 import { CourseCardGrid, type CourseCardData } from './CourseCardGrid';
-import { CourseContact } from './CourseContact';
 import { CourseHero } from './CourseHero';
+import { PageContainer } from '@/components/layout/PageContainer';
+import { ContactCta } from '@/components/sections/ContactCta';
 
 type CoursePageHero = {
   title: string;
@@ -12,6 +13,7 @@ type CoursePageHero = {
 type CoursePageContact = {
   title: string;
   description: string;
+  className?: string;
 };
 
 type CoursePageProps = {
@@ -30,14 +32,18 @@ export const CoursePage = ({
   cardCtaHref,
 }: CoursePageProps) => {
   return (
-    <div className='mx-auto max-w-6xl px-6 pt-20 pb-10 md:pt-28 md:pb-16'>
+    <PageContainer>
       <CourseHero {...hero} />
       <CourseCardGrid
         courses={courses}
         ctaLabel={cardCtaLabel}
         ctaHref={cardCtaHref}
       />
-      <CourseContact {...contact} />
-    </div>
+      <ContactCta
+        title={contact.title}
+        description={contact.description}
+        className={contact.className}
+      />
+    </PageContainer>
   );
 };

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { linkPath } from '@/lib/linkPath';
 import { HomeCourseCard, type CourseCardData } from './HomeCourseCard';
-import { HomeCtaLink } from './HomeCtaLink';
+import { CtaLink } from '@/components/ui/CtaLink';
 
 const courses: CourseCardData[] = [
   {
@@ -45,14 +45,14 @@ export const HomeCourses = () => {
           </p>
         </div>
 
-        <HomeCtaLink
+        <CtaLink
           href={linkPath('/#contact')}
           variant='ghost'
           size='sm'
           className='hidden md:inline-flex'
         >
           Ask about availability
-        </HomeCtaLink>
+        </CtaLink>
       </div>
 
       <div className='relative mt-10 -mx-6 md:mx-0'>
@@ -68,14 +68,14 @@ export const HomeCourses = () => {
       </div>
 
       <div className='mt-8 md:hidden'>
-        <HomeCtaLink
+        <CtaLink
           href={linkPath('/#contact')}
           variant='ghost'
           size='sm'
           className='w-full py-3'
         >
           Ask about availability
-        </HomeCtaLink>
+        </CtaLink>
       </div>
     </section>
   );

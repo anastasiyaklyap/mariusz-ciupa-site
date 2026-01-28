@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { assetPath } from '@/lib/assetPath';
-import { HomeCtaLink } from '@/components/home/HomeCtaLink';
+import { CtaLink } from '@/components/ui/CtaLink';
 
 export type CourseCardData = {
   title: string;
@@ -111,14 +111,14 @@ export const CourseCardGrid = ({
                 ) : null}
 
                 <div className='mt-auto pt-6'>
-                  <HomeCtaLink
+                  <CtaLink
                     href={ctaHref}
                     variant='ghost'
                     size='sm'
                     className='gap-2 text-white/90'
                   >
                     {ctaLabel} <span className='text-white/60'>→</span>
-                  </HomeCtaLink>
+                  </CtaLink>
                 </div>
               </div>
             </article>

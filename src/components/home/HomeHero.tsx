@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { assetPath } from '@/lib/assetPath';
 import { linkPath } from '@/lib/linkPath';
 import { siteConfig } from '@/lib/siteConfig';
-import { HomeCtaLink } from './HomeCtaLink';
+import { CtaLink } from '@/components/ui/CtaLink';
 
 export const HomeHero = () => {
   return (
@@ -23,20 +23,20 @@ export const HomeHero = () => {
           </p>
 
           <div className='mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4'>
-            <HomeCtaLink
+            <CtaLink
               href={linkPath('/#courses')}
               className='w-full sm:w-auto'
             >
               View courses
-            </HomeCtaLink>
+            </CtaLink>
 
-            <HomeCtaLink
+            <CtaLink
               href={linkPath('/#contact')}
               variant='outline'
               className='w-full sm:w-auto'
             >
               Contact me
-            </HomeCtaLink>
+            </CtaLink>
           </div>
         </div>
 
