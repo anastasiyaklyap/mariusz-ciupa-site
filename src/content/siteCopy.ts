@@ -145,6 +145,14 @@ export const siteCopy = {
           tag: 'Next step',
           price: { amount: 395, currency: 'GBP' },
         },
+        {
+          title: 'Scuba Skills Update',
+          description:
+            'Refresh your diving knowledge and practical skills with guided exercises designed to rebuild confidence, improve buoyancy and ensure safe, comfortable dives.',
+          imageSrc: '/images/courses/scuba-skills-update.jpg',
+          tag: 'Refresh',
+          price: { amount: 95, currency: 'GBP' },
+        },
       ],
       contact: {
         title: 'Want to start with beginner training?',
@@ -196,22 +204,49 @@ export const siteCopy = {
         {
           title: 'Speciality',
           items: [
-            { title: 'Advanced Open Water Diver', price: { amount: 395, currency: 'GBP' } },
-            { title: 'Dry Suit Diving', price: { amount: 230, currency: 'GBP' }, extras: ['Dry suit rent'] },
-            { title: 'Perfect Buoyancy', price: { amount: 175, currency: 'GBP' } },
-            { title: 'Enriched Air Nitrox Level 1 (32%)', price: { amount: 150, currency: 'GBP' } },
+            {
+              title: 'Advanced Open Water Diver',
+              price: { amount: 395, currency: 'GBP' },
+            },
+            {
+              title: 'Dry Suit Diving',
+              price: { amount: 230, currency: 'GBP' },
+              extras: ['Dry suit rent'],
+            },
+            {
+              title: 'Perfect Buoyancy',
+              price: { amount: 175, currency: 'GBP' },
+            },
+            {
+              title: 'Enriched Air Nitrox Level 1 (32%)',
+              price: { amount: 150, currency: 'GBP' },
+            },
             { title: 'Boat Diving', price: { amount: 150, currency: 'GBP' } },
-            { title: 'Wreck Diving', price: { amount: 175, currency: 'GBP' }, extras: ['10 dives'] },
-            { title: 'Advanced Wreck Diving', price: { amount: 300, currency: 'GBP' }, extras: ['10 dives'] },
+            {
+              title: 'Wreck Diving',
+              price: { amount: 175, currency: 'GBP' },
+              extras: ['10 dives'],
+            },
+            {
+              title: 'Advanced Wreck Diving',
+              price: { amount: 300, currency: 'GBP' },
+              extras: ['10 dives'],
+            },
             { title: 'Deep Diving', price: { amount: 250, currency: 'GBP' } },
           ],
         },
         {
           title: 'Technical',
           items: [
-            { title: 'Sidemount Diving', price: { amount: 450, currency: 'GBP' } },
+            {
+              title: 'Sidemount Diving',
+              price: { amount: 450, currency: 'GBP' },
+            },
             { title: 'Deco Diving', price: { amount: 650, currency: 'GBP' } },
-            { title: 'Extended Range', price: { amount: 950, currency: 'GBP' } },
+            {
+              title: 'Extended Range',
+              price: { amount: 950, currency: 'GBP' },
+            },
           ],
         },
       ],
@@ -368,6 +403,14 @@ export const siteCopy = {
           tag: 'Kolejny krok',
           price: { amount: 395, currency: 'GBP' },
         },
+        {
+          title: 'Scuba Skills Update',
+          description:
+            'Odśwież swoją wiedzę nurkową i umiejętności praktyczne dzięki ćwiczeniom prowadzonym przez instruktora, które pomogą odbudować pewność siebie, poprawić pływalność i zapewnić bezpieczne oraz komfortowe nurkowanie.',
+          imageSrc: '/images/courses/scuba-skills-update.jpg',
+          tag: 'Odświeżenie',
+          price: { amount: 95, currency: 'GBP' },
+        },
       ],
       contact: {
         title: 'Chcesz zacząć od kursów dla początkujących?',
@@ -420,22 +463,49 @@ export const siteCopy = {
         {
           title: 'Specjalizacje',
           items: [
-            { title: 'Advanced Open Water Diver', price: { amount: 395, currency: 'GBP' } },
-            { title: 'Dry Suit Diving', price: { amount: 230, currency: 'GBP' }, extras: ['Wypożyczenie suchego skafandra'] },
-            { title: 'Perfect Buoyancy', price: { amount: 175, currency: 'GBP' } },
-            { title: 'Enriched Air Nitrox Level 1 (32%)', price: { amount: 150, currency: 'GBP' } },
+            {
+              title: 'Advanced Open Water Diver',
+              price: { amount: 395, currency: 'GBP' },
+            },
+            {
+              title: 'Dry Suit Diving',
+              price: { amount: 230, currency: 'GBP' },
+              extras: ['Wypożyczenie suchego skafandra'],
+            },
+            {
+              title: 'Perfect Buoyancy',
+              price: { amount: 175, currency: 'GBP' },
+            },
+            {
+              title: 'Enriched Air Nitrox Level 1 (32%)',
+              price: { amount: 150, currency: 'GBP' },
+            },
             { title: 'Boat Diving', price: { amount: 150, currency: 'GBP' } },
-            { title: 'Wreck Diving', price: { amount: 175, currency: 'GBP' }, extras: ['10 nurkowań'] },
-            { title: 'Advanced Wreck Diving', price: { amount: 300, currency: 'GBP' }, extras: ['10 nurkowań'] },
+            {
+              title: 'Wreck Diving',
+              price: { amount: 175, currency: 'GBP' },
+              extras: ['10 nurkowań'],
+            },
+            {
+              title: 'Advanced Wreck Diving',
+              price: { amount: 300, currency: 'GBP' },
+              extras: ['10 nurkowań'],
+            },
             { title: 'Deep Diving', price: { amount: 250, currency: 'GBP' } },
           ],
         },
         {
           title: 'Techniczne',
           items: [
-            { title: 'Sidemount Diving', price: { amount: 450, currency: 'GBP' } },
+            {
+              title: 'Sidemount Diving',
+              price: { amount: 450, currency: 'GBP' },
+            },
             { title: 'Deco Diving', price: { amount: 650, currency: 'GBP' } },
-            { title: 'Extended Range', price: { amount: 950, currency: 'GBP' } },
+            {
+              title: 'Extended Range',
+              price: { amount: 950, currency: 'GBP' },
+            },
           ],
         },
       ],

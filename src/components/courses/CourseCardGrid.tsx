@@ -88,13 +88,11 @@ export const CourseCardGrid = ({
                     src={assetPath(course.imageSrc)}
                     alt={course.title}
                     fill
-                    className='object-cover'
+                    className='object-cover brightness-75 contrast-90 saturate-90'
                   />
                 </div>
 
-                <div className='pointer-events-none absolute inset-0 bg-black/10' />
-                <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/25 to-transparent' />
-
+                <div className='pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black to-transparent/20' />
                 <div className='absolute left-5 top-5'>
                   <span className='rounded-full border border-white/20 bg-black/30 px-3 py-1 text-xs font-medium text-white/90 backdrop-blur-md shadow-sm'>
                     {course.tag ?? copy.defaultTag}
