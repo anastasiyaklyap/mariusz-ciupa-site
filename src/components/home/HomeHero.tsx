@@ -50,12 +50,12 @@ export const HomeHero = ({ locale }: HomeHeroProps) => {
         </div>
 
         <div className='order-first md:order-none relative overflow-hidden rounded-3xl border border-white/10 bg-white/5'>
-          <div className='relative aspect-[16/10] md:aspect-[4/5] w-full'>
+          <div className='relative aspect-[2/3]'>
             <Image
-              src={assetPath('/images/hero.jpg')}
+              src={assetPath('/images/hero.jpeg')}
               alt={copy.imageAlt}
               fill
-              className='object-cover'
+              className='w-auto'
               priority
             />
           </div>

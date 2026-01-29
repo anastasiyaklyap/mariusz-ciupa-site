@@ -17,9 +17,9 @@ export const HomeAbout = ({ locale }: HomeAboutProps) => {
     <section className='mt-24 md:mt-32' id='about'>
       <div className='grid gap-8 md:grid-cols-2 md:items-center md:gap-12'>
         <div className='relative overflow-hidden rounded-3xl border border-white/10 bg-white/5'>
-          <div className='relative aspect-[3/2] w-full md:aspect-[4/5]'>
+          <div className='relative aspect-[2/3] w-full '>
             <Image
-              src={assetPath('/images/mariusz-ciupa.jpg')}
+              src={assetPath('/images/mariusz-ciupa.jpeg')}
               alt={copy.imageAlt}
               fill
               className='object-cover'
