@@ -34,7 +34,7 @@ export const PricesPageClient = () => {
         <p className='mt-4 max-w-2xl text-white/75'>{copy.hero.description}</p>
 
         <div className='mt-8 flex flex-wrap gap-3 text-xs text-white/70'>
-          <span  className='rounded-full border border-white/15 bg-white/5 px-3 py-1.5'>
+          <span className='rounded-full border border-white/15 bg-white/5 px-3 py-1.5'>
             {copy.hero.badges[0]}
           </span>
           <a
@@ -56,7 +56,7 @@ export const PricesPageClient = () => {
             </div>
 
             <div className='mt-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5'>
-              <div className='grid grid-cols-[minmax(0,1fr)_120px_180px] gap-4 border-b border-white/10 bg-white/5 px-5 py-3 text-xs uppercase tracking-[0.2em] text-white/50'>
+              <div className='hidden grid-cols-[minmax(0,1fr)_120px_180px] gap-4 border-b border-white/10 bg-white/5 px-5 py-3 text-xs uppercase tracking-[0.2em] text-white/50 md:grid'>
                 <span>{copy.table.course}</span>
                 <span className='text-right'>{copy.table.price}</span>
                 <span>{copy.table.extras}</span>
@@ -70,17 +70,27 @@ export const PricesPageClient = () => {
                     return (
                       <div
                         key={item.title}
-                        className='grid grid-cols-[minmax(0,1fr)_120px_180px] items-center gap-4 px-5 py-4 text-sm text-white/85'
+                        className='grid gap-3 px-5 py-4 text-sm text-white/85 md:grid-cols-[minmax(0,1fr)_120px_180px] md:items-center md:gap-4'
                       >
-                        <span>{item.title}</span>
-                        <span className='text-right text-base font-semibold text-white'>
-                          {formatPrice(
-                            item.price.amount,
-                            item.price.currency,
-                            locale,
-                          )}
-                        </span>
+                        <div className='text-base font-medium text-white'>
+                          {item.title}
+                        </div>
+                        <div className='flex items-baseline justify-between gap-3 md:justify-end'>
+                          <span className='text-[11px] uppercase tracking-[0.18em] text-white/45 md:hidden'>
+                            {copy.table.price}
+                          </span>
+                          <span className='text-base font-semibold text-white'>
+                            {formatPrice(
+                              item.price.amount,
+                              item.price.currency,
+                              locale,
+                            )}
+                          </span>
+                        </div>
                         <div className='text-xs text-white/60'>
+                          <span className='mb-1 block text-[11px] uppercase tracking-[0.18em] text-white/45 md:hidden'>
+                            {copy.table.extras}
+                          </span>
                           {extras?.length ? (
                             <span>
                               {extras.join(', ')}

@@ -38,6 +38,7 @@ export const Header = () => {
     window.location.href = url.toString();
   };
   const menuRef = useRef<HTMLDivElement | null>(null);
+  const menuButtonRef = useRef<HTMLButtonElement | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<HeaderSectionId | null>(
     null
@@ -93,7 +94,12 @@ export const Header = () => {
     if (!isMenuOpen) return;
 
     const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      const target = event.target as Node;
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(target) &&
+        !menuButtonRef.current?.contains(target)
+      ) {
         setIsMenuOpen(false);
       }
     };
@@ -136,6 +142,7 @@ export const Header = () => {
         </div>
         <div className='flex items-center gap-2 md:hidden'>
           <HeaderMenuButton
+            ref={menuButtonRef}
             isOpen={isMenuOpen}
             onToggle={() => setIsMenuOpen((v) => !v)}
             locale={locale}

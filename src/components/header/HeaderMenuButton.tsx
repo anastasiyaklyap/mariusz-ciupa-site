@@ -1,3 +1,4 @@
+import { forwardRef } from 'react';
 import classNames from 'classnames';
 import { siteCopy } from '@/content/siteCopy';
 import type { Locale } from '@/lib/i18n';
@@ -8,17 +9,17 @@ type HeaderMenuButtonProps = {
   locale: Locale;
 };
 
-export const HeaderMenuButton = ({
-  isOpen,
-  onToggle,
-  locale,
-}: HeaderMenuButtonProps) => {
+export const HeaderMenuButton = forwardRef<
+  HTMLButtonElement,
+  HeaderMenuButtonProps
+>(({ isOpen, onToggle, locale }, ref) => {
   const copy = siteCopy[locale].common;
   return (
     <button
+      ref={ref}
       type='button'
       className='inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-white/80 transition hover:bg-white/10 md:hidden focus:outline-none focus:ring-2 focus:ring-[#24C6D9]/40 focus:ring-offset-0'
-      aria-label={copy.menuOpenLabel}
+      aria-label={isOpen ? copy.menuCloseLabel : copy.menuOpenLabel}
       aria-expanded={isOpen}
       onClick={onToggle}
     >
@@ -51,4 +52,6 @@ export const HeaderMenuButton = ({
       </span>
     </button>
   );
-};
+});
+
+HeaderMenuButton.displayName = 'HeaderMenuButton';
