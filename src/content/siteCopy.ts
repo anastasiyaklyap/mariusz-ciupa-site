@@ -132,7 +132,7 @@ export const siteCopy = {
         {
           title: 'SSI Open Water Diver',
           description:
-            'Become a certified Open Water Diver with SSI. This globally recognized certification program is the best way to begin your lifelong adventures as a certified scuba diver. Personalized training is combined with in-water practice sessions to ensure you have the skills and experience required to become truly comfortable underwater. You will earn the SSI Open Water Diver certification.',
+            'Become a certified Open Water Diver with SSI. \nThis globally recognized certification program is the best way to begin your lifelong adventures as a certified scuba diver. Personalized training is combined with in-water practice sessions to ensure you have the skills and experience required to become truly comfortable underwater. You will earn the SSI Open Water Diver certification.',
           imageSrc: '/images/courses/open-water.jpg',
           tag: 'Certification',
           price: { amount: 550, currency: 'GBP' },
@@ -148,7 +148,7 @@ export const siteCopy = {
         {
           title: 'Scuba Skills Update',
           description:
-            'Refresh your diving knowledge and practical skills with guided exercises designed to rebuild confidence, improve buoyancy and ensure safe, comfortable dives.',
+            'Continue your dive adventure with a Scuba Skills Update \nIt is easy for dive skills to get rusty and to lose confidence when you have not dived for a while. With the SSI Scuba Skills Update, we will get you back in the water and diving with ease in no time. This scuba refresher course allows you to review and practice scuba skills you learned in your Open Water Diver program, under the guidance of an SSI Professional. This is a great course to take just before a dive holiday, so you spend less time worrying about your skills and more time admiring the marine life. If you are a non-certified Open Water Diver student, a Scuba Skills Update is ideal for practicing your dive skills before your open water training dives. With no fixed course duration, you can take your time and focus on the skills you need help with.',
           imageSrc: '/images/courses/scuba-skills-update.jpg',
           tag: 'Refresh',
           price: { amount: 95, currency: 'GBP' },
@@ -545,7 +545,7 @@ export const siteCopy = {
         {
           title: 'SSI Open Water Diver',
           description:
-            'Zdobądź certyfikat Open Water Diver SSI. To uznawany na całym świecie program, który najlepiej rozpoczyna przygodę z nurkowaniem. Spersonalizowany trening łączy teorię i praktykę w wodzie, abyś czuł się pewnie i komfortowo pod wodą. Po ukończeniu otrzymasz certyfikat SSI Open Water Diver.',
+            'Zostań certyfikowanym nurkiem Open Water Diver SSI. \nTen uznawany na całym świecie program certyfikacyjny to najlepszy sposób, aby rozpocząć swoją przygodę z nurkowaniem jako certyfikowany nurek. Spersonalizowane szkolenie połączone jest z praktycznymi zajęciami w wodzie, aby zapewnić Ci umiejętności i doświadczenie niezbędne do swobodnego poruszania się pod wodą. Po ukończeniu szkolenia otrzymasz certyfikat SSI Open Water Diver.',
           imageSrc: '/images/courses/open-water.jpg',
           tag: 'Certyfikacja',
           price: { amount: 550, currency: 'GBP' },
@@ -561,7 +561,7 @@ export const siteCopy = {
         {
           title: 'Scuba Skills Update',
           description:
-            'Odśwież swoją wiedzę nurkową i umiejętności praktyczne dzięki ćwiczeniom prowadzonym przez instruktora, które pomogą odbudować pewność siebie, poprawić pływalność i zapewnić bezpieczne oraz komfortowe nurkowanie.',
+            'Kontynuuj swoją nurkową przygodę dzięki Scuba Skills Update. \nŁatwo stracić wprawę i pewność siebie, gdy przez dłuższy czas nie nurkujesz. Dzięki programowi SSI Scuba Skills Update szybko wrócimy z Tobą do wody i sprawimy, że znów będziesz nurkować z łatwością. Ten kurs odświeżający pozwala powtórzyć i przećwiczyć umiejętności nurkowe, których nauczyłeś/aś się podczas kursu Open Water Diver, pod okiem profesjonalisty SSI. To doskonały kurs przed wyjazdem nurkowym, abyś spędzał/a mniej czasu martwiąc się o swoje umiejętności, a więcej na podziwianiu życia morskiego. Jeśli jesteś kursantem Open Water Diver bez certyfikatu, Scuba Skills Update jest idealnym rozwiązaniem do przećwiczenia umiejętności przed nurkowaniami szkoleniowymi na wodach otwartych. Bez sztywno określonego czasu trwania kursu możesz poświęcić tyle czasu, ile potrzebujesz, i skupić się na umiejętnościach, które wymagają poprawy.',
           imageSrc: '/images/courses/scuba-skills-update.jpg',
           tag: 'Odświeżenie',
           price: { amount: 95, currency: 'GBP' },

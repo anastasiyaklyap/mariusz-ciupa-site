@@ -11,8 +11,7 @@
 - [ ] Are we going to translate course titles to PL ? 
 - [ ] Are we going to use prices in PLN ? 
 - [ ] Review all PL translation, made with AI
-
-
-## Assets
-
-- [ ] Logo in SVG
+- [ ] Description for Try Scuba. Now using AI version
+- [ ] Why SSI Open Water Diver is more expensive than Advancs Open Water Diver? Couldn't understand the price list
+- [ ] Description for Advanced Open Water Diver. Now using AI version
+- [ ] Price for Scuba Skills Update. Now 95
