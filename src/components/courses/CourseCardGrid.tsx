@@ -109,7 +109,7 @@ export const CourseCardGrid = ({
                   ref={(el) => {
                     descRefs.current[course.title] = el;
                   }}
-                  className={`text-sm leading-relaxed text-white/75 ${
+                  className={`text-sm leading-relaxed text-white/75 whitespace-pre-line ${
                     isOpen ? '' : 'line-clamp-4'
                   }`}
                 >
