@@ -5,6 +5,7 @@ export const siteCopy = {
       responseTime: 'Typical response time: 24–48h',
       emailLabel: 'Email me',
       menuOpenLabel: 'Open menu',
+      menuCloseLabel: 'Close menu',
       languageLabel: 'Language',
       social: [
         { key: 'instagram', label: 'Instagram' },
@@ -533,6 +534,7 @@ export const siteCopy = {
       responseTime: 'Zwykle odpowiadam w ciągu 24–48 h',
       emailLabel: 'Napisz do mnie',
       menuOpenLabel: 'Otwórz menu',
+      menuCloseLabel: 'Zamknij menu',
       languageLabel: 'Język',
       social: [
         { key: 'instagram', label: 'Instagram' },
