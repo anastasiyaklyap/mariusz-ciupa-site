@@ -17,3 +17,6 @@
 - [ ] Price for Scuba Skills Update. Now 95
 - [ ] Add Scuba Skills Update to the Price Page when will be available price.
 - [ ] Add Marine Ecology to the Price Page when will be available price.
+- [ ] Add Extended Range Nitrox Diving description. Now using AI description
+- [ ] Add Extended Range description. Now using AI description
+- [ ] Add Extended Range Trimix  description. Now using AI description

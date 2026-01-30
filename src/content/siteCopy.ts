@@ -66,7 +66,7 @@ export const siteCopy = {
             desc: 'Advanced training for deeper dives, procedures and serious planning.',
             tag: 'Go beyond limits',
             imageSrc: '/images/courses-technical.jpg',
-            link: '#',
+            link: '/technical',
           },
         ],
       },
@@ -315,6 +315,53 @@ export const siteCopy = {
           'Tell me which areas you’d like to focus on and where you plan to dive — I’ll help you choose the right courses for your goals.',
       },
     },
+    technical: {
+      hero: {
+        title: 'Technical Diving Courses',
+        description:
+          'Go beyond recreational limits and train advanced diving techniques for deeper, longer, and more complex dives. Focus on precision, planning, and full control in demanding environments.',
+        tags: ['Advanced training', 'Extended range'],
+      },
+      courses: [
+        {
+          title: 'Advanced Wreck Diving',
+          description:
+            'Become a certified Wreck Diver with SSI. \nMany of the ocean’s best dive sites are wrecks. These impressive structures attract unusually high densities of marine life and give you the chance to immerse in living history as you dive. There is nothing quite like wreck diving and the SSI Wreck Diving specialty will give you all the skills and knowledge you need to become a safe and confident wreck diver. With a combination of academic and confined water sessions, you will be taught how to safely conduct non-penetration dives around wrecks and artificial reefs, up to a depth of 30 meters. You will also get to practice your wreck diving skills during open water training dives. All of which will ensure you can enjoy wreck diving with confidence and get the most out of every dive. Upon completion of this program, you will earn your SSI Wreck Diving specialty certification. Continue your adventures and become a wreck diver. Get started online today!',
+          imageSrc: '/images/courses/advanced-wreck-diving.jpg',
+          tag: 'Wreck',
+          price: { amount: 300, currency: 'GBP', extras: [] },
+        },
+        {
+          title: 'Extended Range Nitrox Diving',
+          description:
+            'Train advanced nitrox procedures for deeper and longer dives beyond recreational limits. Learn precise gas planning, decompression strategies, and technical buoyancy control.',
+          imageSrc: '/images/courses/extended-range-nitrox-diving.jpg',
+          tag: 'Twin Set',
+          price: { amount: 400, currency: 'GBP', extras: [] },
+        },
+        {
+          title: 'Extended Range',
+          description:
+            'Develop the skills needed for deeper dives with planned decompression beyond recreational limits. Focus on advanced dive planning, precise buoyancy, and safe team procedures.',
+          imageSrc: '/images/courses/extended-range.jpg',
+          tag: 'Twin Set',
+          price: { amount: 550, currency: 'GBP', extras: [] },
+        },
+        {
+          title: 'Extended Range Trimix',
+          description:
+            'Master advanced trimix techniques for deep and complex dives with planned decompression. Learn precise gas management, advanced dive planning, and safe team procedures for extreme depths.',
+          imageSrc: '/images/courses/extended-range-trimix.jpg',
+          tag: 'Twin Set',
+          price: { amount: 550, currency: 'GBP', extras: ['gases'] },
+        },
+      ],
+      contact: {
+        title: 'Ready for technical diving training?',
+        description:
+          'Tell me about your current certifications, experience, and goals — I’ll help you choose the right technical path.',
+      },
+    },
     footer: {
       rights: 'All rights reserved.',
     },
@@ -540,14 +587,14 @@ export const siteCopy = {
             desc: 'Rozwijaj umiejętności na kursach takich jak pływalność, nawigacja czy nurkowanie nocne.',
             tag: 'Buduj doświadczenie',
             imageSrc: '/images/courses-speciality.jpg',
-            link: '#',
+            link: '/speciality',
           },
           {
             title: 'Techniczne',
             desc: 'Zaawansowane szkolenia do głębszych nurkowań, procedur i poważnego planowania.',
             tag: 'Przekrocz granice',
             imageSrc: '/images/courses-technical.jpg',
-            link: '#',
+            link: '/technical',
           },
         ],
       },
@@ -806,6 +853,53 @@ export const siteCopy = {
         title: 'Interesuje Cię szkolenie specjalistyczne z nurkowania?',
         description:
           'Powiedz mi, na jakich obszarach chcesz się skupić i gdzie planujesz nurkować — pomogę Ci dobrać odpowiednie kursy do Twoich celów.',
+      },
+    },
+    technical: {
+      hero: {
+        title: 'Kursy nurkowania technicznego',
+        description:
+          'Wyjdź poza limity nurkowania rekreacyjnego i trenuj zaawansowane techniki nurkowe do głębszych, dłuższych i bardziej złożonych nurkowań. Skup się na precyzji, planowaniu i pełnej kontroli w wymagających środowiskach.',
+        tags: ['Szkolenie zaawansowane', 'Rozszerzony zakres'],
+      },
+      courses: [
+        {
+          title: 'Advanced Wreck Diving',
+          description:
+            'Zostań certyfikowanym nurkiem wrakowym SSI. \nWiele z najlepszych miejsc nurkowych na świecie to wraki. Te imponujące konstrukcje przyciągają wyjątkowo duże skupiska życia morskiego i dają możliwość zanurzenia się w żywej historii podczas nurkowania. Nie ma niczego podobnego do nurkowania wrakowego, a specjalizacja SSI Wreck Diving zapewni Ci wszystkie umiejętności i wiedzę potrzebne, aby stać się bezpiecznym i pewnym siebie nurkiem wrakowym. Dzięki połączeniu zajęć teoretycznych oraz sesji w wodach ograniczonych nauczysz się, jak bezpiecznie wykonywać nurkowania bez penetracji wraków oraz sztucznych raf, do głębokości 30 metrów. Będziesz także ćwiczyć swoje umiejętności nurkowania wrakowego podczas nurkowań szkoleniowych w wodach otwartych. Wszystko to pozwoli Ci nurkować na wrakach z pewnością siebie i w pełni korzystać z każdego nurkowania. Po ukończeniu programu otrzymasz certyfikat specjalistyczny SSI Wreck Diving Specialty. Kontynuuj swoje przygody i zostań nurkiem wrakowym. Rozpocznij naukę online już dziś!',
+          imageSrc: '/images/courses/advanced-wreck-diving.jpg',
+          tag: 'Wrak',
+          price: { amount: 300, currency: 'GBP', extras: [] },
+        },
+        {
+          title: 'Extended Range Nitrox Diving',
+          description:
+            'Trenuj zaawansowane procedury nurkowania na nitroksie do głębszych i dłuższych nurkowań poza limitami rekreacyjnymi. Naucz się precyzyjnego planowania gazów, strategii dekompresyjnych oraz technicznej kontroli pływalności.',
+          imageSrc: '/images/courses/extended-range-nitrox-diving.jpg',
+          tag: 'Twinset',
+          price: { amount: 400, currency: 'GBP', extras: [] },
+        },
+        {
+          title: 'Extended Range',
+          description:
+            'Rozwijaj umiejętności potrzebne do głębszych nurkowań z planowaną dekompresją poza limitami rekreacyjnymi. Skup się na zaawansowanym planowaniu nurkowań, precyzyjnej kontroli pływalności oraz bezpiecznych procedurach zespołowych.',
+          imageSrc: '/images/courses/extended-range.jpg',
+          tag: 'Twinset',
+          price: { amount: 550, currency: 'GBP', extras: [] },
+        },
+        {
+          title: 'Extended Range Trimix',
+          description:
+            'Opanuj zaawansowane techniki trimiksowe do głębokich i złożonych nurkowań z planowaną dekompresją. Naucz się precyzyjnego zarządzania gazami, zaawansowanego planowania nurkowań oraz bezpiecznych procedur zespołowych dla ekstremalnych głębokości.',
+          imageSrc: '/images/courses/extended-range-trimix.jpg',
+          tag: 'Twinset',
+          price: { amount: 550, currency: 'GBP', extras: ['gazy'] },
+        },
+      ],
+      contact: {
+        title: 'Gotowy na szkolenie z nurkowania technicznego?',
+        description:
+          'Opowiedz mi o swoich obecnych certyfikatach, doświadczeniu i celach — pomogę Ci wybrać odpowiednią ścieżkę techniczną.',
       },
     },
     footer: {
