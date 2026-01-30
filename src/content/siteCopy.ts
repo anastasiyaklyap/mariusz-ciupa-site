@@ -350,7 +350,7 @@ export const siteCopy = {
               price: { amount: 550, currency: 'GBP' },
             },
             {
-              title: 'Open Water Diver + Dry Suit',
+              title: 'Open Water Diver plus Dry Suit',
               price: { amount: 700, currency: 'GBP' },
               extras: ['Dry suit rent'],
             },
@@ -376,31 +376,99 @@ export const siteCopy = {
               title: 'Enriched Air Nitrox Level 1 (32%)',
               price: { amount: 150, currency: 'GBP' },
             },
-            { title: 'Boat Diving', price: { amount: 150, currency: 'GBP' } },
+            {
+              title: 'Enriched Air Nitrox Level 2 (40%)',
+              price: { amount: 175, currency: 'GBP' },
+            },
+            { title: 'Boat Diving', price: { amount: 250, currency: 'GBP' } },
             {
               title: 'Wreck Diving',
               price: { amount: 175, currency: 'GBP' },
-              extras: ['10 dives'],
             },
             {
               title: 'Advanced Wreck Diving',
               price: { amount: 300, currency: 'GBP' },
-              extras: ['10 dives'],
             },
-            { title: 'Deep Diving', price: { amount: 250, currency: 'GBP' } },
+            {
+              title: 'Night Diving & Limited Visibility',
+              price: { amount: 200, currency: 'GBP' },
+            },
+            {
+              title: 'Deep Diving',
+              price: { amount: 250, currency: 'GBP' },
+            },
+            {
+              title: 'Decompression Diving',
+              price: { amount: 350, currency: 'GBP' },
+            },
+            {
+              title: 'DPV Diving',
+              price: { amount: 250, currency: 'GBP' },
+              extras: ['Dry suit rent'],
+            },
+            {
+              title: 'DPV Diving ( technical )',
+              price: { amount: 280, currency: 'GBP' },
+              extras: ['Dry suit rent'],
+            },
+            {
+              title: 'React Right Instructor (FA, CPR, AED, O2)',
+              price: { amount: 150, currency: 'GBP' },
+            },
+            {
+              title: 'Stress & Rescue',
+              price: { amount: 450, currency: 'GBP' },
+            },
+            {
+              title: 'Science of Diving',
+              price: { amount: 150, currency: 'GBP' },
+            },
+            {
+              title: 'Navigation Diving',
+              price: { amount: 175, currency: 'GBP' },
+            },
+          ],
+        },
+        {
+          title: 'Professional',
+          items: [
+            {
+              title: 'Divemaster',
+              price: { amount: 600, currency: 'GBP' },
+              extras: ['DM kit'],
+            },
+            {
+              title: 'Assistant Instructor',
+              price: { amount: 900, currency: 'GBP' },
+              extras: ['AI kit'],
+            },
           ],
         },
         {
           title: 'Technical',
           items: [
             {
-              title: 'Sidemount Diving',
-              price: { amount: 450, currency: 'GBP' },
+              title: 'Extended Range Nitrox Diving (twin set)',
+              price: { amount: 400, currency: 'GBP' },
             },
-            { title: 'Deco Diving', price: { amount: 650, currency: 'GBP' } },
             {
-              title: 'Extended Range',
-              price: { amount: 950, currency: 'GBP' },
+              title: 'Extended Range (twin set)',
+              price: { amount: 550, currency: 'GBP' },
+            },
+            {
+              title: 'Extended Range Trimix (twin set)',
+              price: { amount: 550, currency: 'GBP' },
+              extras: ['gases'],
+            },
+          ],
+        },
+        {
+          title: 'Bundle rec',
+          items: [
+            {
+              title: 'Divemaster Bundle',
+              price: { amount: 900, currency: 'GBP' },
+              extras: ['DM kit'],
             },
           ],
         },
@@ -769,21 +837,21 @@ export const siteCopy = {
             {
               title: 'Open Water Diver referral',
               price: { amount: 350, currency: 'GBP' },
-              extras: ['Teoria i basen'],
+              extras: ['Teoria i tylko basen'],
             },
             {
-              title: 'Open Water Diver - pełny',
+              title: 'Open Water Diver - full',
               price: { amount: 550, currency: 'GBP' },
             },
             {
-              title: 'Open Water Diver + Dry Suit',
+              title: 'Open Water Diver plus Dry Suit',
               price: { amount: 700, currency: 'GBP' },
               extras: ['Wypożyczenie suchego skafandra'],
             },
           ],
         },
         {
-          title: 'Specjalizacje',
+          title: 'Specjalizacja',
           items: [
             {
               title: 'Advanced Open Water Diver',
@@ -802,31 +870,99 @@ export const siteCopy = {
               title: 'Enriched Air Nitrox Level 1 (32%)',
               price: { amount: 150, currency: 'GBP' },
             },
-            { title: 'Boat Diving', price: { amount: 150, currency: 'GBP' } },
+            {
+              title: 'Enriched Air Nitrox Level 2 (40%)',
+              price: { amount: 175, currency: 'GBP' },
+            },
+            { title: 'Boat Diving', price: { amount: 250, currency: 'GBP' } },
             {
               title: 'Wreck Diving',
               price: { amount: 175, currency: 'GBP' },
-              extras: ['10 nurkowań'],
             },
             {
               title: 'Advanced Wreck Diving',
               price: { amount: 300, currency: 'GBP' },
-              extras: ['10 nurkowań'],
             },
-            { title: 'Deep Diving', price: { amount: 250, currency: 'GBP' } },
+            {
+              title: 'Night Diving & Limited Visibility',
+              price: { amount: 200, currency: 'GBP' },
+            },
+            {
+              title: 'Deep Diving',
+              price: { amount: 250, currency: 'GBP' },
+            },
+            {
+              title: 'Decompression Diving',
+              price: { amount: 350, currency: 'GBP' },
+            },
+            {
+              title: 'DPV Diving',
+              price: { amount: 250, currency: 'GBP' },
+              extras: ['Wypożyczenie suchego skafandra'],
+            },
+            {
+              title: 'DPV Diving ( technical )',
+              price: { amount: 280, currency: 'GBP' },
+              extras: ['Wypożyczenie suchego skafandra'],
+            },
+            {
+              title: 'React Right Instructor (FA, CPR, AED, O2)',
+              price: { amount: 150, currency: 'GBP' },
+            },
+            {
+              title: 'Stress & Rescue',
+              price: { amount: 450, currency: 'GBP' },
+            },
+            {
+              title: 'Science of Diving',
+              price: { amount: 150, currency: 'GBP' },
+            },
+            {
+              title: 'Navigation Diving',
+              price: { amount: 175, currency: 'GBP' },
+            },
           ],
         },
         {
-          title: 'Techniczne',
+          title: 'Profesjonalny',
           items: [
             {
-              title: 'Sidemount Diving',
-              price: { amount: 450, currency: 'GBP' },
+              title: 'Divemaster',
+              price: { amount: 600, currency: 'GBP' },
+              extras: ['zestaw Divemastera'],
             },
-            { title: 'Deco Diving', price: { amount: 650, currency: 'GBP' } },
             {
-              title: 'Extended Range',
-              price: { amount: 950, currency: 'GBP' },
+              title: 'Assistant Instructor',
+              price: { amount: 900, currency: 'GBP' },
+              extras: ['zestaw AI'],
+            },
+          ],
+        },
+        {
+          title: 'Techniczny',
+          items: [
+            {
+              title: 'Extended Range Nitrox Diving (twin set)',
+              price: { amount: 400, currency: 'GBP' },
+            },
+            {
+              title: 'Extended Range (twin set)',
+              price: { amount: 550, currency: 'GBP' },
+            },
+            {
+              title: 'Extended Range Trimix (twin set)',
+              price: { amount: 550, currency: 'GBP' },
+              extras: ['gazy'],
+            },
+          ],
+        },
+        {
+          title: 'Pakiet rekreacyjny',
+          items: [
+            {
+              title: 'Divemaster Bundle',
+              price: { amount: 900, currency: 'GBP' },
+              extras: ['zestaw Divemastera'],
             },
           ],
         },
