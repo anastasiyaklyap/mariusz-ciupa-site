@@ -66,7 +66,7 @@ export const siteCopy = {
             desc: 'Advanced training for deeper dives, procedures and serious planning.',
             tag: 'Go beyond limits',
             imageSrc: '/images/courses-technical.jpg',
-            link: '#',
+            link: '/technical',
           },
         ],
       },
@@ -315,6 +315,53 @@ export const siteCopy = {
           'Tell me which areas you’d like to focus on and where you plan to dive — I’ll help you choose the right courses for your goals.',
       },
     },
+    technical: {
+      hero: {
+        title: 'Technical Diving Courses',
+        description:
+          'Go beyond recreational limits and train advanced diving techniques for deeper, longer, and more complex dives. Focus on precision, planning, and full control in demanding environments.',
+        tags: ['Advanced training', 'Extended range'],
+      },
+      courses: [
+        {
+          title: 'Advanced Wreck Diving',
+          description:
+            'Become a certified Wreck Diver with SSI. \nMany of the ocean’s best dive sites are wrecks. These impressive structures attract unusually high densities of marine life and give you the chance to immerse in living history as you dive. There is nothing quite like wreck diving and the SSI Wreck Diving specialty will give you all the skills and knowledge you need to become a safe and confident wreck diver. With a combination of academic and confined water sessions, you will be taught how to safely conduct non-penetration dives around wrecks and artificial reefs, up to a depth of 30 meters. You will also get to practice your wreck diving skills during open water training dives. All of which will ensure you can enjoy wreck diving with confidence and get the most out of every dive. Upon completion of this program, you will earn your SSI Wreck Diving specialty certification. Continue your adventures and become a wreck diver. Get started online today!',
+          imageSrc: '/images/courses/advanced-wreck-diving.jpg',
+          tag: 'Wreck',
+          price: { amount: 300, currency: 'GBP', extras: [] },
+        },
+        {
+          title: 'Extended Range Nitrox Diving',
+          description:
+            'Train advanced nitrox procedures for deeper and longer dives beyond recreational limits. Learn precise gas planning, decompression strategies, and technical buoyancy control.',
+          imageSrc: '/images/courses/extended-range-nitrox-diving.jpg',
+          tag: 'Twin Set',
+          price: { amount: 400, currency: 'GBP', extras: [] },
+        },
+        {
+          title: 'Extended Range',
+          description:
+            'Develop the skills needed for deeper dives with planned decompression beyond recreational limits. Focus on advanced dive planning, precise buoyancy, and safe team procedures.',
+          imageSrc: '/images/courses/extended-range.jpg',
+          tag: 'Twin Set',
+          price: { amount: 550, currency: 'GBP', extras: [] },
+        },
+        {
+          title: 'Extended Range Trimix',
+          description:
+            'Master advanced trimix techniques for deep and complex dives with planned decompression. Learn precise gas management, advanced dive planning, and safe team procedures for extreme depths.',
+          imageSrc: '/images/courses/extended-range-trimix.jpg',
+          tag: 'Twin Set',
+          price: { amount: 550, currency: 'GBP', extras: ['gases'] },
+        },
+      ],
+      contact: {
+        title: 'Ready for technical diving training?',
+        description:
+          'Tell me about your current certifications, experience, and goals — I’ll help you choose the right technical path.',
+      },
+    },
     footer: {
       rights: 'All rights reserved.',
     },
@@ -350,7 +397,7 @@ export const siteCopy = {
               price: { amount: 550, currency: 'GBP' },
             },
             {
-              title: 'Open Water Diver + Dry Suit',
+              title: 'Open Water Diver plus Dry Suit',
               price: { amount: 700, currency: 'GBP' },
               extras: ['Dry suit rent'],
             },
@@ -376,31 +423,99 @@ export const siteCopy = {
               title: 'Enriched Air Nitrox Level 1 (32%)',
               price: { amount: 150, currency: 'GBP' },
             },
-            { title: 'Boat Diving', price: { amount: 150, currency: 'GBP' } },
+            {
+              title: 'Enriched Air Nitrox Level 2 (40%)',
+              price: { amount: 175, currency: 'GBP' },
+            },
+            { title: 'Boat Diving', price: { amount: 250, currency: 'GBP' } },
             {
               title: 'Wreck Diving',
               price: { amount: 175, currency: 'GBP' },
-              extras: ['10 dives'],
             },
             {
               title: 'Advanced Wreck Diving',
               price: { amount: 300, currency: 'GBP' },
-              extras: ['10 dives'],
             },
-            { title: 'Deep Diving', price: { amount: 250, currency: 'GBP' } },
+            {
+              title: 'Night Diving & Limited Visibility',
+              price: { amount: 200, currency: 'GBP' },
+            },
+            {
+              title: 'Deep Diving',
+              price: { amount: 250, currency: 'GBP' },
+            },
+            {
+              title: 'Decompression Diving',
+              price: { amount: 350, currency: 'GBP' },
+            },
+            {
+              title: 'DPV Diving',
+              price: { amount: 250, currency: 'GBP' },
+              extras: ['Dry suit rent'],
+            },
+            {
+              title: 'DPV Diving ( technical )',
+              price: { amount: 280, currency: 'GBP' },
+              extras: ['Dry suit rent'],
+            },
+            {
+              title: 'React Right Instructor (FA, CPR, AED, O2)',
+              price: { amount: 150, currency: 'GBP' },
+            },
+            {
+              title: 'Stress & Rescue',
+              price: { amount: 450, currency: 'GBP' },
+            },
+            {
+              title: 'Science of Diving',
+              price: { amount: 150, currency: 'GBP' },
+            },
+            {
+              title: 'Navigation Diving',
+              price: { amount: 175, currency: 'GBP' },
+            },
+          ],
+        },
+        {
+          title: 'Professional',
+          items: [
+            {
+              title: 'Divemaster',
+              price: { amount: 600, currency: 'GBP' },
+              extras: ['DM kit'],
+            },
+            {
+              title: 'Assistant Instructor',
+              price: { amount: 900, currency: 'GBP' },
+              extras: ['AI kit'],
+            },
           ],
         },
         {
           title: 'Technical',
           items: [
             {
-              title: 'Sidemount Diving',
-              price: { amount: 450, currency: 'GBP' },
+              title: 'Extended Range Nitrox Diving (twin set)',
+              price: { amount: 400, currency: 'GBP' },
             },
-            { title: 'Deco Diving', price: { amount: 650, currency: 'GBP' } },
             {
-              title: 'Extended Range',
-              price: { amount: 950, currency: 'GBP' },
+              title: 'Extended Range (twin set)',
+              price: { amount: 550, currency: 'GBP' },
+            },
+            {
+              title: 'Extended Range Trimix (twin set)',
+              price: { amount: 550, currency: 'GBP' },
+              extras: ['gases'],
+            },
+          ],
+        },
+        {
+          title: 'Bundle rec',
+          items: [
+            {
+              title: 'Divemaster Bundle',
+              price: { amount: 900, currency: 'GBP' },
+              extras: ['DM kit'],
             },
           ],
         },
@@ -472,14 +587,14 @@ export const siteCopy = {
             desc: 'Rozwijaj umiejętności na kursach takich jak pływalność, nawigacja czy nurkowanie nocne.',
             tag: 'Buduj doświadczenie',
             imageSrc: '/images/courses-speciality.jpg',
-            link: '#',
+            link: '/speciality',
           },
           {
             title: 'Techniczne',
             desc: 'Zaawansowane szkolenia do głębszych nurkowań, procedur i poważnego planowania.',
             tag: 'Przekrocz granice',
             imageSrc: '/images/courses-technical.jpg',
-            link: '#',
+            link: '/technical',
           },
         ],
       },
@@ -740,6 +855,53 @@ export const siteCopy = {
           'Powiedz mi, na jakich obszarach chcesz się skupić i gdzie planujesz nurkować — pomogę Ci dobrać odpowiednie kursy do Twoich celów.',
       },
     },
+    technical: {
+      hero: {
+        title: 'Kursy nurkowania technicznego',
+        description:
+          'Wyjdź poza limity nurkowania rekreacyjnego i trenuj zaawansowane techniki nurkowe do głębszych, dłuższych i bardziej złożonych nurkowań. Skup się na precyzji, planowaniu i pełnej kontroli w wymagających środowiskach.',
+        tags: ['Szkolenie zaawansowane', 'Rozszerzony zakres'],
+      },
+      courses: [
+        {
+          title: 'Advanced Wreck Diving',
+          description:
+            'Zostań certyfikowanym nurkiem wrakowym SSI. \nWiele z najlepszych miejsc nurkowych na świecie to wraki. Te imponujące konstrukcje przyciągają wyjątkowo duże skupiska życia morskiego i dają możliwość zanurzenia się w żywej historii podczas nurkowania. Nie ma niczego podobnego do nurkowania wrakowego, a specjalizacja SSI Wreck Diving zapewni Ci wszystkie umiejętności i wiedzę potrzebne, aby stać się bezpiecznym i pewnym siebie nurkiem wrakowym. Dzięki połączeniu zajęć teoretycznych oraz sesji w wodach ograniczonych nauczysz się, jak bezpiecznie wykonywać nurkowania bez penetracji wraków oraz sztucznych raf, do głębokości 30 metrów. Będziesz także ćwiczyć swoje umiejętności nurkowania wrakowego podczas nurkowań szkoleniowych w wodach otwartych. Wszystko to pozwoli Ci nurkować na wrakach z pewnością siebie i w pełni korzystać z każdego nurkowania. Po ukończeniu programu otrzymasz certyfikat specjalistyczny SSI Wreck Diving Specialty. Kontynuuj swoje przygody i zostań nurkiem wrakowym. Rozpocznij naukę online już dziś!',
+          imageSrc: '/images/courses/advanced-wreck-diving.jpg',
+          tag: 'Wrak',
+          price: { amount: 300, currency: 'GBP', extras: [] },
+        },
+        {
+          title: 'Extended Range Nitrox Diving',
+          description:
+            'Trenuj zaawansowane procedury nurkowania na nitroksie do głębszych i dłuższych nurkowań poza limitami rekreacyjnymi. Naucz się precyzyjnego planowania gazów, strategii dekompresyjnych oraz technicznej kontroli pływalności.',
+          imageSrc: '/images/courses/extended-range-nitrox-diving.jpg',
+          tag: 'Twinset',
+          price: { amount: 400, currency: 'GBP', extras: [] },
+        },
+        {
+          title: 'Extended Range',
+          description:
+            'Rozwijaj umiejętności potrzebne do głębszych nurkowań z planowaną dekompresją poza limitami rekreacyjnymi. Skup się na zaawansowanym planowaniu nurkowań, precyzyjnej kontroli pływalności oraz bezpiecznych procedurach zespołowych.',
+          imageSrc: '/images/courses/extended-range.jpg',
+          tag: 'Twinset',
+          price: { amount: 550, currency: 'GBP', extras: [] },
+        },
+        {
+          title: 'Extended Range Trimix',
+          description:
+            'Opanuj zaawansowane techniki trimiksowe do głębokich i złożonych nurkowań z planowaną dekompresją. Naucz się precyzyjnego zarządzania gazami, zaawansowanego planowania nurkowań oraz bezpiecznych procedur zespołowych dla ekstremalnych głębokości.',
+          imageSrc: '/images/courses/extended-range-trimix.jpg',
+          tag: 'Twinset',
+          price: { amount: 550, currency: 'GBP', extras: ['gazy'] },
+        },
+      ],
+      contact: {
+        title: 'Gotowy na szkolenie z nurkowania technicznego?',
+        description:
+          'Opowiedz mi o swoich obecnych certyfikatach, doświadczeniu i celach — pomogę Ci wybrać odpowiednią ścieżkę techniczną.',
+      },
+    },
     footer: {
       rights: 'Wszelkie prawa zastrzeżone.',
     },
@@ -769,21 +931,21 @@ export const siteCopy = {
             {
               title: 'Open Water Diver referral',
               price: { amount: 350, currency: 'GBP' },
-              extras: ['Teoria i basen'],
+              extras: ['Teoria i tylko basen'],
             },
             {
-              title: 'Open Water Diver - pełny',
+              title: 'Open Water Diver - full',
               price: { amount: 550, currency: 'GBP' },
             },
             {
-              title: 'Open Water Diver + Dry Suit',
+              title: 'Open Water Diver plus Dry Suit',
               price: { amount: 700, currency: 'GBP' },
               extras: ['Wypożyczenie suchego skafandra'],
             },
           ],
         },
         {
-          title: 'Specjalizacje',
+          title: 'Specjalizacja',
           items: [
             {
               title: 'Advanced Open Water Diver',
@@ -802,31 +964,99 @@ export const siteCopy = {
               title: 'Enriched Air Nitrox Level 1 (32%)',
               price: { amount: 150, currency: 'GBP' },
             },
-            { title: 'Boat Diving', price: { amount: 150, currency: 'GBP' } },
+            {
+              title: 'Enriched Air Nitrox Level 2 (40%)',
+              price: { amount: 175, currency: 'GBP' },
+            },
+            { title: 'Boat Diving', price: { amount: 250, currency: 'GBP' } },
             {
               title: 'Wreck Diving',
               price: { amount: 175, currency: 'GBP' },
-              extras: ['10 nurkowań'],
             },
             {
               title: 'Advanced Wreck Diving',
               price: { amount: 300, currency: 'GBP' },
-              extras: ['10 nurkowań'],
             },
-            { title: 'Deep Diving', price: { amount: 250, currency: 'GBP' } },
+            {
+              title: 'Night Diving & Limited Visibility',
+              price: { amount: 200, currency: 'GBP' },
+            },
+            {
+              title: 'Deep Diving',
+              price: { amount: 250, currency: 'GBP' },
+            },
+            {
+              title: 'Decompression Diving',
+              price: { amount: 350, currency: 'GBP' },
+            },
+            {
+              title: 'DPV Diving',
+              price: { amount: 250, currency: 'GBP' },
+              extras: ['Wypożyczenie suchego skafandra'],
+            },
+            {
+              title: 'DPV Diving ( technical )',
+              price: { amount: 280, currency: 'GBP' },
+              extras: ['Wypożyczenie suchego skafandra'],
+            },
+            {
+              title: 'React Right Instructor (FA, CPR, AED, O2)',
+              price: { amount: 150, currency: 'GBP' },
+            },
+            {
+              title: 'Stress & Rescue',
+              price: { amount: 450, currency: 'GBP' },
+            },
+            {
+              title: 'Science of Diving',
+              price: { amount: 150, currency: 'GBP' },
+            },
+            {
+              title: 'Navigation Diving',
+              price: { amount: 175, currency: 'GBP' },
+            },
           ],
         },
         {
-          title: 'Techniczne',
+          title: 'Profesjonalny',
           items: [
             {
-              title: 'Sidemount Diving',
-              price: { amount: 450, currency: 'GBP' },
+              title: 'Divemaster',
+              price: { amount: 600, currency: 'GBP' },
+              extras: ['zestaw Divemastera'],
             },
-            { title: 'Deco Diving', price: { amount: 650, currency: 'GBP' } },
             {
-              title: 'Extended Range',
-              price: { amount: 950, currency: 'GBP' },
+              title: 'Assistant Instructor',
+              price: { amount: 900, currency: 'GBP' },
+              extras: ['zestaw AI'],
+            },
+          ],
+        },
+        {
+          title: 'Techniczny',
+          items: [
+            {
+              title: 'Extended Range Nitrox Diving (twin set)',
+              price: { amount: 400, currency: 'GBP' },
+            },
+            {
+              title: 'Extended Range (twin set)',
+              price: { amount: 550, currency: 'GBP' },
+            },
+            {
+              title: 'Extended Range Trimix (twin set)',
+              price: { amount: 550, currency: 'GBP' },
+              extras: ['gazy'],
+            },
+          ],
+        },
+        {
+          title: 'Pakiet rekreacyjny',
+          items: [
+            {
+              title: 'Divemaster Bundle',
+              price: { amount: 900, currency: 'GBP' },
+              extras: ['zestaw Divemastera'],
             },
           ],
         },
