@@ -90,6 +90,8 @@ export const HomeAbout = ({ locale }: HomeAboutProps) => {
                       href={logo.link}
                       title={logo.alt}
                       className='inline-block'
+                      target='_blank'
+                      rel='noreferrer noopener'
                     >
                       <Image
                         src={assetPath(logo.src)}

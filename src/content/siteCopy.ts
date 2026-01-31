@@ -18,6 +18,7 @@ export const siteCopy = {
       nav: {
         courses: 'Courses',
         prices: 'Prices',
+        updates: 'Updates',
         about: 'About',
         contact: 'Contact',
       },
@@ -385,6 +386,38 @@ export const siteCopy = {
           'Tell me about your current certifications, experience, and goals — I’ll help you choose the right technical path.',
       },
     },
+    updates: {
+      hero: {
+        eyebrow: 'UPDATES',
+        title: 'Trips & Updates',
+        description:
+          'See upcoming diving trips, training camps and the latest updates.',
+        badges: [
+          { label: 'Upcoming trips & highlights' },
+          { label: 'Contact me', cta: true },
+        ],
+      },
+      items: [
+        {
+          eyebrow: 'TRIP',
+          title: 'Scuba Diving Safari in Egypt',
+          description:
+            'Join our Red Sea diving safari and explore famous wrecks and vibrant reefs. Check details, dates and availability.',
+          imageSrc: '/images/updates/scuba-diving-safari-egipt.jpg',
+          imageAlt: 'Scuba Diving Safari in Egypt',
+          learnMoreLabel: 'Learn more',
+          learnMoreHref: 'https://www.facebook.com/events/854604690478835/?acontext=%7B%22event_action_history%22%3A[%7B%22mechanism%22%3A%22surface%22%2C%22surface%22%3A%22groups_highlight_units%22%7D]%2C%22ref_notif_type%22%3Anull%7D',
+          linkLabel: 'Check availability',
+          linkHref: '#updates-contact',
+        },
+      ],
+      contact: {
+        sectionId: 'updates-contact',
+        title: 'Want to join a trip or workshop?',
+        description:
+          'Tell me your level, preferred location and dates — I’ll share the next steps.',
+      },
+    },
     footer: {
       rights: 'All rights reserved.',
     },
@@ -572,6 +605,7 @@ export const siteCopy = {
       nav: {
         courses: 'Kursy',
         prices: 'Cennik',
+        updates: 'Aktualności',
         about: 'O mnie',
         contact: 'Kontakt',
       },
@@ -949,6 +983,38 @@ export const siteCopy = {
         title: 'Gotowy na szkolenie z nurkowania technicznego?',
         description:
           'Opowiedz mi o swoich obecnych certyfikatach, doświadczeniu i celach — pomogę Ci wybrać odpowiednią ścieżkę techniczną.',
+      },
+    },
+    updates: {
+      hero: {
+        eyebrow: 'AKTUALNOŚCI',
+        title: 'Aktualności i wyjazdy',
+        description:
+          'Zobacz nadchodzące wyprawy nurkowe, obozy szkoleniowe oraz najnowsze aktualności.',
+        badges: [
+          { label: 'Nadchodzące wyjazdy i najważniejsze wydarzenia' },
+          { label: 'Skontaktuj się', cta: true },
+        ],
+      },
+      items: [
+        {
+          eyebrow: 'WYJAZD',
+          title: 'Safari nurkowe w Egipcie',
+          description:
+            'Dołącz do naszego safari nurkowego na Morzu Czerwonym i odkrywaj słynne wraki oraz tętniące życiem rafy. Sprawdź szczegóły, terminy i dostępność.',
+          imageSrc: '/images/updates/scuba-diving-safari-egipt.jpg',
+          imageAlt: 'Scuba Diving Safari in Egypt',
+          learnMoreLabel: 'Dowiedz się więcej',
+          learnMoreHref: 'https://www.facebook.com/events/854604690478835/?acontext=%7B%22event_action_history%22%3A[%7B%22mechanism%22%3A%22surface%22%2C%22surface%22%3A%22groups_highlight_units%22%7D]%2C%22ref_notif_type%22%3Anull%7D',
+          linkLabel: 'Sprawdź dostępność',
+          linkHref: '#updates-contact',
+        },
+      ],
+      contact: {
+        sectionId: 'updates-contact',
+        title: 'Chcesz dołączyć do wyjazdu lub warsztatu?',
+        description:
+          'Powiedz mi, jaki masz poziom, preferowaną lokalizację i terminy — przekażę Ci kolejne kroki.',
       },
     },
     footer: {
