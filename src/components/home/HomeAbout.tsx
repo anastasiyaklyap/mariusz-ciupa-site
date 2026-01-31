@@ -82,15 +82,25 @@ export const HomeAbout = ({ locale }: HomeAboutProps) => {
             <div className='mt-6 rounded-2xl border border-white/10 bg-white/5 px-4 py-4'>
               <div className='grid grid-cols-3 items-center gap-6'>
                 {copy.partnerLogos.map((logo) => (
-                  <div key={logo.src} className='flex items-center justify-center'>
-                    <div className='relative h-14 w-full max-w-[180px] opacity-85'>
+                  <div
+                    key={logo.src}
+                    className='flex items-center justify-center'
+                  >
+                    <a
+                      href={logo.link}
+                      title={logo.alt}
+                      className='inline-block'
+                      target='_blank'
+                      rel='noreferrer noopener'
+                    >
                       <Image
                         src={assetPath(logo.src)}
                         alt={logo.alt}
-                        fill
-                        className='object-contain'
+                        height={60}
+                        width={80}
+                        className='h-[60px] w-auto object-contain'
                       />
-                    </div>
+                    </a>
                   </div>
                 ))}
               </div>

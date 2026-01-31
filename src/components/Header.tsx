@@ -125,7 +125,7 @@ export const Header = () => {
                 isActive={
                   link.sectionId
                     ? activeSection === link.sectionId
-                    : pathname.endsWith('/prices')
+                    : pathname.endsWith(link.href.split('?')[0].split('#')[0])
                 }
               />
             ))}

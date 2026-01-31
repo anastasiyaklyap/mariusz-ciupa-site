@@ -33,9 +33,12 @@ export const CtaLink = ({
   size = 'md',
   className,
 }: CtaLinkProps) => {
+  const isExternal = href.startsWith('http://') || href.startsWith('https://');
   return (
     <a
       href={href}
+      target={isExternal ? '_blank' : undefined}
+      rel={isExternal ? 'noreferrer noopener' : undefined}
       className={classNames(
         baseClassName,
         sizeClassNames[size],
