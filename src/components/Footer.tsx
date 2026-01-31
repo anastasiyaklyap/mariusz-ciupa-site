@@ -32,7 +32,8 @@ export const Footer = () => {
             ))}
           </div>
         </div>
-        <div className='mt-8 flex flex-col gap-2 text-xs text-white/40 md:flex-row md:items-center md:justify-between'>
+        <div className='mt-8 flex flex-col gap-2 text-xs text-white/40'>
+          <p>{copy.common.legalDisclaimer}</p>
           <p>
             © {new Date().getFullYear()} {siteConfig.name}. {copy.footer.rights}
           </p>

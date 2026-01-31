@@ -11,6 +11,8 @@ export const siteCopy = {
         { key: 'instagram', label: 'Instagram' },
         { key: 'facebook', label: 'Facebook' },
       ],
+      legalDisclaimer:
+        'The information provided on this website is for general information purposes only and does not constitute a contractual offer or confirmation of business activity.',
     },
     header: {
       nav: {
@@ -26,7 +28,7 @@ export const siteCopy = {
         titlePrimary: 'Mariusz',
         titleAccent: 'Ciupa',
         subtitle:
-          'Personal diving training — from your first dive to advanced technical courses.',
+          'Personal diving training — from your first dive to advanced technical courses and freediving.',
         ctaPrimary: 'View courses',
         ctaSecondary: 'Contact me',
         imageAlt: 'Scuba diving training',
@@ -92,9 +94,21 @@ export const siteCopy = {
           'I cooperate with selected dive centers in the United Kingdom, Lanzarote and Poland — so you can train and dive in different environments with continuity and trusted support.',
         locations: ['UK', 'Lanzarote', 'Poland'],
         partnerLogos: [
-          { src: '/images/logo-bonito.png', alt: 'Bonito Diving Lanzarote' },
-          { src: '/images/logo-scuba-tech.png', alt: 'Scuba Tech' },
-          { src: '/images/logo-scubaelite.png', alt: 'Scuba Elite' },
+          {
+            src: '/images/logo-bonito.png',
+            alt: 'Bonito Diving Lanzarote',
+            link: 'https://bonitodivinglanzarote.biz.pl/divecenter/',
+          },
+          {
+            src: '/images/logo-scuba-tech.png',
+            alt: 'Scuba Tech',
+            link: 'https://www.scuba-tech.co.uk/',
+          },
+          {
+            src: '/images/logo-scubaelite.png',
+            alt: 'Scuba Elite',
+            link: 'https://scubaelite.pl/',
+          },
         ],
         ctaLabel: 'Contact me',
       },
@@ -141,7 +155,7 @@ export const siteCopy = {
         {
           title: 'Advanced Open Water Diver',
           description:
-            'Build confidence and expand your skills with structured training dives focused on improving control, awareness and comfort in different conditions.',
+            'If you cannot decide which specialty programs are the best choice for you, join the SSI Advanced Open Water Diver program! You will try Deep Diving and Navigation plus a variety of 3 more specialty areas of choice before committing to full specialty training. It is a great way to experience what advanced diver training is all about and how valuable it can be to your diving adventures. \nDuring the Advanced Open Water Diver Program, you will experience 5 different specialties by completing one open water training dive per specialty after a comprehensive briefing with your SSI Instructor. \nBy taking this program you will have total freedom to explore. You can complete the full Specialty trainings any time in the future and credit your Advanced Open Water Diver training towards them.',
           imageSrc: '/images/courses/advanced-open-water.jpg',
           tag: 'Next step',
           price: { amount: 395, currency: 'GBP' },
@@ -153,6 +167,14 @@ export const siteCopy = {
           imageSrc: '/images/courses/scuba-skills-update.jpg',
           tag: 'Refresh',
           price: { amount: 95, currency: 'GBP' },
+        },
+        {
+          title: 'Basic Freediver',
+          description:
+            'Become a Basic Freediver - Learn how to freedive today! \nThe SSI Basic Freediver course is your first step into the peaceful, exhilarating world of freediving. During this entry-level program, you will learn how to freedive safely with a buddy in a pool/confined water up to a depth of five meters. Online training is combined with in-water practice sessions to give you all the skills and knowledge you need to be a confident freediver. Upon completing this program, you will earn your SSI Basic Freediver certification.',
+          imageSrc: '/images/courses/basic-freediving.jpg',
+          tag: 'Freediving basics',
+          price: { amount: 0, currency: 'GBP' },
         },
       ],
       contact: {
@@ -216,7 +238,7 @@ export const siteCopy = {
         {
           title: 'Navigation Diving',
           description:
-            'Learn how to navigate underwater using natural references and compass skills to plan routes and return confidently to your exit point.',
+            'Become an SSI Navigation Specialty Diver \nIn this specialty program, you will gain the advanced skills and knowledge you need to safely and confidently navigate underwater. \nYou will learn how to use a compass and natural navigation techniques, estimate distance, how to leave and return to a designated point, plus basic navigation patterns. You will also be taught how to combine navigation techniques to enhance your diving experience. All of which hones your underwater observation skills, improves your dive safety and helps you to get the most out of every dive. \nUpon completion, you will earn the SSI Navigation Specialty certification.',
           imageSrc: '/images/courses/navigation.jpg',
           tag: 'Navigation',
           price: { amount: 175, currency: 'GBP' },
@@ -240,7 +262,7 @@ export const siteCopy = {
         {
           title: 'Wreck Diving',
           description:
-            'Learn how to explore shipwrecks safely by improving buoyancy control, situational awareness and dive planning around submerged structures.',
+            'Become a certified wreck diver \nMany of the ocean’s best dive sites are wrecks. These impressive structures attract unusually high densities of marine life and give you the chance to immerse in living history as you dive. \nThere is nothing quite like wreck diving and the SSI Wreck Diving specialty will give you all the skills and knowledge you need to become a safe and confident wreck diver. With a combination of academic and confined water sessions, you will be taught how to safely conduct non-penetration dives around wrecks and artificial reefs, up to a depth of 30 meters. \nYou will also get to practice your wreck diving skills during open water training dives. All of which will ensure you can enjoy wreck diving with confidence and get the most out of every dive. Upon completion of this program, you will earn your SSI Wreck Diving specialty certification. Continue your adventures and become a wreck diver. Get started online today!',
           imageSrc: '/images/courses/wreck-diving.jpg',
           tag: 'Wreck',
           price: { amount: 175, currency: 'GBP' },
@@ -256,7 +278,7 @@ export const siteCopy = {
         {
           title: 'DPV Diving ( technical )',
           description:
-            'Become a certified DPV diver. \nIf you want to make the most of your bottom time and have more fun on your dives, try underwater scooter or diver propulsion vehicle (DPV) diving. In this underwater scooter and DPV course, you will learn the skills and concepts you need to safely plan and conduct dives using scooters or DPVs. You will learn the special precautions needed for using DPVs, how to maintain buddy contact and how to control your equipment, so you can safely enjoy the new dive experiences DPVs provide. Upon completion of this program, you will earn the SSI DPV Diving specialty certification and be able to dive up to 30 meters deep with a scooter or DPV.',
+            'Become a certified DPV diver. \nIf you want to make the most of your bottom time and have more fun on your dives, try underwater scooter or diver propulsion vehicle (DPV) diving. In this underwater scooter and DPV course, you will learn the skills and concepts you need to safely plan and conduct dives using scooters or DPVs. You will learn the special precautions needed for using DPVs, how to maintain buddy contact and how to control your equipment, so you can safely enjoy the new dive experiences DPVs provide. Upon completion of this program, you will earn the SSI DPV Diving specialty certification and be able to dive to the depth limits of your certification with a scooter or DPV.',
           imageSrc: '/images/courses/dpv-diving.jpg',
           tag: 'Technical',
           price: { amount: 280, currency: 'GBP', extras: ['DPV rent'] },
@@ -275,7 +297,7 @@ export const siteCopy = {
             'Become a certified SSI Marine Ecology diver. \nIn the SSI Marine Ecology specialty program, you will learn how ocean organisms interact with each other and their environments. You will be taught how energy flows through communities and the links between different ocean ecosystems. With your newfound knowledge, you will appreciate the marine life you dive with even more! Start online today and earn your SSI Marine Ecology Specialty certification.',
           imageSrc: '/images/courses/marine-ecology.jpeg',
           tag: 'Ecology',
-          price: { amount: 0, currency: 'GBP', extras: [] },
+          price: { amount: 99, currency: 'GBP', extras: [] },
         },
         {
           title: 'Science of Diving',
@@ -335,7 +357,7 @@ export const siteCopy = {
         {
           title: 'Extended Range Nitrox Diving',
           description:
-            'Train advanced nitrox procedures for deeper and longer dives beyond recreational limits. Learn precise gas planning, decompression strategies, and technical buoyancy control.',
+            'Train advanced nitrox procedures for deeper and longer dives beyond recreational limits. Learn precise gas planning, decompression strategies, and technical buoyancy control. This program provides divers with the training necessary to: \nindependently plan and conduct decompression dives, \nusing a full Twinset diving system or Extended Range Sidemount, \nto a maximum depth of 40 meters, \nusing decompression gases with up to 100% oxygen content, \nperforming decompression dives with a total decompression time of up to 15 minutes, \nwith a buddy holding the same or higher certification level.',
           imageSrc: '/images/courses/extended-range-nitrox-diving.jpg',
           tag: 'Twin Set',
           price: { amount: 400, currency: 'GBP', extras: [] },
@@ -343,7 +365,7 @@ export const siteCopy = {
         {
           title: 'Extended Range',
           description:
-            'Develop the skills needed for deeper dives with planned decompression beyond recreational limits. Focus on advanced dive planning, precise buoyancy, and safe team procedures.',
+            'Develop the skills needed for deeper dives with planned decompression beyond recreational limits. Focus on advanced dive planning, precise buoyancy, and safe team procedures. This program provides divers with the training necessary to: \nindependently plan and conduct decompression dives, \nusing a full Twinset diving system or Extended Range Sidemount, \nto a maximum depth of 45 meters, \nusing decompression gases with up to 100% oxygen content, \nperforming decompression dives with a total decompression time of up to 25 minutes, \nwith a buddy holding the same or higher level of certification.',
           imageSrc: '/images/courses/extended-range.jpg',
           tag: 'Twin Set',
           price: { amount: 550, currency: 'GBP', extras: [] },
@@ -351,7 +373,7 @@ export const siteCopy = {
         {
           title: 'Extended Range Trimix',
           description:
-            'Master advanced trimix techniques for deep and complex dives with planned decompression. Learn precise gas management, advanced dive planning, and safe team procedures for extreme depths.',
+            'Master advanced trimix techniques for deep and complex dives with planned decompression. Learn precise gas management, advanced dive planning, and safe team procedures for extreme depths. This program provides divers with the training necessary to: \nindependently plan and conduct decompression dives, \nusing a full Twinset diving system or Extended Range Sidemount, \nto a maximum depth of 45 meters, \nusing decompression gases with up to 100% oxygen content, \nperforming decompression dives with a total decompression time of up to 25 minutes, \nwith a buddy holding the same or higher level of certification, \nusing helium-based gas mixtures',
           imageSrc: '/images/courses/extended-range-trimix.jpg',
           tag: 'Twin Set',
           price: { amount: 550, currency: 'GBP', extras: ['gases'] },
@@ -372,7 +394,10 @@ export const siteCopy = {
         title: 'Diving Courses',
         description:
           'See our scuba diving courses along with their prices and any additional costs.',
-        badges: ['Prices include VAT', 'Contact me for course details'],
+        badges: [
+          'The prices listed below are indicative only and are provided for informational purposes.',
+          'Contact me for course details',
+        ],
       },
       table: {
         course: 'Course',
@@ -401,6 +426,11 @@ export const siteCopy = {
               title: 'Open Water Diver plus Dry Suit',
               price: { amount: 700, currency: 'GBP' },
               extras: ['Dry suit rent'],
+            },
+            {
+              title: 'Scuba Skills Update',
+              price: { amount: 95, currency: 'GBP' },
+              extras: [],
             },
           ],
         },
@@ -452,12 +482,12 @@ export const siteCopy = {
             {
               title: 'DPV Diving',
               price: { amount: 250, currency: 'GBP' },
-              extras: ['Dry suit rent'],
+              extras: ['DPV rent'],
             },
             {
               title: 'DPV Diving ( technical )',
               price: { amount: 280, currency: 'GBP' },
-              extras: ['Dry suit rent'],
+              extras: ['DPV rent'],
             },
             {
               title: 'React Right Instructor (FA, CPR, AED, O2)',
@@ -475,6 +505,10 @@ export const siteCopy = {
               title: 'Navigation Diving',
               price: { amount: 175, currency: 'GBP' },
             },
+            {
+              title: 'Marine Ecology',
+              price: { amount: 99, currency: 'GBP' },
+            },
           ],
         },
         {
@@ -486,9 +520,10 @@ export const siteCopy = {
               extras: ['DM kit'],
             },
             {
-              title: 'Assistant Instructor',
+              title:
+                'Divemaster bundle – dive guide + react right + science of diving',
               price: { amount: 900, currency: 'GBP' },
-              extras: ['AI kit'],
+              extras: ['DM kit'],
             },
           ],
         },
@@ -507,16 +542,6 @@ export const siteCopy = {
               title: 'Extended Range Trimix (twin set)',
               price: { amount: 550, currency: 'GBP' },
               extras: ['gases'],
-            },
-          ],
-        },
-        {
-          title: 'Bundle rec',
-          items: [
-            {
-              title: 'Divemaster Bundle',
-              price: { amount: 900, currency: 'GBP' },
-              extras: ['DM kit'],
             },
           ],
         },
@@ -540,6 +565,8 @@ export const siteCopy = {
         { key: 'instagram', label: 'Instagram' },
         { key: 'facebook', label: 'Facebook' },
       ],
+      legalDisclaimer:
+        'Informacje zamieszczone na stronie mają charakter informacyjny i nie stanowią oferty w rozumieniu Kodeksu cywilnego ani potwierdzenia prowadzenia działalności gospodarczej',
     },
     header: {
       nav: {
@@ -555,7 +582,7 @@ export const siteCopy = {
         titlePrimary: 'Mariusz',
         titleAccent: 'Ciupa',
         subtitle:
-          'Trening nurkowy od pierwszego zanurzenia po zaawansowane kursy techniczne.',
+          'Trening nurkowy od pierwszego zanurzenia po zaawansowane kursy techniczne oraz freediving.',
         ctaPrimary: 'Zobacz kursy',
         ctaSecondary: 'Skontaktuj się',
         imageAlt: 'Szkolenie nurkowe',
@@ -621,9 +648,21 @@ export const siteCopy = {
           'Współpracuję z wybranymi centrami nurkowymi w Wielkiej Brytanii, na Lanzarote i w Polsce — możesz szkolić się w różnych warunkach, zachowując ciągłość i zaufane wsparcie.',
         locations: ['Wielka Brytania', 'Lanzarote', 'Polska'],
         partnerLogos: [
-          { src: '/images/logo-bonito.png', alt: 'Bonito Diving Lanzarote' },
-          { src: '/images/logo-scuba-tech.png', alt: 'Scuba Tech' },
-          { src: '/images/logo-scubaelite.png', alt: 'Scuba Elite' },
+          {
+            src: '/images/logo-bonito.png',
+            alt: 'Bonito Diving Lanzarote',
+            link: 'https://bonitodivinglanzarote.biz.pl/divecenter/',
+          },
+          {
+            src: '/images/logo-scuba-tech.png',
+            alt: 'Scuba Tech',
+            link: 'https://www.scuba-tech.co.uk/',
+          },
+          {
+            src: '/images/logo-scubaelite.png',
+            alt: 'Scuba Elite',
+            link: 'https://scubaelite.pl/',
+          },
         ],
         ctaLabel: 'Skontaktuj się',
       },
@@ -670,7 +709,7 @@ export const siteCopy = {
         {
           title: 'Advanced Open Water Diver',
           description:
-            'Buduj pewność i rozwijaj umiejętności poprzez uporządkowane nurkowania szkoleniowe skoncentrowane na kontroli, świadomości i komforcie w różnych warunkach.',
+            'Jeśli nie możesz zdecydować, która specjalizacja jest dla Ciebie najlepszym wyborem, zapisz się na program SSI Advanced Open Water Diver! Zrealizujesz nurkowania z zakresu specjalizacji Deep Diving i Navigation oraz 3 innych spośród wybranych specjalizacji, zanim zdecydujesz się na realizację pełnej specjalizacji. Jest to świetny sposób, aby doświadczyć, na czym polega zaawansowane szkolenie nurkowe i jak cennym dodatkiem do Twoich przygód nurkowych może być. \nPodczas programu Advanced Open Water Diver doświadczysz 5 różnych specjalizacji, wykonując po jednym nurkowaniu szkoleniowym na wodach otwartych dla każdej specjalizacji po kompleksowym briefingu z Instruktorem SSI. Biorąc udział w tym programie będziesz miał całkowitą swobodę. Możesz ukończyć pełne specjalizacje w dowolnym momencie w przyszłości i zaliczyć swoje nurkowania z kursu Advanced Open Water Diver na ich poczet.',
           imageSrc: '/images/courses/advanced-open-water.jpg',
           tag: 'Kolejny krok',
           price: { amount: 395, currency: 'GBP' },
@@ -682,6 +721,14 @@ export const siteCopy = {
           imageSrc: '/images/courses/scuba-skills-update.jpg',
           tag: 'Odświeżenie',
           price: { amount: 95, currency: 'GBP' },
+        },
+        {
+          title: 'Basic Freediver',
+          description:
+            'Zostań podstawowym freediverem – naucz się freedivingu już dziś! \nKurs SSI Basic Freediver to Twój pierwszy krok do spokojnego i ekscytującego świata freedivingu. W trakcie tego programu na poziomie podstawowym nauczysz się bezpiecznie nurkować na bezdechu z partnerem w basenie lub w wodach ograniczonych, na głębokość do pięciu metrów. Szkolenie online jest połączone z zajęciami praktycznymi w wodzie, aby zapewnić Ci wszystkie umiejętności i wiedzę potrzebne do tego, by zostać pewnym siebie freediverem. Po ukończeniu programu otrzymasz certyfikat SSI Basic Freediver.',
+          imageSrc: '/images/courses/basic-freediving.jpg',
+          tag: 'Podstawy freedivingu',
+          price: { amount: 0, currency: 'GBP' },
         },
       ],
       contact: {
@@ -745,7 +792,7 @@ export const siteCopy = {
         {
           title: 'Navigation Diving',
           description:
-            'Naucz się nawigacji podwodnej, wykorzystując naturalne punkty orientacyjne oraz umiejętności posługiwania się kompasem, aby planować trasy i z pewnością wracać do punktu wyjścia.',
+            'Zostań certyfikowanym nurkiem SSI Navigation \nNa tej specjalizacji zdobędziesz zaawansowane umiejętności i wiedzę potrzebne do bezpiecznej i pewnej podwodnej nawigacji. Nauczysz się używać kompasu nurkowego, technik nawigacji naturalnej, szacowania dystansu, jak odpłynąć i wrócić do wyznaczonego miejsca oraz podstawowych wzorów nawigowania. Dowiesz się też jak łączyć techniki nawigacyjne, by zwiększyć przyjemność ze swoich doświadczeń nurkowych. Polepszy to Twoją zdolność skutecznej obserwacji pod wodą, zwiększy bezpieczeństwo Twoich nurkowań i pozwoli Ci w pełni cieszyć się Twoimi nurkowaniami. Po ukończeniu kursu otrzymasz certyfikat specjalizacji SSI Navigation.',
           imageSrc: '/images/courses/navigation.jpg',
           tag: 'Nawigacja',
           price: { amount: 175, currency: 'GBP' },
@@ -769,7 +816,7 @@ export const siteCopy = {
         {
           title: 'Wreck Diving',
           description:
-            'Naucz się bezpiecznie eksplorować wraki statków, poprawiając kontrolę pływalności, świadomość sytuacyjną oraz planowanie nurkowań wokół zanurzonych konstrukcji.',
+            'Zostań certyfikowanym nurkiem wrakowym \nWiele spośród najlepszych światowych miejsc nurkowych to wraki. Te imponujące konstrukcje skupiają niespotykanie duże ilości życia morskiego i pozwalają zanurzyć się w historii podczas nurkowania. Nie ma drugiej podobnej rzeczy do nurkowania wrakowego, a specjalizacja SSI Wreck Diving da ci wszystkie potrzebne umiejętności i wiedzę, by zostać kompetentnym i bezpiecznym nurkiem wrakowym. Dzięki połączeniu sesji teoretycznych i w wodach basenopodobnych nauczysz się bezpiecznie nurkować nad i dookoła wraków bez penetracji do głębokości 30 metrów. Poćwiczysz też nowo nabyte umiejętności podczas nurkowań na wodach otwartych. To wszystko da Ci pewność, że w przyszłości będziesz cieszył się nurkowaniami wrakowymi przeprowadzonymi pewnie i bezpiecznie. Po ukończeniu kursu otrzymasz certyfikat specjalizacji SSI Wreck Diving. Kontynuuj swoją przygodę i zostań nurkiem wrakowym. Zacznij online już dziś!',
           imageSrc: '/images/courses/wreck-diving.jpg',
           tag: 'Wrak',
           price: { amount: 175, currency: 'GBP' },
@@ -789,7 +836,7 @@ export const siteCopy = {
         {
           title: 'DPV Diving ( technical )',
           description:
-            'Zostań certyfikowanym nurkiem DPV. \nJeśli chcesz maksymalnie wykorzystać czas spędzony na dnie i czerpać jeszcze więcej radości z nurkowań, spróbuj nurkowania ze skuterem podwodnym, czyli pojazdem napędowym dla nurków (DPV – Diver Propulsion Vehicle). Podczas tego kursu nurkowania ze skuterem podwodnym i DPV nauczysz się umiejętności oraz zasad niezbędnych do bezpiecznego planowania i wykonywania nurkowań z użyciem skuterów lub DPV. Poznasz szczególne środki ostrożności związane z używaniem DPV, nauczysz się utrzymywać kontakt z partnerem nurkowym oraz kontrolować swój sprzęt, aby móc bezpiecznie cieszyć się nowymi doświadczeniami nurkowymi, jakie oferują DPV. Po ukończeniu programu otrzymasz certyfikat specjalistyczny SSI DPV Diving Specialty i będziesz mógł/mogła nurkować ze skuterem lub DPV do głębokości 30 metrów.',
+            'Zostań certyfikowanym nurkiem DPV. \nJeśli chcesz maksymalnie wykorzystać czas spędzony na dnie i czerpać jeszcze więcej radości z nurkowań, spróbuj nurkowania ze skuterem podwodnym, czyli pojazdem napędowym dla nurków (DPV – Diver Propulsion Vehicle). Podczas tego kursu nurkowania ze skuterem podwodnym i DPV nauczysz się umiejętności oraz zasad niezbędnych do bezpiecznego planowania i wykonywania nurkowań z użyciem skuterów lub DPV. Poznasz szczególne środki ostrożności związane z używaniem DPV, nauczysz się utrzymywać kontakt z partnerem nurkowym oraz kontrolować swój sprzęt, aby móc bezpiecznie cieszyć się nowymi doświadczeniami nurkowymi, jakie oferują DPV. Po ukończeniu programu otrzymasz certyfikat specjalistyczny SSI DPV Diving Specialty i będziesz mógł/mogła nurkować ze skuterem lub DPV do głębokości równej limitom Twoich uprawnień',
           imageSrc: '/images/courses/dpv-diving.jpg',
           tag: 'Techniczny',
           price: {
@@ -812,7 +859,7 @@ export const siteCopy = {
             'Zostań certyfikowanym nurkiem SSI Marine Ecology. \nW specjalistycznym programie SSI Marine Ecology nauczysz się, jak organizmy morskie oddziałują ze sobą nawzajem oraz ze swoim środowiskiem. Dowiesz się, jak energia przepływa przez społeczności oraz jakie istnieją powiązania między różnymi ekosystemami oceanicznymi. Dzięki nowo zdobytej wiedzy jeszcze bardziej docenisz życie morskie, z którym nurkujesz! Rozpocznij naukę online już dziś i zdobądź certyfikat specjalistyczny SSI Marine Ecology Specialty.',
           imageSrc: '/images/courses/marine-ecology.jpeg',
           tag: 'Ekologia',
-          price: { amount: 0, currency: 'GBP', extras: [] },
+          price: { amount: 99, currency: 'GBP', extras: [] },
         },
         {
           title: 'Science of Diving',
@@ -876,7 +923,7 @@ export const siteCopy = {
         {
           title: 'Extended Range Nitrox Diving',
           description:
-            'Trenuj zaawansowane procedury nurkowania na nitroksie do głębszych i dłuższych nurkowań poza limitami rekreacyjnymi. Naucz się precyzyjnego planowania gazów, strategii dekompresyjnych oraz technicznej kontroli pływalności.',
+            'Trenuj zaawansowane procedury nurkowania na nitroksie do głębszych i dłuższych nurkowań poza limitami rekreacyjnymi. Naucz się precyzyjnego planowania gazów, strategii dekompresyjnych oraz technicznej kontroli pływalności. Program ten zapewnia nurkom przeszkolenie niezbędne do: \nSamodzielnego planowania i wykonywania nurkowań dekompresyjnych, \nW Pełnym Systemie Nurkowym Twinset lub Extended Range Sidemount, \nDo maksymalnej głębokości 40 metrów, \nKorzystania z gazów dekompresyjnych do 100% zawartości tlenu, \nNurkowania dekompresyjnego, z dekompresją o łącznym czasie 15 minut, z partnerem o takich samych lub wyższych uprawnieniach.',
           imageSrc: '/images/courses/extended-range-nitrox-diving.jpg',
           tag: 'Twinset',
           price: { amount: 400, currency: 'GBP', extras: [] },
@@ -884,7 +931,7 @@ export const siteCopy = {
         {
           title: 'Extended Range',
           description:
-            'Rozwijaj umiejętności potrzebne do głębszych nurkowań z planowaną dekompresją poza limitami rekreacyjnymi. Skup się na zaawansowanym planowaniu nurkowań, precyzyjnej kontroli pływalności oraz bezpiecznych procedurach zespołowych.',
+            'Rozwijaj umiejętności potrzebne do głębszych nurkowań z planowaną dekompresją poza limitami rekreacyjnymi. Skup się na zaawansowanym planowaniu nurkowań, precyzyjnej kontroli pływalności oraz bezpiecznych procedurach zespołowych. Program ten zapewnia nurkom przeszkolenie niezbędne do: \nSamodzielnego planowania i wykonywania nurkowań dekompresyjnych, \nW Pełnym Systemie Nurkowym Twinset lub Extended Range Sidemount, \nDo maksymalnej głębokości 45 metrów, \nKorzystania z gazów dekompresyjnych do 100% zawartości tlenu, \nNurkowania dekompresyjnego, z dekompresją o łącznym czasie 25 minut, \nz partnerem o takich samych lub wyższych uprawnieniach.',
           imageSrc: '/images/courses/extended-range.jpg',
           tag: 'Twinset',
           price: { amount: 550, currency: 'GBP', extras: [] },
@@ -892,7 +939,7 @@ export const siteCopy = {
         {
           title: 'Extended Range Trimix',
           description:
-            'Opanuj zaawansowane techniki trimiksowe do głębokich i złożonych nurkowań z planowaną dekompresją. Naucz się precyzyjnego zarządzania gazami, zaawansowanego planowania nurkowań oraz bezpiecznych procedur zespołowych dla ekstremalnych głębokości.',
+            'Opanuj zaawansowane techniki trimiksowe do głębokich i złożonych nurkowań z planowaną dekompresją. Naucz się precyzyjnego zarządzania gazami, zaawansowanego planowania nurkowań oraz bezpiecznych procedur zespołowych dla ekstremalnych głębokości. Program ten zapewnia nurkom przeszkolenie niezbędne do: \nSamodzielnego planowania i wykonywania nurkowań dekompresyjnych, \nW Pełnym Systemie Nurkowym Twinset lub Extended Range Sidemount, \nDo maksymalnej głębokości 45 metrów, \nKorzystania z gazów dekompresyjnych do 100% zawartości tlenu, \nNurkowania dekompresyjnego, z dekompresją o łącznym czasie 25 minut, \nz partnerem o takich samych lub wyższych uprawnieniach, \nKorzystanie z mieszanek zawierajacych hel.',
           imageSrc: '/images/courses/extended-range-trimix.jpg',
           tag: 'Twinset',
           price: { amount: 550, currency: 'GBP', extras: ['gazy'] },
@@ -914,7 +961,10 @@ export const siteCopy = {
         titleAccent: 'Cennik',
         description:
           'Sprawdź dostępne kursy nurkowe wraz z cenami i ewentualnymi dodatkowymi kosztami.',
-        badges: ['Ceny zawierają VAT', 'Skontaktuj się po szczegóły kursu'],
+        badges: [
+          'Poniższe ceny mają charakter orientacyjny i służą wyłącznie jako informacja.',
+          'Skontaktuj się po szczegóły kursu',
+        ],
       },
       table: {
         course: 'Kurs',
@@ -943,6 +993,11 @@ export const siteCopy = {
               title: 'Open Water Diver plus Dry Suit',
               price: { amount: 700, currency: 'GBP' },
               extras: ['Wypożyczenie suchego skafandra'],
+            },
+            {
+              title: 'Scuba Skills Update',
+              price: { amount: 95, currency: 'GBP' },
+              extras: [],
             },
           ],
         },
@@ -994,12 +1049,12 @@ export const siteCopy = {
             {
               title: 'DPV Diving',
               price: { amount: 250, currency: 'GBP' },
-              extras: ['Wypożyczenie suchego skafandra'],
+              extras: ['Wypożyczenie skutera podwodnego (DPV)'],
             },
             {
               title: 'DPV Diving ( technical )',
               price: { amount: 280, currency: 'GBP' },
-              extras: ['Wypożyczenie suchego skafandra'],
+              extras: ['Wypożyczenie skutera podwodnego (DPV)'],
             },
             {
               title: 'React Right Instructor (FA, CPR, AED, O2)',
@@ -1017,6 +1072,10 @@ export const siteCopy = {
               title: 'Navigation Diving',
               price: { amount: 175, currency: 'GBP' },
             },
+            {
+              title: 'Marine Ecology',
+              price: { amount: 99, currency: 'GBP' },
+            },
           ],
         },
         {
@@ -1028,9 +1087,10 @@ export const siteCopy = {
               extras: ['zestaw Divemastera'],
             },
             {
-              title: 'Assistant Instructor',
+              title:
+                'Divemaster bundle – dive guide + react right + science of diving',
               price: { amount: 900, currency: 'GBP' },
-              extras: ['zestaw AI'],
+              extras: ['zestaw Divemastera'],
             },
           ],
         },
@@ -1049,16 +1109,6 @@ export const siteCopy = {
               title: 'Extended Range Trimix (twin set)',
               price: { amount: 550, currency: 'GBP' },
               extras: ['gazy'],
-            },
-          ],
-        },
-        {
-          title: 'Pakiet rekreacyjny',
-          items: [
-            {
-              title: 'Divemaster Bundle',
-              price: { amount: 900, currency: 'GBP' },
-              extras: ['zestaw Divemastera'],
             },
           ],
         },
