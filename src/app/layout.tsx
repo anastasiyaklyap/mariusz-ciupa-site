@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   title: 'Mariusz Ciupa – SSI Scuba Diving Instructor',
   description:
     'Personal scuba diving training from beginner to technical level.',
+  icons: {
+    icon: '/images/favicon.png',
+  },
 };
 
 export default function RootLayout({
