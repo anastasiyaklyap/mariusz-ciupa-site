@@ -16,7 +16,7 @@ export const HomeCourses = ({ locale }: HomeCoursesProps) => {
 
   return (
     <section id='courses' className='mt-24 md:mt-32'>
-      <div className='flex items-end justify-between gap-6'>
+      <div className='flex items-end justify-between gap-6 flex-col md:flex-row'>
         <div>
           <p className='text-xs font-medium tracking-[0.2em] text-white/50'>
             {copy.eyebrow}

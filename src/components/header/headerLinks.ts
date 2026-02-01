@@ -38,7 +38,7 @@ export const getHeaderNavLinks = (locale: Locale): HeaderNavLink[] => {
     {
       id: 'updates',
       label: labels.updates,
-      href: withLocaleHref(linkPath('/aktualnosci'), locale),
+      href: withLocaleHref(linkPath('/updates'), locale),
     },
     {
       id: 'about',

@@ -51,7 +51,7 @@ export const UpdatesPageClient = () => {
         {copy.items.map((item) => (
           <article
             key={item.title}
-            className='group overflow-hidden rounded-3xl border border-white/10 bg-white/5'
+            className='group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5'
           >
             <div className='relative aspect-square w-full overflow-hidden'>
               <Image
@@ -63,13 +63,15 @@ export const UpdatesPageClient = () => {
               <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent' />
             </div>
 
-            <div className='space-y-3 p-6'>
+            <div className='flex flex-1 flex-col gap-3 p-6'>
               <p className='text-xs font-medium tracking-[0.18em] text-white/50'>
                 {item.eyebrow}
               </p>
               <h2 className='text-lg font-semibold text-white'>{item.title}</h2>
-              <p className='text-sm text-white/70'>{item.description}</p>
-              <div className='flex flex-col gap-2 sm:flex-row sm:flex-wrap'>
+              <p className='text-sm leading-5 text-white/70'>
+                {item.description}
+              </p>
+              <div className='mt-auto flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center'>
                 {item.linkLabel ? (
                   <CtaLink
                     href={withLocaleHref(item.linkHref, locale)}
@@ -80,7 +82,9 @@ export const UpdatesPageClient = () => {
                     {item.linkLabel}
                   </CtaLink>
                 ) : null}
-                {item.learnMoreLabel ? (
+                {'learnMoreLabel' in item &&
+                'learnMoreHref' in item &&
+                item.learnMoreLabel ? (
                   <CtaLink
                     href={item.learnMoreHref}
                     variant='ghost'

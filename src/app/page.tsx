@@ -8,11 +8,14 @@ import { HomeQuote } from '@/components/home/HomeQuote';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { ContactCta } from '@/components/sections/ContactCta';
 import { siteCopy } from '@/content/siteCopy';
+import { useHashScroll } from '@/hooks/useHashScroll';
 import { useLocale } from '@/hooks/useLocale';
 
 const HomePageContent = () => {
   const locale = useLocale();
   const copy = siteCopy[locale].home;
+
+  useHashScroll();
 
   return (
     <PageContainer>

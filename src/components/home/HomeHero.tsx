@@ -50,21 +50,29 @@ export const HomeHero = ({ locale }: HomeHeroProps) => {
         </div>
 
         <div className='order-first md:order-none relative overflow-hidden rounded-3xl border border-white/10 bg-white/5'>
-          <div className='relative aspect-[2/3]'>
+          <div className='relative w-full md:aspect-[2/3]'>
+            <Image
+              src={assetPath('/images/hero-mobile.jpeg')}
+              alt={copy.imageAlt}
+              width={1536}
+              height={1024}
+              className='h-auto w-full object-cover md:hidden'
+              priority
+            />
             <Image
               src={assetPath('/images/hero.jpeg')}
               alt={copy.imageAlt}
               fill
-              className='w-auto'
+              className='hidden object-cover md:block'
               priority
             />
           </div>
 
-          <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent' />
+          <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-black/40 md:via-transparent to-transparent' />
 
           <div className='absolute bottom-0 left-0 right-0 p-6'>
-            <p className='text-sm text-white/70'>{copy.captionEyebrow}</p>
-            <p className='mt-1 text-lg font-semibold'>{copy.captionTitle}</p>
+            <p className='text-xs md:text-sm text-white/70'>{copy.captionEyebrow}</p>
+            <p className='mt-1 text-sm md:text-lg font-semibold'>{copy.captionTitle}</p>
           </div>
         </div>
       </div>
