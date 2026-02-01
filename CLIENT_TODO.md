@@ -2,4 +2,4 @@
 
 ## Content
 
-- [ ] First image on home page on mobile - how smaller?
+1. jak jestem na prices i klikam na 'o mnie' to wchodzi na strone glowna ale nie an sekcje o mnie.
