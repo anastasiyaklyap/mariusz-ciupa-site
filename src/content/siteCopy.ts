@@ -175,7 +175,7 @@ export const siteCopy = {
             'Become a Basic Freediver - Learn how to freedive today! \nThe SSI Basic Freediver course is your first step into the peaceful, exhilarating world of freediving. During this entry-level program, you will learn how to freedive safely with a buddy in a pool/confined water up to a depth of five meters. Online training is combined with in-water practice sessions to give you all the skills and knowledge you need to be a confident freediver. Upon completing this program, you will earn your SSI Basic Freediver certification.',
           imageSrc: '/images/courses/basic-freediving.jpg',
           tag: 'Freediving basics',
-          price: { amount: 0, currency: 'GBP' },
+          priceText: 'Ask for price',
         },
       ],
       contact: {
@@ -762,7 +762,7 @@ export const siteCopy = {
             'Zostań podstawowym freediverem – naucz się freedivingu już dziś! \nKurs SSI Basic Freediver to Twój pierwszy krok do spokojnego i ekscytującego świata freedivingu. W trakcie tego programu na poziomie podstawowym nauczysz się bezpiecznie nurkować na bezdechu z partnerem w basenie lub w wodach ograniczonych, na głębokość do pięciu metrów. Szkolenie online jest połączone z zajęciami praktycznymi w wodzie, aby zapewnić Ci wszystkie umiejętności i wiedzę potrzebne do tego, by zostać pewnym siebie freediverem. Po ukończeniu programu otrzymasz certyfikat SSI Basic Freediver.',
           imageSrc: '/images/courses/basic-freediving.jpg',
           tag: 'Podstawy freedivingu',
-          price: { amount: 0, currency: 'GBP' },
+          priceText: 'Zapytaj o cenę',
         },
       ],
       contact: {

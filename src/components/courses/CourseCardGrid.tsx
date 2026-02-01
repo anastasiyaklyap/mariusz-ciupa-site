@@ -13,6 +13,7 @@ export type CourseCardData = {
   description: string;
   imageSrc: string;
   tag?: string;
+  priceText?: string;
   price?: {
     amount: number;
     currency: 'GBP' | 'EUR' | 'PLN';
@@ -131,21 +132,22 @@ export const CourseCardGrid = ({
                   </button>
                 ) : null}
 
-                {course.price ? (
+                {course.priceText || course.price ? (
                   <div className='mt-4'>
                     <div className='text-xs uppercase tracking-wide text-white/50'>
                       {copy.priceLabel}
                     </div>
 
                     <div className='text-base font-semibold text-white'>
-                      {formatPrice(
-                        course.price.amount,
-                        course.price.currency,
-                        locale,
-                      )}
+                      {course.priceText ??
+                        formatPrice(
+                          course.price!.amount,
+                          course.price!.currency,
+                          locale,
+                        )}
                     </div>
 
-                    {course.price.extras?.length ? (
+                    {course.price?.extras?.length ? (
                       <div className='mt-1 text-xs text-white/60'>
                         {copy.extrasLabel} {course.price.extras.join(', ')}
                       </div>
