@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://scubadivinginstructor.co.uk/sitemap.xml
