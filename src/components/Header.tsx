@@ -25,17 +25,11 @@ export const Header = () => {
   const pathname = usePathname();
   const handleLocaleChange = (nextLocale: string) => {
     if (typeof window === 'undefined') return;
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
-    const rawPathname = window.location.pathname;
-    const pathname = rawPathname.startsWith(basePath)
-      ? rawPathname.slice(basePath.length) || '/'
-      : rawPathname;
-    const url = new URL(linkPath(pathname), window.location.origin);
-    const params = new URLSearchParams(window.location.search);
-    params.set('lang', nextLocale);
-    url.search = params.toString();
-    url.hash = window.location.hash;
-    window.location.href = url.toString();
+    const url = withLocaleHref(
+      `${window.location.pathname}${window.location.search}${window.location.hash}`,
+      nextLocale as 'en' | 'pl'
+    );
+    window.location.href = url;
   };
   const menuRef = useRef<HTMLDivElement | null>(null);
   const menuButtonRef = useRef<HTMLButtonElement | null>(null);

@@ -1,13 +1,20 @@
 'use client';
 
-import { Suspense } from 'react';
 import { CoursePage } from '@/components/courses/CoursePage';
 import { siteCopy } from '@/content/siteCopy';
 import { useLocale } from '@/hooks/useLocale';
 
-const SpecialityCoursesContent = () => {
+type CourseCategory = 'beginner' | 'speciality' | 'technical';
+
+type CourseCategoryPageClientProps = {
+  category: CourseCategory;
+};
+
+export const CourseCategoryPageClient = ({
+  category,
+}: CourseCategoryPageClientProps) => {
   const locale = useLocale();
-  const copy = siteCopy[locale].speciality;
+  const copy = siteCopy[locale][category];
   const common = siteCopy[locale].common;
 
   return (
@@ -19,13 +26,3 @@ const SpecialityCoursesContent = () => {
     />
   );
 };
-
-const SpecialityCoursesPage = () => {
-  return (
-    <Suspense fallback={null}>
-      <SpecialityCoursesContent />
-    </Suspense>
-  );
-};
-
-export default SpecialityCoursesPage;

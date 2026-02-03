@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://scubadivinginstructor.co.uk/</loc>
+    <loc>https://scubadivinginstructor.co.uk/en/</loc>
   </url>
   <url>
-    <loc>https://scubadivinginstructor.co.uk/beginner/</loc>
+    <loc>https://scubadivinginstructor.co.uk/en/beginner/</loc>
   </url>
   <url>
-    <loc>https://scubadivinginstructor.co.uk/speciality/</loc>
+    <loc>https://scubadivinginstructor.co.uk/en/speciality/</loc>
   </url>
   <url>
-    <loc>https://scubadivinginstructor.co.uk/technical/</loc>
+    <loc>https://scubadivinginstructor.co.uk/en/technical/</loc>
   </url>
   <url>
-    <loc>https://scubadivinginstructor.co.uk/prices/</loc>
+    <loc>https://scubadivinginstructor.co.uk/en/prices/</loc>
   </url>
   <url>
-    <loc>https://scubadivinginstructor.co.uk/updates/</loc>
+    <loc>https://scubadivinginstructor.co.uk/en/updates/</loc>
   </url>
   <url>
-    <loc>https://scubadivinginstructor.co.uk/privacy-policy/</loc>
+    <loc>https://scubadivinginstructor.co.uk/en/privacy-policy/</loc>
   </url>
   <url>
-    <loc>https://scubadivinginstructor.co.uk/cookie-policy/</loc>
+    <loc>https://scubadivinginstructor.co.uk/en/cookie-policy/</loc>
+  </url>
+  <url>
+    <loc>https://scubadivinginstructor.co.uk/pl/</loc>
+  </url>
+  <url>
+    <loc>https://scubadivinginstructor.co.uk/pl/beginner/</loc>
+  </url>
+  <url>
+    <loc>https://scubadivinginstructor.co.uk/pl/speciality/</loc>
+  </url>
+  <url>
+    <loc>https://scubadivinginstructor.co.uk/pl/technical/</loc>
+  </url>
+  <url>
+    <loc>https://scubadivinginstructor.co.uk/pl/prices/</loc>
+  </url>
+  <url>
+    <loc>https://scubadivinginstructor.co.uk/pl/updates/</loc>
+  </url>
+  <url>
+    <loc>https://scubadivinginstructor.co.uk/pl/privacy-policy/</loc>
+  </url>
+  <url>
+    <loc>https://scubadivinginstructor.co.uk/pl/cookie-policy/</loc>
   </url>
 </urlset>
