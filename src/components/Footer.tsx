@@ -5,11 +5,17 @@ import { FooterBrand } from './footer/FooterBrand';
 import { FooterLink } from './footer/FooterLink';
 import { siteCopy } from '@/content/siteCopy';
 import { useLocale } from '@/hooks/useLocale';
+import { withLocaleHref } from '@/lib/i18n';
 
 export const Footer = () => {
   const locale = useLocale();
   const copy = siteCopy[locale];
+  const legalLinks = copy.common.legalLinks.map((link) => ({
+    label: link.label,
+    href: withLocaleHref(link.href, locale),
+  }));
   const footerLinks = [
+    ...legalLinks,
     ...copy.common.social.map((link) => ({
       label: link.label,
       href: siteConfig.socials[link.key],

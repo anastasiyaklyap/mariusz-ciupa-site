@@ -10,6 +10,8 @@ const inter = Inter({
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Suspense } from 'react';
+import { CookieBanner } from '@/components/CookieBanner';
+import { AnalyticsProvider } from '@/components/AnalyticsProvider';
 
 export const metadata: Metadata = {
   title: 'Mariusz Ciupa – SSI Scuba Diving Instructor',
@@ -23,16 +25,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang='en'>
-      <body
-        className={`${inter.className} bg-[#0B1220] text-white antialiased`}
-      >
+const RootLayout = ({ children }: { children: React.ReactNode }) => (
+  <html lang='en'>
+    <body className={`${inter.className} bg-[#0B1220] text-white antialiased`}>
+      <AnalyticsProvider>
         <div className='pointer-events-none fixed inset-0 -z-10'>
           <div className='absolute inset-0 bg-gradient-to-b from-[#0E1B2B] via-[#0B1220] to-[#070B12]' />
           <div className='absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(36,198,217,0.12),transparent_60%)]' />
@@ -45,7 +41,12 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <Footer />
         </Suspense>
-      </body>
-    </html>
-  );
-}
+        <Suspense fallback={null}>
+          <CookieBanner />
+        </Suspense>
+      </AnalyticsProvider>
+    </body>
+  </html>
+);
+
+export default RootLayout;

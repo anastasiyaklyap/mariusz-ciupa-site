@@ -13,6 +13,160 @@ export const siteCopy = {
 			],
 			legalDisclaimer:
 				"The information provided on this website is for general information purposes only and does not constitute a contractual offer or confirmation of business activity.",
+			cookieBanner: {
+				title: "Cookies",
+				description:
+					"We use cookies to improve the site and measure traffic. You can accept or reject analytics cookies.",
+				learnMorePrefix: "Learn more in our",
+				privacyPolicyLabel: "Privacy Policy",
+				cookiePolicyLabel: "Cookie Policy",
+				conjunctionLabel: "and",
+				acceptLabel: "Accept",
+				rejectLabel: "Reject",
+			},
+			legalLinks: [
+				{
+					key: "privacyPolicy",
+					label: "Privacy Policy",
+					href: "/privacy-policy",
+				},
+				{ key: "cookiePolicy", label: "Cookie Policy", href: "/cookie-policy" },
+			],
+			cookiePolicy: {
+				title: "COOKIE POLICY",
+				sections: [
+					{
+						heading: "Cookie Policy",
+						paragraphs: [
+							"The Website uses cookies to ensure proper operation and for statistical purposes.",
+						],
+					},
+					{
+						heading: "1. What are cookies",
+						paragraphs: [
+							"Cookies are small text files stored on the user’s device when using the Website.",
+						],
+					},
+					{
+						heading: "2. Types of cookies used on the Website",
+						paragraphs: ["The Website uses:"],
+						list: [
+							"necessary cookies – required for proper functioning of the Website,",
+							"analytical cookies – used to collect statistical data (Google Analytics).",
+						],
+					},
+					{
+						heading: "3. Analytical cookies",
+						paragraphs: [
+							"Analytical cookies are used only after the user has given consent.",
+							"They are used for:",
+						],
+						list: [
+							"analyzing traffic on the Website,",
+							"improving the quality and operation of the Website.",
+						],
+					},
+					{
+						heading: "4. Cookie management",
+						paragraphs: ["The user may:"],
+						list: [
+							"accept analytical cookies,",
+							"reject analytical cookies,",
+							"withdraw consent at any time by deleting cookies or changing browser settings.",
+						],
+					},
+					{
+						heading: "5. Changes to the cookie policy",
+						paragraphs: ["This Cookie Policy may be updated when necessary."],
+					},
+				],
+			},
+
+			privacyPolicy: {
+				title: "PRIVACY POLICY",
+				sections: [
+					{
+						heading: "Privacy Policy",
+						paragraphs: [
+							"(effective date: 3 February 2026)",
+							"This Privacy Policy explains how personal data is processed on this website.",
+						],
+					},
+					{
+						heading: "1. Data Controller",
+						paragraphs: [
+							"The controller of personal data is:",
+							"Mariusz Ciupa",
+							"Email: mariuszciupa1969@gmail.com",
+						],
+					},
+					{
+						heading: "2. Scope of processed data",
+						paragraphs: [
+							"The Website does not use contact forms and does not collect data directly from users.",
+							"When using the Website, the following data may be processed:",
+						],
+						list: [
+							"IP address (in anonymized form),",
+							"statistical data about visits (e.g. number of visits, device type, browser),",
+							"data about how the Website is used (e.g. visited pages).",
+						],
+					},
+					{
+						heading: "3. Purpose of data processing",
+						paragraphs: ["Personal data is processed for the purpose of:"],
+						list: [
+							"keeping visit statistics,",
+							"improving the functioning of the Website,",
+							"analyzing how the content is used.",
+						],
+					},
+					{
+						heading: "4. Legal basis",
+						paragraphs: ["Personal data is processed on the basis of:"],
+						list: [
+							"user’s consent (Article 6(1)(a) GDPR) – for analytical cookies.",
+						],
+					},
+					{
+						heading: "5. Analytical tool",
+						paragraphs: [
+							"The Website uses: Google Analytics (Google LLC).",
+							"Google Analytics uses cookies to analyze website traffic.",
+							"IP addresses are anonymized before being processed.",
+							"Data may be transferred to Google servers outside the European Union (e.g. the USA), based on appropriate safeguards in accordance with GDPR (such as standard contractual clauses).",
+						],
+					},
+					{
+						heading: "6. Data retention period",
+						paragraphs: [
+							"Statistical data is stored according to Google Analytics settings or until the user withdraws their consent.",
+						],
+					},
+					{
+						heading: "7. User rights",
+						paragraphs: ["The user has the right to:"],
+						list: [
+							"access their data,",
+							"rectify their data,",
+							"erase their data,",
+							"restrict processing,",
+							"withdraw consent at any time,",
+							"lodge a complaint with a data protection authority.",
+						],
+					},
+					{
+						heading: "8. Withdrawal of consent",
+						paragraphs: [
+							"The user may withdraw consent at any time by deleting cookies in their browser or changing their browser cookie settings.",
+						],
+					},
+					{
+						heading: "9. Changes to the privacy policy",
+						paragraphs: ["This Privacy Policy may be updated when necessary."],
+					},
+				],
+			},
 		},
 		header: {
 			nav: {
@@ -637,6 +791,168 @@ export const siteCopy = {
 			],
 			legalDisclaimer:
 				"Informacje zamieszczone na stronie mają charakter informacyjny i nie stanowią oferty w rozumieniu Kodeksu cywilnego ani potwierdzenia prowadzenia działalności gospodarczej",
+			cookieBanner: {
+				title: "Pliki cookie",
+				description:
+					"Używamy plików cookie, aby ulepszać stronę i mierzyć ruch. Możesz zaakceptować lub odrzucić cookies analityczne.",
+				learnMorePrefix: "Więcej informacji znajdziesz w",
+				privacyPolicyLabel: "Polityka prywatności",
+				cookiePolicyLabel: "Polityka cookies",
+				conjunctionLabel: "oraz",
+				acceptLabel: "Akceptuj",
+				rejectLabel: "Odrzuć",
+			},
+			legalLinks: [
+				{
+					key: "privacyPolicy",
+					label: "Polityka prywatności",
+					href: "/privacy-policy",
+				},
+				{
+					key: "cookiePolicy",
+					label: "Polityka cookies",
+					href: "/cookie-policy",
+				},
+			],
+			cookiePolicy: {
+				title: "POLITYKA COOKIES",
+				sections: [
+					{
+						heading: "Polityka cookies",
+						paragraphs: [
+							"Strona internetowa wykorzystuje pliki cookies w celu zapewnienia prawidłowego działania oraz do celów statystycznych.",
+						],
+					},
+					{
+						heading: "1. Czym są pliki cookies",
+						paragraphs: [
+							"Pliki cookies to niewielkie pliki tekstowe zapisywane na urządzeniu użytkownika podczas korzystania ze Strony.",
+						],
+					},
+					{
+						heading: "2. Rodzaje plików cookies używanych na Stronie",
+						paragraphs: ["Strona wykorzystuje:"],
+						list: [
+							"niezbędne pliki cookies – wymagane do prawidłowego działania Strony,",
+							"analityczne pliki cookies – służące do zbierania danych statystycznych (Google Analytics).",
+						],
+					},
+					{
+						heading: "3. Analityczne pliki cookies",
+						paragraphs: [
+							"Analityczne pliki cookies są wykorzystywane wyłącznie po uzyskaniu zgody użytkownika.",
+							"Są one wykorzystywane do:",
+						],
+						list: [
+							"analizy ruchu na Stronie,",
+							"poprawy jakości treści oraz działania Strony.",
+						],
+					},
+					{
+						heading: "4. Zarządzanie plikami cookies",
+						paragraphs: ["Użytkownik może:"],
+						list: [
+							"zaakceptować analityczne pliki cookies,",
+							"odrzucić analityczne pliki cookies,",
+							"cofnąć zgodę w dowolnym momencie poprzez usunięcie plików cookies lub zmianę ustawień przeglądarki.",
+						],
+					},
+					{
+						heading: "5. Zmiany w polityce cookies",
+						paragraphs: [
+							"Niniejsza Polityka cookies może być aktualizowana w razie potrzeby.",
+						],
+					},
+				],
+			},
+
+			privacyPolicy: {
+				title: "POLITYKA PRYWATNOŚCI",
+				sections: [
+					{
+						heading: "Polityka prywatności",
+						paragraphs: [
+							"(data obowiązywania: 3 lutego 2026)",
+							"Niniejsza Polityka prywatności wyjaśnia zasady przetwarzania danych osobowych na tej stronie internetowej.",
+						],
+					},
+					{
+						heading: "1. Administrator danych",
+						paragraphs: [
+							"Administratorem danych osobowych jest:",
+							"Mariusz Ciupa",
+							"Email: mariuszciupa1969@gmail.com",
+						],
+					},
+					{
+						heading: "2. Zakres przetwarzanych danych",
+						paragraphs: [
+							"Strona nie posiada formularzy kontaktowych i nie zbiera danych bezpośrednio od użytkowników.",
+							"Podczas korzystania ze Strony mogą być przetwarzane następujące dane:",
+						],
+						list: [
+							"adres IP (w formie zanonimizowanej),",
+							"dane statystyczne dotyczące wizyt (np. liczba wizyt, typ urządzenia, przeglądarka),",
+							"dane dotyczące sposobu korzystania ze Strony (np. odwiedzane podstrony).",
+						],
+					},
+					{
+						heading: "3. Cel przetwarzania danych",
+						paragraphs: ["Dane osobowe są przetwarzane w celu:"],
+						list: [
+							"prowadzenia statystyk odwiedzin,",
+							"poprawy funkcjonowania Strony,",
+							"analizy sposobu korzystania z treści.",
+						],
+					},
+					{
+						heading: "4. Podstawa prawna",
+						paragraphs: ["Dane osobowe są przetwarzane na podstawie:"],
+						list: [
+							"zgody użytkownika (art. 6 ust. 1 lit. a RODO) – w zakresie analitycznych plików cookies.",
+						],
+					},
+					{
+						heading: "5. Narzędzie analityczne",
+						paragraphs: [
+							"Strona wykorzystuje: Google Analytics (Google LLC).",
+							"Google Analytics używa plików cookies do analizy ruchu na Stronie.",
+							"Adresy IP są anonimizowane przed przetwarzaniem.",
+							"Dane mogą być przekazywane na serwery Google poza Unią Europejską (np. do USA) na podstawie odpowiednich zabezpieczeń zgodnych z RODO (takich jak standardowe klauzule umowne).",
+						],
+					},
+					{
+						heading: "6. Okres przechowywania danych",
+						paragraphs: [
+							"Dane statystyczne są przechowywane zgodnie z ustawieniami Google Analytics lub do momentu cofnięcia zgody przez użytkownika.",
+						],
+					},
+					{
+						heading: "7. Prawa użytkownika",
+						paragraphs: ["Użytkownik ma prawo do:"],
+						list: [
+							"dostępu do swoich danych,",
+							"ich sprostowania,",
+							"ich usunięcia,",
+							"ograniczenia przetwarzania,",
+							"cofnięcia zgody w dowolnym momencie,",
+							"wniesienia skargi do organu nadzorczego ds. ochrony danych osobowych.",
+						],
+					},
+					{
+						heading: "8. Cofnięcie zgody",
+						paragraphs: [
+							"Użytkownik może w każdej chwili cofnąć zgodę poprzez usunięcie plików cookies w przeglądarce lub zmianę ustawień przeglądarki.",
+						],
+					},
+					{
+						heading: "9. Zmiany w polityce prywatności",
+						paragraphs: [
+							"Niniejsza Polityka prywatności może być aktualizowana w razie potrzeby.",
+						],
+					},
+				],
+			},
 		},
 		header: {
 			nav: {

@@ -18,7 +18,14 @@ export const getLocaleFromSearchParams = async (
   const resolved = (await searchParams) ?? undefined;
   if (!resolved) return defaultLocale;
 
-  const value = resolved.lang;
+  return getLocaleFromSearchParamsSync(resolved);
+};
+
+export const getLocaleFromSearchParamsSync = (
+  searchParams?: SearchParams,
+): Locale => {
+  if (!searchParams) return defaultLocale;
+  const value = searchParams.lang;
   const lang = Array.isArray(value) ? value[0] : value;
 
   return isLocale(lang) ? lang : defaultLocale;
