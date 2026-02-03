@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { siteCopy } from '@/content/siteCopy';
 import { useLocale } from '@/hooks/useLocale';
 import { withLocaleHref } from '@/lib/i18n';
+import { linkPath } from '@/lib/linkPath';
 import { type Consent, STORAGE_KEY } from '@/lib/cookieConsent';
 import { useAnalyticsConsent } from '@/components/AnalyticsProvider';
 
@@ -44,14 +45,14 @@ export const CookieBanner = () => {
               {copy.learnMorePrefix}{' '}
               <Link
                 className='text-white/85 transition hover:underline'
-                href={withLocaleHref('/privacy-policy', locale)}
+                href={withLocaleHref(linkPath('/privacy-policy'), locale)}
               >
                 {copy.privacyPolicyLabel}
               </Link>{' '}
               {copy.conjunctionLabel}{' '}
               <Link
                 className='text-white/85 transition hover:underline'
-                href={withLocaleHref('/cookie-policy', locale)}
+                href={withLocaleHref(linkPath('/cookie-policy'), locale)}
               >
                 {copy.cookiePolicyLabel}
               </Link>
