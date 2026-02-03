@@ -16,7 +16,10 @@ export const metadata: Metadata = {
   description:
     'Personal scuba diving training from beginner to technical level.',
   icons: {
-    icon: '/images/favicon.png',
+    icon: [
+      { url: '/favicon.ico', type: 'image/x-icon' },
+      { url: '/images/favicon.png', type: 'image/png', sizes: '256x256' },
+    ],
   },
 };
 
