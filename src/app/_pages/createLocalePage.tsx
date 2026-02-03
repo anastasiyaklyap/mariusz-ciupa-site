@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import type { ReactElement } from 'react';
 import { Suspense } from 'react';
 import { createLocaleMetadata } from '@/lib/seo';
 import type { Locale } from '@/lib/i18n';
@@ -6,7 +7,7 @@ import type { Locale } from '@/lib/i18n';
 type CreateLocalePageOptions = {
   locale: Locale;
   pathname: string;
-  component: React.ReactNode;
+  component: ReactElement;
   metadata?: Metadata;
 };
 
@@ -15,7 +16,10 @@ export const createLocalePage = ({
   pathname,
   component,
   metadata,
-}: CreateLocalePageOptions): { metadata: Metadata; Page: () => JSX.Element } => {
+}: CreateLocalePageOptions): {
+  metadata: Metadata;
+  Page: () => ReactElement;
+} => {
   const baseMetadata = createLocaleMetadata(pathname, locale);
   const mergedMetadata: Metadata = {
     ...baseMetadata,
