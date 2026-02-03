@@ -13,14 +13,20 @@ import { Suspense } from 'react';
 import { CookieBanner } from '@/components/CookieBanner';
 import { AnalyticsProvider } from '@/components/AnalyticsProvider';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
 export const metadata: Metadata = {
   title: 'Mariusz Ciupa – SSI Scuba Diving Instructor',
   description:
     'Personal scuba diving training from beginner to technical level.',
   icons: {
     icon: [
-      { url: '/favicon.ico', type: 'image/x-icon' },
-      { url: '/images/favicon.png', type: 'image/png', sizes: '256x256' },
+      { url: `${basePath}/favicon.ico`, type: 'image/x-icon' },
+      {
+        url: `${basePath}/images/favicon.png`,
+        type: 'image/png',
+        sizes: '256x256',
+      },
     ],
   },
 };
