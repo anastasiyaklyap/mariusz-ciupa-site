@@ -10,9 +10,14 @@ import { ContactCta } from '@/components/sections/ContactCta';
 import { siteCopy } from '@/content/siteCopy';
 import { useHashScroll } from '@/hooks/useHashScroll';
 import { useLocale } from '@/hooks/useLocale';
+import type { Locale } from '@/lib/i18n';
 
-const HomePageContent = () => {
-  const locale = useLocale();
+type HomePageContentProps = {
+  localeOverride?: Locale;
+};
+
+const HomePageContent = ({ localeOverride }: HomePageContentProps) => {
+  const locale = localeOverride ?? useLocale();
   const copy = siteCopy[locale].home;
 
   useHashScroll();
@@ -32,12 +37,14 @@ const HomePageContent = () => {
   );
 };
 
-const HomePage = () => {
-  return (
-    <Suspense fallback={null}>
-      <HomePageContent />
-    </Suspense>
-  );
+type HomePageClientProps = {
+  localeOverride?: Locale;
 };
 
-export default HomePage;
+const HomePageClient = ({ localeOverride }: HomePageClientProps) => (
+  <Suspense fallback={null}>
+    <HomePageContent localeOverride={localeOverride} />
+  </Suspense>
+);
+
+export default HomePageClient;

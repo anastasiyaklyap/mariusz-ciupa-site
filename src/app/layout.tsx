@@ -12,13 +12,16 @@ import { Footer } from '@/components/Footer';
 import { Suspense } from 'react';
 import { CookieBanner } from '@/components/CookieBanner';
 import { AnalyticsProvider } from '@/components/AnalyticsProvider';
+import { HtmlLangSync } from '@/components/HtmlLangSync';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 export const metadata: Metadata = {
   title: 'Mariusz Ciupa – SSI Scuba Diving Instructor',
   description:
     'Personal scuba diving training from beginner to technical level.',
+  ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
   icons: {
     icon: [
       { url: `${basePath}/favicon.ico`, type: 'image/x-icon' },
@@ -50,6 +53,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
         <Suspense fallback={null}>
           <CookieBanner />
         </Suspense>
+        <HtmlLangSync />
       </AnalyticsProvider>
     </body>
   </html>
