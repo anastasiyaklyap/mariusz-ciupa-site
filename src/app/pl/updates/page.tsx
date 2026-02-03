@@ -1,10 +1,15 @@
-import { UpdatesPageClient } from '@/components/pages/UpdatesPageClient';
-import { createLocalePage } from '@/app/_pages/createLocalePage';
+import { UpdatesPageClient } from "@/components/pages/UpdatesPageClient";
+import { createLocalePage } from "@/app/_pages/createLocalePage";
 
 const { metadata, Page } = createLocalePage({
-  locale: 'pl',
-  pathname: '/updates',
-  component: <UpdatesPageClient />,
+	locale: "pl",
+	pathname: "/updates",
+	component: <UpdatesPageClient />,
+	metadata: {
+		title: "Aktualności i wyjazdy nurkowe | Kursy i wyprawy – Mariusz Ciupa",
+		description:
+			"Zobacz nadchodzące wyjazdy nurkowe, obozy szkoleniowe oraz najnowsze informacje o kursach i wydarzeniach.",
+	},
 });
 
 export { metadata };
