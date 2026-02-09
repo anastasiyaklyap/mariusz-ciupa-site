@@ -553,16 +553,15 @@ export const siteCopy = {
 			},
 			items: [
 				{
-					eyebrow: "TRIP",
-					title: "Scuba Diving Safari in Egypt",
+					eyebrow: "MAGAZINE",
+					title: "Perfect Diver",
 					description:
-						"Join our Red Sea diving safari and explore famous wrecks and vibrant reefs. Check details, dates and availability.",
-					imageSrc: "/images/updates/scuba-diving-safari-egipt.jpg",
-					imageAlt: "Scuba Diving Safari in Egypt",
+						"Perfect Diver is a magazine created for everyone passionate about diving and the underwater world. \nIt showcases breathtaking dive sites, from vibrant reefs to historic wrecks. \nClear and accessible articles cover equipment, techniques, and safety. \nThe magazine features interviews with experienced divers and true enthusiasts. \nEach issue is filled with inspiring underwater stories. \nHigh-quality photography brings the ocean depths closer to the reader. \nPerfect Diver is suitable for both beginners and advanced divers. \nIt delivers reliable knowledge and fresh motivation. \nA subscription ensures easy access to every issue without missing a beat. \nPerfect Diver is more than a magazine, it’s a gateway to life beneath the surface.",
+					imageSrc: "/images/updates/perfect-diver.jpeg",
+					imageAlt: "Perfect Diver",
 					learnMoreLabel: "Learn more",
-					learnMoreHref:
-						"https://www.facebook.com/events/854604690478835/?acontext=%7B%22event_action_history%22%3A[%7B%22mechanism%22%3A%22surface%22%2C%22surface%22%3A%22groups_highlight_units%22%7D]%2C%22ref_notif_type%22%3Anull%7D",
-					linkLabel: "Check availability",
+					learnMoreHref: "http://www.perfectdiver.com/",
+					linkLabel: "Get in Touch",
 					linkHref: "#updates-contact",
 				},
 				{
@@ -754,6 +753,10 @@ export const siteCopy = {
 				{
 					title: "Technical",
 					items: [
+						{
+							title: "Intro Tec Diving",
+							price: { amount: 80, currency: "GBP" },
+						},
 						{
 							title: "Extended Range Nitrox Diving (twin set)",
 							price: { amount: 400, currency: "GBP" },
@@ -1351,16 +1354,15 @@ export const siteCopy = {
 			},
 			items: [
 				{
-					eyebrow: "WYJAZD",
-					title: "Safari nurkowe w Egipcie",
+					eyebrow: "MAGAZYN",
+					title: "Perfect Diver",
 					description:
-						"Dołącz do naszego safari nurkowego na Morzu Czerwonym i odkrywaj słynne wraki oraz tętniące życiem rafy. Sprawdź szczegóły, terminy i dostępność.",
-					imageSrc: "/images/updates/scuba-diving-safari-egipt.jpg",
-					imageAlt: "Scuba Diving Safari in Egypt",
+						"Perfect Diver to magazyn dla wszystkich, którzy kochają nurkowanie i podwodny świat. \nPrezentuje najpiękniejsze miejsca nurkowe, od kolorowych raf po tajemnicze wraki. \nW przystępny sposób porusza tematy sprzętu, technik i bezpieczeństwa. \nNa łamach pojawiają się rozmowy z doświadczonymi nurkami i prawdziwymi pasjonatami. \nKażdy numer pełen jest inspirujących historii z głębin. \nWysokiej jakości zdjęcia pozwalają poczuć klimat podwodnej przygody. \nMagazyn trafia zarówno do początkujących, jak i zaawansowanych nurków. \nTo solidne źródło wiedzy i świeżej inspiracji. \nPrenumerata daje wygodny dostęp do każdego wydania bez przerw. \nPerfect Diver to magazyn, który łączy pasję, wiedzę i morską wolność.",
+					imageSrc: "/images/updates/perfect-diver.jpeg",
+					imageAlt: "Perfect Diver",
 					learnMoreLabel: "Dowiedz się więcej",
-					learnMoreHref:
-						"https://www.facebook.com/events/854604690478835/?acontext=%7B%22event_action_history%22%3A[%7B%22mechanism%22%3A%22surface%22%2C%22surface%22%3A%22groups_highlight_units%22%7D]%2C%22ref_notif_type%22%3Anull%7D",
-					linkLabel: "Sprawdź dostępność",
+					learnMoreHref: "http://www.perfectdiver.com/",
+					linkLabel: "Skontaktuj się",
 					linkHref: "#updates-contact",
 				},
 				{
@@ -1553,6 +1555,10 @@ export const siteCopy = {
 				{
 					title: "Techniczny",
 					items: [
+						{
+							title: "Intro Tec Diving",
+							price: { amount: 80, currency: "GBP" },
+						},
 						{
 							title: "Extended Range Nitrox Diving (twin set)",
 							price: { amount: 400, currency: "GBP" },

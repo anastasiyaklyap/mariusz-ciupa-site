@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: 'Mariusz Ciupa',
-  role: 'SSI ADVANCED SCUBA DIVING INSTRUCTOR XR',
+  role: 'SSI DIVEMASTER INSTRUCTOR XR',
   email: 'mariuszciupa1969@gmail.com',
   socials: {
     instagram: 'https://www.instagram.com/scubatravelmario/',

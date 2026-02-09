@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { SectionSurface } from '@/components/sections/SectionSurface';
 import { ContactCta } from '@/components/sections/ContactCta';
@@ -13,6 +14,31 @@ import { withLocaleHref } from '@/lib/i18n';
 export const UpdatesPageClient = () => {
   const locale = useLocale();
   const copy = siteCopy[locale].updates;
+  const courseCardCopy = siteCopy[locale].courses.card;
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+  const descRefs = useRef<Record<string, HTMLParagraphElement | null>>({});
+  const [canExpand, setCanExpand] = useState<Record<string, boolean>>({});
+
+  useEffect(() => {
+    const check = () => {
+      const next: Record<string, boolean> = {};
+
+      Object.entries(descRefs.current).forEach(([key, el]) => {
+        if (!el) return;
+        next[key] = el.scrollHeight > el.clientHeight + 1;
+      });
+
+      setCanExpand(next);
+    };
+
+    const t = window.setTimeout(check, 50);
+    window.addEventListener('resize', check);
+
+    return () => {
+      window.clearTimeout(t);
+      window.removeEventListener('resize', check);
+    };
+  }, [copy.items]);
 
   return (
     <PageContainer>
@@ -48,11 +74,14 @@ export const UpdatesPageClient = () => {
       </SectionSurface>
 
       <div className='mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3'>
-        {copy.items.map((item) => (
-          <article
-            key={item.title}
-            className='group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5'
-          >
+        {copy.items.map((item) => {
+          const isOpen = !!expanded[item.title];
+
+          return (
+            <article
+              key={item.title}
+              className='group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5'
+            >
             <div className='relative aspect-square w-full overflow-hidden'>
               <Image
                 src={assetPath(item.imageSrc)}
@@ -68,9 +97,31 @@ export const UpdatesPageClient = () => {
                 {item.eyebrow}
               </p>
               <h2 className='text-lg font-semibold text-white'>{item.title}</h2>
-              <p className='text-sm leading-5 text-white/70'>
+              <p
+                ref={(el) => {
+                  descRefs.current[item.title] = el;
+                }}
+                className={`text-sm leading-5 text-white/70 whitespace-pre-line ${
+                  isOpen ? '' : 'line-clamp-4'
+                }`}
+              >
                 {item.description}
               </p>
+
+              {canExpand[item.title] ? (
+                <button
+                  type='button'
+                  onClick={() =>
+                    setExpanded((prev) => ({
+                      ...prev,
+                      [item.title]: !prev[item.title],
+                    }))
+                  }
+                  className='inline-flex w-fit cursor-pointer items-center gap-2 text-sm font-medium text-white/70 transition hover:text-white hover:underline underline-offset-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#24C6D9]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B1220]'
+                >
+                  {isOpen ? courseCardCopy.showLess : courseCardCopy.readMore}
+                </button>
+              ) : null}
               <div className='mt-auto flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center'>
                 {item.linkLabel ? (
                   <CtaLink
@@ -97,7 +148,8 @@ export const UpdatesPageClient = () => {
               </div>
             </div>
           </article>
-        ))}
+          );
+        })}
       </div>
 
       <ContactCta
