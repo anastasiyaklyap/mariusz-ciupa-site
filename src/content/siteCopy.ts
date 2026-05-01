@@ -471,7 +471,7 @@ export const siteCopy = {
 					price: { amount: 450, currency: "GBP", extras: [] },
 				},
 				{
-					title: "React Right Instructor (FA, CPR, AED, O2)",
+					title: "React Right (FA, CPR, AED, O2)",
 					description:
 						"Become a certified React Right Specialty diver. \nReact Right is SSI’s emergency first response course and provides you with the training and knowledge you need to act as a first responder in a medical emergency. In this flexible dive program, you can choose which subjects you want to learn about, including primary assessment, first aid, CPR and primary stabilization techniques. You can also learn about oxygen administration in diving emergencies and Automated External Defibrillator (AED) basics. Using a combination of academic sessions and practical training scenarios, this program will give you the tools and confidence you need for emergency response. By the time you are certified, you will be able to act as an emergency first responder, provide first aid and CPR, administer oxygen and provide AED support in a medical emergency. Earn your SSI React Right specialty certification. Get started today!",
 					imageSrc: "/images/courses/react-right.jpeg",
@@ -713,7 +713,7 @@ export const siteCopy = {
 							extras: ["DPV rent"],
 						},
 						{
-							title: "React Right Instructor (FA, CPR, AED, O2)",
+							title: "React Right (FA, CPR, AED, O2)",
 							price: { amount: 150, currency: "GBP" },
 						},
 						{
@@ -1268,7 +1268,7 @@ export const siteCopy = {
 					price: { amount: 450, currency: "GBP", extras: [] },
 				},
 				{
-					title: "React Right Instructor (FA, CPR, AED, O2)",
+					title: "React Right (FA, CPR, AED, O2)",
 					description:
 						"Zostań certyfikowanym nurkiem specjalistą React Right. \nReact Right to kurs pierwszej pomocy w sytuacjach nagłych SSI, który zapewnia Ci szkolenie i wiedzę potrzebne do działania jako pierwszy ratownik w nagłych przypadkach medycznych. W tym elastycznym programie szkoleniowym możesz wybrać, których zagadnień chcesz się uczyć, w tym: ocenę stanu poszkodowanego, pierwszą pomoc, RKO (resuscytację krążeniowo-oddechową) oraz techniki podstawowej stabilizacji. Możesz także nauczyć się podawania tlenu w nagłych wypadkach nurkowych oraz podstaw obsługi automatycznego defibrylatora zewnętrznego (AED). Dzięki połączeniu zajęć teoretycznych oraz praktycznych scenariuszy szkoleniowych program ten da Ci narzędzia i pewność siebie potrzebne do reagowania w sytuacjach awaryjnych. Po uzyskaniu certyfikatu będziesz w stanie działać jako pierwszy ratownik, udzielać pierwszej pomocy i RKO, podawać tlen oraz korzystać z AED w nagłych przypadkach medycznych. Zdobądź certyfikat specjalistyczny SSI React Right Specialty. Rozpocznij już dziś!",
 					imageSrc: "/images/courses/react-right.jpeg",
@@ -1515,7 +1515,7 @@ export const siteCopy = {
 							extras: ["Wypożyczenie skutera podwodnego (DPV)"],
 						},
 						{
-							title: "React Right Instructor (FA, CPR, AED, O2)",
+							title: "React Right (FA, CPR, AED, O2)",
 							price: { amount: 150, currency: "GBP" },
 						},
 						{
