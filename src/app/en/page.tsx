@@ -9,7 +9,7 @@ const { metadata, Page } = createLocalePage({
 		title:
 			"Scuba Diving Instructor UK | SSI Courses (Beginner to Technical) – Mariusz Ciupa",
 		description:
-			"Personal scuba diving training in the UK, Lanzarote and Poland. SSI courses from beginner to technical level, plus freediving. Ask about availability.",
+			"SSI scuba diving courses in the UK, from beginner training to technical diving and freediving. Some courses are also available in Lanzarote and Poland.",
 	},
 });
 

@@ -183,7 +183,7 @@ export const siteCopy = {
 				titlePrimary: "Mariusz",
 				titleAccent: "Ciupa",
 				subtitle:
-					"Personal diving training — from your first dive to advanced technical courses and freediving.",
+					"SSI scuba diving courses in the UK — from your first dive to technical training and freediving. Some courses are also available in Lanzarote and Poland.",
 				ctaPrimary: "View courses",
 				ctaSecondary: "Contact me",
 				imageAlt: "Scuba diving training",
@@ -246,7 +246,7 @@ export const siteCopy = {
 				imageCaptionTitle: "Experience you can trust",
 				locationTitle: "Where I teach",
 				locationDescription:
-					"I cooperate with selected dive centers in the United Kingdom, Lanzarote and Poland — so you can train and dive in different environments with continuity and trusted support.",
+					"I mainly teach in the UK, and some SSI courses are also available in Lanzarote and Poland through trusted local dive centres.",
 				locations: ["UK", "Lanzarote", "Poland"],
 				partnerLogos: [
 					{
@@ -270,7 +270,7 @@ export const siteCopy = {
 			contact: {
 				title: "Ready to start your diving journey?",
 				description:
-					"Tell me your level, preferred location and dates — I’ll suggest the best course and next steps.",
+					"Tell me your level, preferred location and dates — I’ll help you choose the right SSI course and the best place to train.",
 			},
 		},
 		courses: {
@@ -807,7 +807,7 @@ export const siteCopy = {
 	},
 	pl: {
 		common: {
-			locations: "Wielka Brytania · Lanzarote · Polska",
+			locations: "UK · Lanzarote · Polska",
 			responseTime: "Zwykle odpowiadam w ciągu 24–48 h",
 			emailLabel: "Napisz do mnie",
 			menuOpenLabel: "Otwórz menu",
@@ -997,7 +997,7 @@ export const siteCopy = {
 				titlePrimary: "Mariusz",
 				titleAccent: "Ciupa",
 				subtitle:
-					"Trening nurkowy od pierwszego zanurzenia po zaawansowane kursy techniczne oraz freediving.",
+					"Kursy nurkowe SSI w UK — od pierwszego nurkowania po szkolenia techniczne i freediving. Niektóre kursy są dostępne także na Lanzarote i w Polsce.",
 				ctaPrimary: "Zobacz kursy",
 				ctaSecondary: "Skontaktuj się",
 				imageAlt: "Szkolenie nurkowe",
@@ -1060,8 +1060,8 @@ export const siteCopy = {
 				imageCaptionTitle: "Doświadczenie, któremu możesz zaufać",
 				locationTitle: "Gdzie szkolę",
 				locationDescription:
-					"Współpracuję z wybranymi centrami nurkowymi w Wielkiej Brytanii, na Lanzarote i w Polsce — możesz szkolić się w różnych warunkach, zachowując ciągłość i zaufane wsparcie.",
-				locations: ["Wielka Brytania", "Lanzarote", "Polska"],
+					"Szkolę przede wszystkim w UK, a część kursów SSI prowadzę także na Lanzarote i w Polsce we współpracy ze sprawdzonymi centrami nurkowymi.",
+				locations: ["UK", "Lanzarote", "Polska"],
 				partnerLogos: [
 					{
 						src: "/images/logo-bonito.png",
@@ -1084,7 +1084,7 @@ export const siteCopy = {
 			contact: {
 				title: "Gotowy, aby rozpocząć swoją nurkową przygodę?",
 				description:
-					"Podaj poziom, preferowaną lokalizację i terminy — zaproponuję najlepszy kurs i dalsze kroki.",
+					"Podaj swój poziom, preferowaną lokalizację i terminy — pomogę Ci wybrać odpowiedni kurs SSI i najlepsze miejsce do szkolenia w UK lub za granicą.",
 			},
 		},
 		courses: {

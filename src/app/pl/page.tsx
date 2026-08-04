@@ -7,9 +7,9 @@ const { metadata, Page } = createLocalePage({
 	component: <HomePageClient localeOverride="pl" />,
 	metadata: {
 		title:
-			"Instruktor nurkowania UK | Kursy SSI (od podstaw do technicznych) – Mariusz Ciupa",
+			"Instruktor nurkowania w UK | Kursy SSI (od podstaw do technicznych) – Mariusz Ciupa",
 		description:
-			"Indywidualne szkolenia nurkowe w Wielkiej Brytanii, na Lanzarote i w Polsce. Kursy SSI od podstaw do technicznych oraz freediving.",
+			"Kursy nurkowe SSI w UK — od podstaw po nurkowanie techniczne i freediving. Niektóre kursy są dostępne także na Lanzarote i w Polsce.",
 	},
 });
 
