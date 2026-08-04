@@ -3,7 +3,11 @@ release
 
 1. npm run build
 
-2. copy everything in out folder to 'new page'
+2. copy everything in out folder to `new-page`
+
+3. in IONOS, make sure the domain `Target` points to `new-page`
+
+4. do not use `new page` with a space in the folder name
 
 Environment
 
