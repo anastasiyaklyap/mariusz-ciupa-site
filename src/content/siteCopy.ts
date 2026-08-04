@@ -502,6 +502,14 @@ export const siteCopy = {
 			},
 			courses: [
 				{
+					title: "Decompression Diving",
+					description:
+						"Begin your Decompression Diving program today. \nThe SSI Decompression Diving Specialty will teach you how to dive beyond the no-decompression limits. You will learn to plan and conduct dives to a maximum depth of 40 meters with limited decompression using your recreational total diving system and a single decompression cylinder. You will learn and practice how to effectively use your dive computer features, including switching gases, gas integration, time-to-reserve, and time-to-surface. Using these computer functions will become second nature, enabling you to safely conduct dives with limited decompression without hours of dive planning. Upon completion, you will earn the SSI Decompression Diving Specialty certification and be able to explore stunning deep dive sites or larger wrecks without being restricted by the traditional no-decompression limits. The opportunities to expand your diving adventures have just got bigger!",
+					imageSrc: "/images/courses/decompression-diving.jpg",
+					tag: "Decompression",
+					price: { amount: 350, currency: "GBP", extras: [] },
+				},
+				{
 					title: "Advanced Wreck Diving",
 					description:
 						"Become a certified Wreck Diver with SSI. \nMany of the ocean’s best dive sites are wrecks. These impressive structures attract unusually high densities of marine life and give you the chance to immerse in living history as you dive. There is nothing quite like wreck diving and the SSI Wreck Diving specialty will give you all the skills and knowledge you need to become a safe and confident wreck diver. With a combination of academic and confined water sessions, you will be taught how to safely conduct non-penetration dives around wrecks and artificial reefs, up to a depth of 30 meters. You will also get to practice your wreck diving skills during open water training dives. All of which will ensure you can enjoy wreck diving with confidence and get the most out of every dive. Upon completion of this program, you will earn your SSI Wreck Diving specialty certification. Continue your adventures and become a wreck diver. Get started online today!",
@@ -532,6 +540,14 @@ export const siteCopy = {
 					imageSrc: "/images/courses/extended-range-trimix.jpg",
 					tag: "Twin Set",
 					price: { amount: 550, currency: "GBP", extras: ["gases"] },
+				},
+				{
+					title: "DPV Diving ( technical )",
+					description:
+						"Become a certified DPV diver. \nIf you want to make the most of your bottom time and have more fun on your dives, try underwater scooter or diver propulsion vehicle (DPV) diving. In this underwater scooter and DPV course, you will learn the skills and concepts you need to safely plan and conduct dives using scooters or DPVs. You will learn the special precautions needed for using DPVs, how to maintain buddy contact and how to control your equipment, so you can safely enjoy the new dive experiences DPVs provide. Upon completion of this program, you will earn the SSI DPV Diving specialty certification and be able to dive to the depth limits of your certification with a scooter or DPV.",
+					imageSrc: "/images/courses/dpv-diving.jpg",
+					tag: "Technical",
+					price: { amount: 280, currency: "GBP", extras: ["DPV rent"] },
 				},
 			],
 			contact: {
@@ -754,6 +770,10 @@ export const siteCopy = {
 					title: "Technical",
 					items: [
 						{
+							title: "Decompression Diving",
+							price: { amount: 350, currency: "GBP" },
+						},
+						{
 							title: "Intro Tec Diving",
 							price: { amount: 80, currency: "GBP" },
 						},
@@ -769,6 +789,11 @@ export const siteCopy = {
 							title: "Extended Range Trimix (twin set)",
 							price: { amount: 550, currency: "GBP" },
 							extras: ["gases"],
+						},
+						{
+							title: "DPV Diving ( technical )",
+							price: { amount: 280, currency: "GBP" },
+							extras: ["DPV rent"],
 						},
 					],
 				},
@@ -1303,6 +1328,14 @@ export const siteCopy = {
 			},
 			courses: [
 				{
+					title: "Decompression Diving",
+					description:
+						"Rozpocznij swój program Decompression Diving już dziś. \nSpecjalizacja SSI Decompression Diving nauczy Cię nurkowania poza limitami bezdekompresyjnymi. Nauczysz się planować i wykonywać nurkowania do maksymalnej głębokości 40 metrów z ograniczoną dekompresją, wykorzystując swój rekreacyjny system nurkowy oraz jedną butlę dekompresyjną. Nauczysz się również efektywnie korzystać z funkcji komputera nurkowego, w tym przełączania gazów, integracji gazu, czasu do rezerwy oraz czasu do wynurzenia. Obsługa tych funkcji stanie się dla Ciebie naturalna, co pozwoli bezpiecznie realizować nurkowania z ograniczoną dekompresją bez konieczności wielogodzinnego planowania nurkowań. Po ukończeniu szkolenia otrzymasz certyfikat specjalistyczny SSI Decompression Diving Specialty i będziesz mógł/mogła eksplorować imponujące głębokie miejsca nurkowe lub większe wraki bez ograniczeń wynikających z tradycyjnych limitów bezdekompresyjnych. Możliwości rozwoju Twoich nurkowych przygód właśnie się zwiększyły!",
+					imageSrc: "/images/courses/decompression-diving.jpg",
+					tag: "Dekompresja",
+					price: { amount: 350, currency: "GBP", extras: [] },
+				},
+				{
 					title: "Advanced Wreck Diving",
 					description:
 						"Zostań certyfikowanym nurkiem wrakowym SSI. \nWiele z najlepszych miejsc nurkowych na świecie to wraki. Te imponujące konstrukcje przyciągają wyjątkowo duże skupiska życia morskiego i dają możliwość zanurzenia się w żywej historii podczas nurkowania. Nie ma niczego podobnego do nurkowania wrakowego, a specjalizacja SSI Wreck Diving zapewni Ci wszystkie umiejętności i wiedzę potrzebne, aby stać się bezpiecznym i pewnym siebie nurkiem wrakowym. Dzięki połączeniu zajęć teoretycznych oraz sesji w wodach ograniczonych nauczysz się, jak bezpiecznie wykonywać nurkowania bez penetracji wraków oraz sztucznych raf, do głębokości 30 metrów. Będziesz także ćwiczyć swoje umiejętności nurkowania wrakowego podczas nurkowań szkoleniowych w wodach otwartych. Wszystko to pozwoli Ci nurkować na wrakach z pewnością siebie i w pełni korzystać z każdego nurkowania. Po ukończeniu programu otrzymasz certyfikat specjalistyczny SSI Wreck Diving Specialty. Kontynuuj swoje przygody i zostań nurkiem wrakowym. Rozpocznij naukę online już dziś!",
@@ -1333,6 +1366,18 @@ export const siteCopy = {
 					imageSrc: "/images/courses/extended-range-trimix.jpg",
 					tag: "Twinset",
 					price: { amount: 550, currency: "GBP", extras: ["gazy"] },
+				},
+				{
+					title: "DPV Diving ( technical )",
+					description:
+						"Zostań certyfikowanym nurkiem DPV. \nJeśli chcesz maksymalnie wykorzystać czas spędzony na dnie i czerpać jeszcze więcej radości z nurkowań, spróbuj nurkowania ze skuterem podwodnym, czyli pojazdem napędowym dla nurków (DPV – Diver Propulsion Vehicle). Podczas tego kursu nurkowania ze skuterem podwodnym i DPV nauczysz się umiejętności oraz zasad niezbędnych do bezpiecznego planowania i wykonywania nurkowań z użyciem skuterów lub DPV. Poznasz szczególne środki ostrożności związane z używaniem DPV, nauczysz się utrzymywać kontakt z partnerem nurkowym oraz kontrolować swój sprzęt, aby móc bezpiecznie cieszyć się nowymi doświadczeniami nurkowymi, jakie oferują DPV. Po ukończeniu programu otrzymasz certyfikat specjalistyczny SSI DPV Diving Specialty i będziesz mógł/mogła nurkować ze skuterem lub DPV do głębokości równej limitom Twoich uprawnień",
+					imageSrc: "/images/courses/dpv-diving.jpg",
+					tag: "Techniczny",
+					price: {
+						amount: 280,
+						currency: "GBP",
+						extras: ["wypożyczenie DPV"],
+					},
 				},
 			],
 			contact: {
@@ -1556,6 +1601,10 @@ export const siteCopy = {
 					title: "Techniczny",
 					items: [
 						{
+							title: "Decompression Diving",
+							price: { amount: 350, currency: "GBP" },
+						},
+						{
 							title: "Intro Tec Diving",
 							price: { amount: 80, currency: "GBP" },
 						},
@@ -1571,6 +1620,11 @@ export const siteCopy = {
 							title: "Extended Range Trimix (twin set)",
 							price: { amount: 550, currency: "GBP" },
 							extras: ["gazy"],
+						},
+						{
+							title: "DPV Diving ( technical )",
+							price: { amount: 280, currency: "GBP" },
+							extras: ["Wypożyczenie skutera podwodnego (DPV)"],
 						},
 					],
 				},
