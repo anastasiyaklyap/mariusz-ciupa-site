@@ -5,11 +5,12 @@ const { metadata, Page } = createLocalePage({
 	locale: "en",
 	pathname: "/updates",
 	component: <UpdatesPageClient />,
+	breadcrumbLabel: "Trips & Updates",
 	metadata: {
 		title:
-			"Diving Trips & Course Updates | Training Camps and Events – Mariusz Ciupa",
+			"Upcoming Diving Trips & Course Dates | Mariusz Ciupa",
 		description:
-			"See upcoming scuba diving trips, training camps and course updates. Stay informed about new courses and diving opportunities.",
+			"See upcoming scuba diving trips, training camps and course dates. Stay informed about new courses and diving opportunities.",
 	},
 });
 

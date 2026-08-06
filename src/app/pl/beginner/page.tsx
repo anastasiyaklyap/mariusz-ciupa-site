@@ -1,15 +1,13 @@
-import { CourseCategoryPageClient } from "@/components/pages/CourseCategoryPageClient";
-import { createLocalePage } from "@/app/_pages/createLocalePage";
+import { createCourseCategoryPage } from "@/app/_pages/createCourseCategoryPage";
 
-const { metadata, Page } = createLocalePage({
+const { metadata, Page } = createCourseCategoryPage({
 	locale: "pl",
-	pathname: "/beginner",
-	component: <CourseCategoryPageClient category="beginner" />,
+	category: "beginner",
 	metadata: {
 		title:
-			"Kursy nurkowania dla początkujących | SSI Open Water – Mariusz Ciupa",
+			"Kurs nurkowania od podstaw w Londynie | SSI Open Water",
 		description:
-			"Rozpocznij naukę nurkowania od zera dzięki kursom SSI dla początkujących. Try Scuba, Open Water Diver i kursy odświeżające.",
+			"Zacznij nurkować od zera z polskim instruktorem SSI w Londynie. Try Dive £75, pełny kurs Open Water Diver £550. Szkolenie indywidualne.",
 	},
 });
 

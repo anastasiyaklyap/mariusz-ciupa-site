@@ -1,14 +1,13 @@
-import { CourseCategoryPageClient } from "@/components/pages/CourseCategoryPageClient";
-import { createLocalePage } from "@/app/_pages/createLocalePage";
+import { createCourseCategoryPage } from "@/app/_pages/createCourseCategoryPage";
 
-const { metadata, Page } = createLocalePage({
+const { metadata, Page } = createCourseCategoryPage({
 	locale: "pl",
-	pathname: "/speciality",
-	component: <CourseCategoryPageClient category="speciality" />,
+	category: "speciality",
 	metadata: {
-		title: "Specjalistyczne kursy nurkowania | Kursy SSI – Mariusz Ciupa",
+		title:
+			"Kursy specjalistyczne SSI w Londynie od £99 | Po polsku",
 		description:
-			"Rozwijaj umiejętności nurkowe na kursach SSI: pływalność, nawigacja, suchy skafander, nitrox i nurkowanie nocne.",
+			"Rozwijaj umiejętności na kursach SSI: pływalność, nitrox, głębokie, wrakowe, suchy skafander. 17 specjalizacji od £99.",
 	},
 });
 

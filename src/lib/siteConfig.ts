@@ -6,5 +6,6 @@ export const siteConfig = {
     instagram: 'https://www.instagram.com/scubatravelmario/',
     facebook:
       'https://www.facebook.com/Scuba-Diving-Instructor-Mariusz-109120158449928',
+    googleBusiness: 'https://maps.google.com/?cid=4788106405059250068',
   },
 } as const;

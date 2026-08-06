@@ -1,15 +1,13 @@
-import { CourseCategoryPageClient } from "@/components/pages/CourseCategoryPageClient";
-import { createLocalePage } from "@/app/_pages/createLocalePage";
+import { createCourseCategoryPage } from "@/app/_pages/createCourseCategoryPage";
 
-const { metadata, Page } = createLocalePage({
+const { metadata, Page } = createCourseCategoryPage({
 	locale: "en",
-	pathname: "/beginner",
-	component: <CourseCategoryPageClient category="beginner" />,
+	category: "beginner",
 	metadata: {
 		title:
-			"Beginner Scuba Diving Courses | SSI Open Water & Try Scuba – Mariusz Ciupa",
+			"Learn to Scuba Dive in London | SSI Open Water Diver Course",
 		description:
-			"Start scuba diving from zero with SSI beginner courses. Try Scuba, Open Water Diver and skill refreshers with safety-focused, personal training.",
+			"Start from zero with SSI beginner courses in London. Try Dive £75, full Open Water Diver £550. Personal, safety-first training.",
 	},
 });
 

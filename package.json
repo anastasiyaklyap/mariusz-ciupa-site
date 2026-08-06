@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:prod": "next build && node scripts/check-placeholders.mjs",
     "start": "next start",
     "lint": "eslint"
   },

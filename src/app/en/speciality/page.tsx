@@ -1,15 +1,13 @@
-import { CourseCategoryPageClient } from "@/components/pages/CourseCategoryPageClient";
-import { createLocalePage } from "@/app/_pages/createLocalePage";
+import { createCourseCategoryPage } from "@/app/_pages/createCourseCategoryPage";
 
-const { metadata, Page } = createLocalePage({
+const { metadata, Page } = createCourseCategoryPage({
 	locale: "en",
-	pathname: "/speciality",
-	component: <CourseCategoryPageClient category="speciality" />,
+	category: "speciality",
 	metadata: {
 		title:
-			"Speciality Scuba Diving Courses | SSI Skill & Environment Training – Mariusz Ciupa",
+			"SSI Speciality Diving Courses in London from £99",
 		description:
-			"Improve your diving skills with SSI specialty courses including buoyancy, navigation, dry suit, nitrox and night diving. Focused, personal training.",
+			"Improve your diving with SSI speciality courses: Perfect Buoyancy, Nitrox, Deep, Wreck, Dry Suit and more. 17 courses from £99.",
 	},
 });
 

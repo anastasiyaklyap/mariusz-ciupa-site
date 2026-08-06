@@ -7,9 +7,9 @@ const { metadata, Page } = createLocalePage({
 	component: <HomePageClient localeOverride="pl" />,
 	metadata: {
 		title:
-			"Instruktor nurkowania UK | Kursy SSI (od podstaw do technicznych) – Mariusz Ciupa",
+			"Nauka nurkowania po polsku w Londynie | SSI – Mariusz Ciupa",
 		description:
-			"Indywidualne szkolenia nurkowe w Wielkiej Brytanii, na Lanzarote i w Polsce. Kursy SSI od podstaw do technicznych oraz freediving.",
+			"Kursy nurkowania SSI w Londynie prowadzone po polsku — od pierwszego zanurzenia po nurkowanie techniczne. Ceny od £75. Zapytaj o terminy.",
 	},
 });
 
