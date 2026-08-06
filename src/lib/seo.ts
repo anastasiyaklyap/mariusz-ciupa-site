@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { type Locale } from '@/lib/i18n';
+import { absoluteUrl } from '@/lib/structuredData';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
@@ -46,3 +47,52 @@ export const createLocaleMetadata = (
 ): Metadata => ({
   alternates: createLocaleAlternates(pathname, locale),
 });
+
+const DEFAULT_TITLE = 'Mariusz Ciupa – SSI Scuba Diving Instructor';
+const DEFAULT_DESCRIPTION =
+  'Personal scuba diving training from beginner to technical level.';
+
+const OG_IMAGE = {
+  url: absoluteUrl('/images/og-image.jpg'),
+  width: 1200,
+  height: 630,
+  alt: 'Scuba diving training with Mariusz Ciupa',
+};
+
+type OpenGraphOptions = {
+  pathname: string;
+  locale: Locale;
+  title?: string;
+  description?: string;
+};
+
+export const createOpenGraphMetadata = ({
+  pathname,
+  locale,
+  title,
+  description,
+}: OpenGraphOptions): Metadata => {
+  const resolvedTitle = title ?? DEFAULT_TITLE;
+  const resolvedDescription = description ?? DEFAULT_DESCRIPTION;
+  const normalized = normalizePath(pathname);
+  const path = normalized === '/' ? `/${locale}/` : `/${locale}${normalized}/`;
+
+  return {
+    openGraph: {
+      type: 'website',
+      siteName: DEFAULT_TITLE,
+      title: resolvedTitle,
+      description: resolvedDescription,
+      url: absoluteUrl(path),
+      locale: locale === 'pl' ? 'pl_PL' : 'en_GB',
+      alternateLocale: locale === 'pl' ? ['en_GB'] : ['pl_PL'],
+      images: [OG_IMAGE],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: resolvedTitle,
+      description: resolvedDescription,
+      images: [OG_IMAGE.url],
+    },
+  };
+};

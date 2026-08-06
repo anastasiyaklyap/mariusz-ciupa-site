@@ -5,6 +5,7 @@ const { metadata, Page } = createLocalePage({
 	locale: "pl",
 	pathname: "/cookie-policy",
 	component: <CookiePolicyPageClient />,
+	breadcrumbLabel: "Polityka cookies",
 	metadata: {
 		title: "Polityka cookies | Instruktor nurkowania – Mariusz Ciupa",
 		description:

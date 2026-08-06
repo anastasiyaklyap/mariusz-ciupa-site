@@ -1,10 +1,8 @@
-import { CourseCategoryPageClient } from "@/components/pages/CourseCategoryPageClient";
-import { createLocalePage } from "@/app/_pages/createLocalePage";
+import { createCourseCategoryPage } from "@/app/_pages/createCourseCategoryPage";
 
-const { metadata, Page } = createLocalePage({
+const { metadata, Page } = createCourseCategoryPage({
 	locale: "pl",
-	pathname: "/beginner",
-	component: <CourseCategoryPageClient category="beginner" />,
+	category: "beginner",
 	metadata: {
 		title:
 			"Kursy nurkowania dla początkujących | SSI Open Water – Mariusz Ciupa",

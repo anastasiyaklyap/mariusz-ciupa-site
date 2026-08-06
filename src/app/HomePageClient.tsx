@@ -17,7 +17,8 @@ type HomePageContentProps = {
 };
 
 const HomePageContent = ({ localeOverride }: HomePageContentProps) => {
-  const locale = localeOverride ?? useLocale();
+  const pathLocale = useLocale();
+  const locale = localeOverride ?? pathLocale;
   const copy = siteCopy[locale].home;
 
   useHashScroll();

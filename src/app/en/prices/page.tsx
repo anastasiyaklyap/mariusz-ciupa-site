@@ -5,6 +5,7 @@ const { metadata, Page } = createLocalePage({
 	locale: "en",
 	pathname: "/prices",
 	component: <PricesPageClient />,
+	breadcrumbLabel: "Prices",
 	metadata: {
 		title:
 			"Scuba Diving Course Prices | SSI Courses & Training Costs – Mariusz Ciupa",

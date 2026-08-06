@@ -5,6 +5,7 @@ const { metadata, Page } = createLocalePage({
 	locale: "en",
 	pathname: "/privacy-policy",
 	component: <PrivacyPolicyPageClient />,
+	breadcrumbLabel: "Privacy Policy",
 	metadata: {
 		title: "Privacy Policy | Scuba Diving Instructor – Mariusz Ciupa",
 		description:

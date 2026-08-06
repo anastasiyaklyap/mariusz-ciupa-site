@@ -1,10 +1,8 @@
-import { CourseCategoryPageClient } from "@/components/pages/CourseCategoryPageClient";
-import { createLocalePage } from "@/app/_pages/createLocalePage";
+import { createCourseCategoryPage } from "@/app/_pages/createCourseCategoryPage";
 
-const { metadata, Page } = createLocalePage({
+const { metadata, Page } = createCourseCategoryPage({
 	locale: "en",
-	pathname: "/beginner",
-	component: <CourseCategoryPageClient category="beginner" />,
+	category: "beginner",
 	metadata: {
 		title:
 			"Beginner Scuba Diving Courses | SSI Open Water & Try Scuba – Mariusz Ciupa",

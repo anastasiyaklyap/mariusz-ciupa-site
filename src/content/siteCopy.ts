@@ -2,6 +2,7 @@ export const siteCopy = {
 	en: {
 		common: {
 			locations: "UK · Lanzarote · Poland",
+			breadcrumbHome: "Home",
 			responseTime: "Typical response time: 24–48h",
 			emailLabel: "Email me",
 			menuOpenLabel: "Open menu",
@@ -808,6 +809,7 @@ export const siteCopy = {
 	pl: {
 		common: {
 			locations: "Wielka Brytania · Lanzarote · Polska",
+			breadcrumbHome: "Strona główna",
 			responseTime: "Zwykle odpowiadam w ciągu 24–48 h",
 			emailLabel: "Napisz do mnie",
 			menuOpenLabel: "Otwórz menu",

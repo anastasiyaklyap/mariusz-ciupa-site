@@ -1,10 +1,8 @@
-import { CourseCategoryPageClient } from "@/components/pages/CourseCategoryPageClient";
-import { createLocalePage } from "@/app/_pages/createLocalePage";
+import { createCourseCategoryPage } from "@/app/_pages/createCourseCategoryPage";
 
-const { metadata, Page } = createLocalePage({
+const { metadata, Page } = createCourseCategoryPage({
 	locale: "en",
-	pathname: "/technical",
-	component: <CourseCategoryPageClient category="technical" />,
+	category: "technical",
 	metadata: {
 		title:
 			"Technical Diving Courses | SSI Extended Range & Trimix – Mariusz Ciupa",

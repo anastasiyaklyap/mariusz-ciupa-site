@@ -5,6 +5,7 @@ const { metadata, Page } = createLocalePage({
 	locale: "pl",
 	pathname: "/prices",
 	component: <PricesPageClient />,
+	breadcrumbLabel: "Cennik",
 	metadata: {
 		title: "Cennik kursów nurkowania | Kursy SSI – Mariusz Ciupa",
 		description:

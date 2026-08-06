@@ -5,6 +5,7 @@ const { metadata, Page } = createLocalePage({
 	locale: "en",
 	pathname: "/updates",
 	component: <UpdatesPageClient />,
+	breadcrumbLabel: "Updates",
 	metadata: {
 		title:
 			"Diving Trips & Course Updates | Training Camps and Events – Mariusz Ciupa",
