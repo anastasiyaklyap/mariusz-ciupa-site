@@ -5,9 +5,10 @@ const { metadata, Page } = createLocalePage({
 	locale: "pl",
 	pathname: "/updates",
 	component: <UpdatesPageClient />,
-	breadcrumbLabel: "Aktualności",
+	breadcrumbLabel: "Aktualności i wyjazdy",
 	metadata: {
-		title: "Aktualności i wyjazdy nurkowe | Kursy i wyprawy – Mariusz Ciupa",
+		title:
+			"Wyjazdy nurkowe i terminy kursów | Mariusz Ciupa",
 		description:
 			"Zobacz nadchodzące wyjazdy nurkowe, obozy szkoleniowe oraz najnowsze informacje o kursach i wydarzeniach.",
 	},

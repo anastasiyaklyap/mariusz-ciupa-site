@@ -5,11 +5,12 @@ const { metadata, Page } = createLocalePage({
 	locale: "pl",
 	pathname: "/prices",
 	component: <PricesPageClient />,
-	breadcrumbLabel: "Cennik",
+	breadcrumbLabel: "Cennik kursów nurkowania",
 	metadata: {
-		title: "Cennik kursów nurkowania | Kursy SSI – Mariusz Ciupa",
+		title:
+			"Cennik kursów nurkowania w Londynie | Kursy SSI od £75",
 		description:
-			"Sprawdź ceny kursów nurkowania SSI – od poziomu podstawowego po techniczny i profesjonalny. Jasne koszty i dodatki.",
+			"Pełny cennik kursów SSI: Try Dive £75, Open Water Diver £550, Advanced £395, techniczne od £280. Jasno wypisane dodatkowe koszty.",
 	},
 });
 

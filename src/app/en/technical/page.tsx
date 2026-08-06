@@ -5,9 +5,9 @@ const { metadata, Page } = createCourseCategoryPage({
 	category: "technical",
 	metadata: {
 		title:
-			"Technical Diving Courses | SSI Extended Range & Trimix – Mariusz Ciupa",
+			"SSI Technical Diving Courses from £280 | Extended Range",
 		description:
-			"Advanced technical diving training for deeper and longer dives. SSI extended range, decompression and trimix courses with precision and safety focus.",
+			"SSI technical diving training: decompression, Extended Range, Trimix and advanced wreck diving. From £280. Personal instruction with an SSI XR instructor.",
 	},
 });
 

@@ -1,5 +1,7 @@
 import { CourseCardGrid, type CourseCardData } from './CourseCardGrid';
 import { CourseHero } from './CourseHero';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
+import { siteCopy } from '@/content/siteCopy';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { ContactCta } from '@/components/sections/ContactCta';
 import type { Locale } from '@/lib/i18n';
@@ -36,6 +38,13 @@ export const CoursePage = ({
 }: CoursePageProps) => {
   return (
     <PageContainer>
+      <Breadcrumbs
+        locale={locale}
+        items={[
+          { name: siteCopy[locale].common.breadcrumbHome, path: '/' },
+          { name: hero.title },
+        ]}
+      />
       <CourseHero {...hero} locale={locale} />
       <CourseCardGrid
         courses={courses}

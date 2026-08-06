@@ -3,6 +3,7 @@
 import { Suspense } from 'react';
 import { HomeAbout } from '@/components/home/HomeAbout';
 import { HomeCourses } from '@/components/home/HomeCourses';
+import { HomeDiveSites } from '@/components/home/HomeDiveSites';
 import { HomeHero } from '@/components/home/HomeHero';
 import { HomeQuote } from '@/components/home/HomeQuote';
 import { PageContainer } from '@/components/layout/PageContainer';
@@ -28,6 +29,7 @@ const HomePageContent = ({ localeOverride }: HomePageContentProps) => {
       <HomeHero locale={locale} />
       <HomeQuote locale={locale} />
       <HomeCourses locale={locale} />
+      <HomeDiveSites locale={locale} />
       <HomeAbout locale={locale} />
       <ContactCta
         title={copy.contact.title}

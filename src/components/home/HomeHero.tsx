@@ -22,14 +22,19 @@ export const HomeHero = ({ locale }: HomeHeroProps) => {
           <h1 className='mt-4 text-3xl font-semibold leading-[1.1] tracking-tight sm:text-4xl md:text-6xl'>
             {copy.titlePrimary}{' '}
             <span className='text-[#24C6D9]'>{copy.titleAccent}</span>
+            <span className='mt-2 block text-xl font-medium text-white/85 sm:text-2xl md:text-3xl'>
+              {copy.withInstructor}
+            </span>
           </h1>
+
+          <p className='mt-5 inline-flex items-center rounded-full border border-[#24C6D9]/40 bg-[#24C6D9]/10 px-4 py-1.5 text-xs font-semibold tracking-[0.16em] text-[#24C6D9]'>
+            {siteConfig.role}
+          </p>
 
           <p className='mt-4 max-w-xl text-sm text-white/75 sm:text-base'>
             {copy.subtitle}
           </p>
-          <p className='mt-6 text-sm text-white/60'>
-            {common.locations} · {siteConfig.role}
-          </p>
+          <p className='mt-6 text-sm text-white/60'>{common.locations}</p>
 
           <div className='mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4'>
             <CtaLink

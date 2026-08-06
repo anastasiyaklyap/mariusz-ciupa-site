@@ -3,6 +3,7 @@
 import { PageContainer } from '@/components/layout/PageContainer';
 import { SectionSurface } from '@/components/sections/SectionSurface';
 import { ContactCta } from '@/components/sections/ContactCta';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { siteCopy } from '@/content/siteCopy';
 import { useLocale } from '@/hooks/useLocale';
 import type { Locale } from '@/lib/i18n';
@@ -24,6 +25,13 @@ export const PricesPageClient = () => {
 
   return (
     <PageContainer>
+      <Breadcrumbs
+        locale={locale}
+        items={[
+          { name: siteCopy[locale].common.breadcrumbHome, path: '/' },
+          { name: copy.hero.title },
+        ]}
+      />
       <SectionSurface withGlow>
         <p className='text-xs font-medium tracking-[0.2em] text-white/50'>
           {copy.hero.eyebrow}

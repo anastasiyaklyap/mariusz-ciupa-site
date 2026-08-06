@@ -6,6 +6,7 @@ import { PageContainer } from '@/components/layout/PageContainer';
 import { SectionSurface } from '@/components/sections/SectionSurface';
 import { ContactCta } from '@/components/sections/ContactCta';
 import { CtaLink } from '@/components/ui/CtaLink';
+import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { siteCopy } from '@/content/siteCopy';
 import { useLocale } from '@/hooks/useLocale';
 import { assetPath } from '@/lib/assetPath';
@@ -42,6 +43,13 @@ export const UpdatesPageClient = () => {
 
   return (
     <PageContainer>
+      <Breadcrumbs
+        locale={locale}
+        items={[
+          { name: siteCopy[locale].common.breadcrumbHome, path: '/' },
+          { name: copy.hero.title },
+        ]}
+      />
       <SectionSurface withGlow>
         <p className='text-xs font-medium tracking-[0.2em] text-white/50'>
           {copy.hero.eyebrow}

@@ -5,9 +5,9 @@ const { metadata, Page } = createCourseCategoryPage({
 	category: "beginner",
 	metadata: {
 		title:
-			"Kursy nurkowania dla początkujących | SSI Open Water – Mariusz Ciupa",
+			"Kurs nurkowania od podstaw w Londynie | SSI Open Water",
 		description:
-			"Rozpocznij naukę nurkowania od zera dzięki kursom SSI dla początkujących. Try Scuba, Open Water Diver i kursy odświeżające.",
+			"Zacznij nurkować od zera z polskim instruktorem SSI w Londynie. Try Dive £75, pełny kurs Open Water Diver £550. Szkolenie indywidualne.",
 	},
 });
 

@@ -36,6 +36,11 @@ export const getHeaderNavLinks = (locale: Locale): HeaderNavLink[] => {
       href: withLocaleHref(linkPath('/prices'), locale),
     },
     {
+      id: 'gallery',
+      label: labels.gallery,
+      href: withLocaleHref(linkPath('/gallery'), locale),
+    },
+    {
       id: 'updates',
       label: labels.updates,
       href: withLocaleHref(linkPath('/updates'), locale),

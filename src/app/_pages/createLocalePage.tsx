@@ -20,6 +20,7 @@ type CreateLocalePageOptions = {
   metadata?: Metadata;
   structuredData?: readonly unknown[];
   breadcrumbLabel?: string;
+  breadcrumbParents?: readonly { name: string; path: string }[];
 };
 
 export const createLocalePage = ({
@@ -29,6 +30,7 @@ export const createLocalePage = ({
   metadata,
   structuredData = [],
   breadcrumbLabel,
+  breadcrumbParents = [],
 }: CreateLocalePageOptions): {
   metadata: Metadata;
   Page: () => ReactElement;
@@ -55,6 +57,7 @@ export const createLocalePage = ({
       ? [
           buildBreadcrumbSchema(locale, [
             { name: siteCopy[locale].common.breadcrumbHome, path: '/' },
+            ...breadcrumbParents,
             { name: breadcrumbLabel, path: pathname },
           ]),
         ]

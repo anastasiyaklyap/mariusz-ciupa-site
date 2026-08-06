@@ -4,9 +4,10 @@ const { metadata, Page } = createCourseCategoryPage({
 	locale: "pl",
 	category: "technical",
 	metadata: {
-		title: "Kursy nurkowania technicznego | SSI Extended Range – Mariusz Ciupa",
+		title:
+			"Kursy nurkowania technicznego SSI od £280 | Extended Range",
 		description:
-			"Zaawansowane szkolenia nurkowe SSI dla głębszych i dłuższych nurkowań. Kursy extended range, dekompresyjne i trimix.",
+			"Szkolenia techniczne SSI po polsku: dekompresja, Extended Range, trimix, wraki zaawansowane. Od £280. Instruktor SSI XR.",
 	},
 });
 

@@ -7,9 +7,9 @@ const { metadata, Page } = createLocalePage({
 	component: <HomePageClient localeOverride="en" />,
 	metadata: {
 		title:
-			"Scuba Diving Instructor UK | SSI Courses (Beginner to Technical) – Mariusz Ciupa",
+			"Learn to Scuba Dive in London | SSI Courses – Mariusz Ciupa",
 		description:
-			"Personal scuba diving training in the UK, Lanzarote and Poland. SSI courses from beginner to technical level, plus freediving. Ask about availability.",
+			"Learn to dive with a personal SSI instructor in London. Courses from beginner to technical level, plus freediving. Prices from £75 — ask about availability.",
 	},
 });
 

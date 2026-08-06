@@ -173,6 +173,7 @@ export const siteCopy = {
 			nav: {
 				courses: "Courses",
 				prices: "Prices",
+				gallery: "Gallery",
 				updates: "Updates",
 				about: "About",
 				contact: "Contact",
@@ -181,8 +182,9 @@ export const siteCopy = {
 		},
 		home: {
 			hero: {
-				titlePrimary: "Mariusz",
-				titleAccent: "Ciupa",
+				titlePrimary: "Learn to Scuba Dive in",
+				titleAccent: "London",
+				withInstructor: "with Mariusz Ciupa",
 				subtitle:
 					"Personal diving training — from your first dive to advanced technical courses and freediving.",
 				ctaPrimary: "View courses",
@@ -226,6 +228,48 @@ export const siteCopy = {
 						tag: "Go beyond limits",
 						imageSrc: "/images/courses-technical.jpg",
 						link: "/technical",
+					},
+				],
+			},
+			diveSites: {
+				eyebrow: "WHERE WE DIVE",
+				title: "The places I take divers",
+				description:
+					"Training happens in the water, not in a classroom. These are the sites I run courses and trips at.",
+				ctaLabel: "See the gallery",
+				items: [
+					{
+						name: "Pool sessions",
+						region: "London",
+						todo: "nazwa basenu i dzielnica Londynu",
+					},
+					{
+						name: "Wraysbury",
+						region: "Near London, UK",
+						description:
+							"The closest open water to London, used alongside Stoney Cove for speciality and technical course dives.",
+						confirmed: true,
+					},
+					{
+						name: "Stoney Cove Quarry",
+						region: "Leicestershire, UK",
+						description:
+							"One of the UK's best known inland dive sites, and where SSI Divemaster candidates put their training together. Sheltered water, good depth and plenty to explore below the surface.",
+						confirmed: true,
+					},
+					{
+						name: "Vobster Quay",
+						region: "Radstock, Somerset, UK",
+						description:
+							"Deep, clear inland water — where the SSI Extended Range and technical courses take place.",
+						confirmed: true,
+					},
+					{
+						name: "Lanzarote",
+						region: "Canary Islands, Spain",
+						description:
+							"Warm water training and dive trips, run together with Bonito Diving Center.",
+						confirmed: true,
 					},
 				],
 			},
@@ -279,6 +323,7 @@ export const siteCopy = {
 				readMore: "Read more",
 				showLess: "Show less",
 				ctaLabel: "Ask about availability",
+				detailLabel: "Course details",
 				defaultTag: "Course",
 				priceLabel: "Price",
 				extrasLabel: "Extras:",
@@ -286,7 +331,7 @@ export const siteCopy = {
 		},
 		beginner: {
 			hero: {
-				title: "Beginner Diving Courses",
+				title: "Beginner Scuba Diving Courses in London",
 				description:
 					"Start from zero, learn the basics step by step, and build calm, confident diving skills with a safety-first approach.",
 				tags: ["No experience needed", "Small groups"],
@@ -302,6 +347,7 @@ export const siteCopy = {
 				},
 				{
 					title: "SSI Open Water Diver",
+					detailHref: "/beginner/open-water-diver",
 					description:
 						"Become a certified Open Water Diver with SSI. \nThis globally recognized certification program is the best way to begin your lifelong adventures as a certified scuba diver. Personalized training is combined with in-water practice sessions to ensure you have the skills and experience required to become truly comfortable underwater. You will earn the SSI Open Water Diver certification.",
 					imageSrc: "/images/courses/open-water.jpg",
@@ -337,6 +383,58 @@ export const siteCopy = {
 				title: "Want to start with beginner training?",
 				description:
 					"Tell me your level, preferred location and dates — I’ll suggest the best first steps for you.",
+			},
+		},
+		courseDetail: {
+			openWaterDiver: {
+				slug: "open-water-diver",
+				eyebrow: "BEGINNER COURSE",
+				title: "SSI Open Water Diver Course in London",
+				description:
+					"Become a certified Open Water Diver with SSI. \nThis globally recognized certification program is the best way to begin your lifelong adventures as a certified scuba diver. Personalized training is combined with in-water practice sessions to ensure you have the skills and experience required to become truly comfortable underwater. You will earn the SSI Open Water Diver certification.",
+				imageSrc: "/images/courses/open-water.jpg",
+				tags: ["No experience needed", "Globally recognised", "Personal training"],
+				priceLabel: "Course price",
+				price: { amount: 550, currency: "GBP" },
+				priceNote:
+					"Indicative price. Ask for a quote covering your dates and location.",
+				practical: {
+					title: "How the course works",
+					description:
+						"Everything you need to plan around the course — how long it takes, where it happens and what the price covers.",
+					rows: [
+						{
+							label: "Theory",
+							draft: "SSI digital learning — online, at your own pace before we meet in the water.",
+						},
+						{ label: "Pool sessions", todo: "ile sesji, na którym basenie" },
+						{
+							label: "Open water dives",
+							draft: "Four open water training dives, as required for SSI certification.",
+						},
+						{ label: "How long it takes", todo: "ile dni lub weekendów" },
+						{ label: "Included in the price", todo: "sprzęt, materiały, certyfikat?" },
+						{ label: "Paid separately", todo: "wstęp na akwen, butle, transport?" },
+						{
+							label: "Available dates",
+							draft: "Scheduled course dates run through the year, and I also arrange courses individually — tell me what suits you.",
+						},
+					],
+				},
+				afterEyebrow: "THE PAYOFF",
+				afterTitle: "Once you are certified, you can",
+				afterCtaLabel: "Ask about availability",
+				afterItems: [
+					"Dive with a qualified buddy, without an instructor",
+					"Dive to a maximum depth of 18 metres",
+					"Rent equipment and join dive trips worldwide",
+					"Continue with speciality courses such as Perfect Buoyancy or Deep Diving",
+				],
+				contact: {
+					title: "Ready to start your Open Water Diver course?",
+					description:
+						"Tell me your preferred dates and I will plan the course around them.",
+				},
 			},
 		},
 		speciality: {
@@ -628,10 +726,60 @@ export const siteCopy = {
 		footer: {
 			rights: "All rights reserved.",
 		},
+		gallery: {
+			eyebrow: "GALLERY",
+			title: "Diving with Mariusz",
+			description:
+				"Training days at UK dive sites — kit, cold water and the moments in between.",
+			items: [
+				{
+					src: "/images/gallery/stoney-cove-divemaster.jpg",
+					alt: "SSI Divemaster candidates in drysuits at Stoney Cove Quarry",
+					caption:
+						"SSI Divemaster candidates at Stoney Cove Quarry, one of the UK's best known inland dive sites.",
+					place: "Stoney Cove, Leicestershire",
+				},
+				{
+					src: "/images/gallery/briefing.jpg",
+					alt: "Dive briefing before entering the water",
+					caption:
+						"Every successful dive starts with a proper briefing — planning, risk assessment and clear objectives.",
+					place: "Stoney Cove, Leicestershire",
+				},
+				{
+					src: "/images/gallery/waterline.jpg",
+					alt: "Diver at the surface, mask above the waterline",
+					caption:
+						"That instant when your eyes meet the waterline. One breath, one final check, one last look at the world above.",
+					place: "",
+				},
+				{
+					src: "/images/gallery/drysuit-team.jpg",
+					alt: "Two divers in drysuits at a UK quarry",
+					caption:
+						"Drysuits, twinsets and cold water — how most UK training days actually look.",
+					place: "United Kingdom",
+				},
+				{
+					src: "/images/gallery/surfacing.jpg",
+					alt: "Diver surfacing after a training dive",
+					caption:
+						"Back on the surface after a training dive. The debrief matters as much as the dive itself.",
+					place: "United Kingdom",
+				},
+				{
+					src: "/images/gallery/pool.jpg",
+					alt: "Pool training session",
+					caption:
+						"Pool sessions come first — mask skills, buoyancy and buddy drills, long before the open water.",
+					place: "London",
+				},
+			],
+		},
 		prices: {
 			hero: {
 				eyebrow: "PRICES",
-				title: "Diving Courses",
+				title: "Scuba Diving Course Prices",
 				description:
 					"See our scuba diving courses along with their prices and any additional costs.",
 				badges: [
@@ -988,6 +1136,7 @@ export const siteCopy = {
 			nav: {
 				courses: "Kursy",
 				prices: "Cennik",
+				gallery: "Galeria",
 				updates: "Aktualności",
 				about: "O mnie",
 				contact: "Kontakt",
@@ -996,8 +1145,9 @@ export const siteCopy = {
 		},
 		home: {
 			hero: {
-				titlePrimary: "Mariusz",
-				titleAccent: "Ciupa",
+				titlePrimary: "Nauka nurkowania w",
+				titleAccent: "Londynie",
+				withInstructor: "z Mariuszem Ciupą",
 				subtitle:
 					"Trening nurkowy od pierwszego zanurzenia po zaawansowane kursy techniczne oraz freediving.",
 				ctaPrimary: "Zobacz kursy",
@@ -1041,6 +1191,48 @@ export const siteCopy = {
 						tag: "Przekrocz granice",
 						imageSrc: "/images/courses-technical.jpg",
 						link: "/technical",
+					},
+				],
+			},
+			diveSites: {
+				eyebrow: "GDZIE NURKUJEMY",
+				title: "Miejsca, do których zabieram nurków",
+				description:
+					"Szkolenie dzieje się w wodzie, nie w sali. To akweny, na których prowadzę kursy i wyjazdy.",
+				ctaLabel: "Zobacz galerię",
+				items: [
+					{
+						name: "Zajęcia basenowe",
+						region: "Londyn",
+						todo: "nazwa basenu i dzielnica Londynu",
+					},
+					{
+						name: "Wraysbury",
+						region: "Pod Londynem, Wielka Brytania",
+						description:
+							"Najbliższy Londynowi akwen otwarty, używany razem ze Stoney Cove przy kursach specjalistycznych i technicznych.",
+						confirmed: true,
+					},
+					{
+						name: "Kamieniołom Stoney Cove",
+						region: "Leicestershire, Wielka Brytania",
+						description:
+							"Jeden z najbardziej znanych akwenów śródlądowych w Wielkiej Brytanii i miejsce, w którym kandydaci na SSI Divemastera składają szkolenie w całość. Osłonięta woda, przyzwoita głębokość i sporo do zobaczenia pod powierzchnią.",
+						confirmed: true,
+					},
+					{
+						name: "Vobster Quay",
+						region: "Radstock, Somerset, Wielka Brytania",
+						description:
+							"Głęboka, przejrzysta woda śródlądowa — tu odbywają się kursy SSI Extended Range i techniczne.",
+						confirmed: true,
+					},
+					{
+						name: "Lanzarote",
+						region: "Wyspy Kanaryjskie, Hiszpania",
+						description:
+							"Szkolenia i wyjazdy nurkowe w ciepłej wodzie, prowadzone razem z Bonito Diving Center.",
+						confirmed: true,
 					},
 				],
 			},
@@ -1094,6 +1286,7 @@ export const siteCopy = {
 				readMore: "Czytaj więcej",
 				showLess: "Pokaż mniej",
 				ctaLabel: "Zapytaj o dostępność",
+				detailLabel: "Szczegóły kursu",
 				defaultTag: "Kurs",
 				priceLabel: "Cena",
 				extrasLabel: "Dodatkowo:",
@@ -1101,7 +1294,7 @@ export const siteCopy = {
 		},
 		beginner: {
 			hero: {
-				title: "Kursy nurkowe dla początkujących",
+				title: "Kursy nurkowania dla początkujących w Londynie",
 				description:
 					"Zacznij od zera, ucz się krok po kroku i buduj spokojne, pewne umiejętności nurkowe z naciskiem na bezpieczeństwo.",
 				tags: ["Nie wymaga doświadczenia", "Małe grupy"],
@@ -1117,6 +1310,7 @@ export const siteCopy = {
 				},
 				{
 					title: "SSI Open Water Diver",
+					detailHref: "/beginner/open-water-diver",
 					description:
 						"Zostań certyfikowanym nurkiem Open Water Diver SSI. \nTen uznawany na całym świecie program certyfikacyjny to najlepszy sposób, aby rozpocząć swoją przygodę z nurkowaniem jako certyfikowany nurek. Spersonalizowane szkolenie połączone jest z praktycznymi zajęciami w wodzie, aby zapewnić Ci umiejętności i doświadczenie niezbędne do swobodnego poruszania się pod wodą. Po ukończeniu szkolenia otrzymasz certyfikat SSI Open Water Diver.",
 					imageSrc: "/images/courses/open-water.jpg",
@@ -1154,9 +1348,61 @@ export const siteCopy = {
 					"Powiedz mi, jaki masz poziom, preferowaną lokalizację i terminy — zaproponuję najlepsze pierwsze kroki.",
 			},
 		},
+		courseDetail: {
+			openWaterDiver: {
+				slug: "open-water-diver",
+				eyebrow: "KURS PODSTAWOWY",
+				title: "Kurs SSI Open Water Diver w Londynie",
+				description:
+					"Zostań certyfikowanym nurkiem Open Water Diver SSI. \nTen uznawany na całym świecie program certyfikacyjny to najlepszy sposób, aby rozpocząć swoją przygodę z nurkowaniem jako certyfikowany nurek. Spersonalizowane szkolenie połączone jest z praktycznymi zajęciami w wodzie, aby zapewnić Ci umiejętności i doświadczenie niezbędne do swobodnego poruszania się pod wodą.",
+				imageSrc: "/images/courses/open-water.jpg",
+				tags: ["Bez doświadczenia", "Certyfikat uznawany na świecie", "Szkolenie indywidualne"],
+				priceLabel: "Cena kursu",
+				price: { amount: 550, currency: "GBP" },
+				priceNote:
+					"Cena orientacyjna. Zapytaj o wycenę dla swoich terminów i lokalizacji.",
+				practical: {
+					title: "Jak wygląda kurs",
+					description:
+						"Wszystko, czego potrzebujesz, żeby zaplanować kurs — ile trwa, gdzie się odbywa i co zawiera cena.",
+					rows: [
+						{
+							label: "Teoria",
+							draft: "SSI digital learning — online, we własnym tempie, przed spotkaniem w wodzie.",
+						},
+						{ label: "Sesje basenowe", todo: "ile sesji, na którym basenie" },
+						{
+							label: "Nurkowania w wodach otwartych",
+							draft: "Cztery nurkowania szkoleniowe, zgodnie z wymaganiami certyfikacji SSI.",
+						},
+						{ label: "Ile trwa", todo: "ile dni lub weekendów" },
+						{ label: "W cenie", todo: "sprzęt, materiały, certyfikat?" },
+						{ label: "Płatne osobno", todo: "wstęp na akwen, butle, dojazd?" },
+						{
+							label: "Terminy",
+							draft: "Kursy odbywają się w stałych terminach w ciągu roku, a poza nimi ustalam je indywidualnie — napisz, kiedy Ci pasuje.",
+						},
+					],
+				},
+				afterEyebrow: "PO CO TO WSZYSTKO",
+				afterTitle: "Po zdobyciu certyfikatu możesz",
+				afterCtaLabel: "Zapytaj o dostępność",
+				afterItems: [
+					"Nurkować z partnerem, bez instruktora",
+					"Nurkować do maksymalnej głębokości 18 metrów",
+					"Wypożyczać sprzęt i jeździć na wyjazdy nurkowe na całym świecie",
+					"Kontynuować naukę na kursach specjalistycznych, np. Perfect Buoyancy czy Deep Diving",
+				],
+				contact: {
+					title: "Gotowy na kurs Open Water Diver?",
+					description:
+						"Napisz, kiedy Ci pasuje, a zaplanuję kurs pod Twoje terminy.",
+				},
+			},
+		},
 		speciality: {
 			hero: {
-				title: "Specialty Diving Courses",
+				title: "Kursy specjalistyczne nurkowania",
 				description:
 					"Skup się na konkretnych umiejętnościach i środowiskach oraz rozwijaj swoje nurkowanie dzięki ukierunkowanemu szkoleniu, zaprojektowanemu tak, aby poprawić kontrolę, świadomość i doświadczenie pod wodą.",
 				tags: ["Rozwój umiejętności", "Różnorodne środowiska"],
@@ -1459,10 +1705,60 @@ export const siteCopy = {
 		footer: {
 			rights: "Wszelkie prawa zastrzeżone.",
 		},
+		gallery: {
+			eyebrow: "GALERIA",
+			title: "Nurkowanie z Mariuszem",
+			description:
+				"Dni szkoleniowe na brytyjskich akwenach — sprzęt, zimna woda i chwile pomiędzy.",
+			items: [
+				{
+					src: "/images/gallery/stoney-cove-divemaster.jpg",
+					alt: "Kandydaci na SSI Divemastera w suchych skafandrach na Stoney Cove",
+					caption:
+						"Kandydaci na SSI Divemastera na kamieniołomie Stoney Cove — jednym z najbardziej znanych akwenów w Wielkiej Brytanii.",
+					place: "Stoney Cove, Leicestershire",
+				},
+				{
+					src: "/images/gallery/briefing.jpg",
+					alt: "Briefing przed nurkowaniem",
+					caption:
+						"Każde udane nurkowanie zaczyna się od porządnego briefingu — planowania, oceny ryzyka i jasnych celów.",
+					place: "Stoney Cove, Leicestershire",
+				},
+				{
+					src: "/images/gallery/waterline.jpg",
+					alt: "Nurek na powierzchni, maska nad lustrem wody",
+					caption:
+						"Ta chwila, gdy oczy zrównują się z lustrem wody. Jeden oddech, ostatnie sprawdzenie, ostatnie spojrzenie na świat powyżej.",
+					place: "",
+				},
+				{
+					src: "/images/gallery/drysuit-team.jpg",
+					alt: "Dwóch nurków w suchych skafandrach na brytyjskim akwenie",
+					caption:
+						"Suche skafandry, twinsety i zimna woda — tak naprawdę wygląda większość dni szkoleniowych w UK.",
+					place: "Wielka Brytania",
+				},
+				{
+					src: "/images/gallery/surfacing.jpg",
+					alt: "Nurek wynurzający się po nurkowaniu szkoleniowym",
+					caption:
+						"Powrót na powierzchnię po nurkowaniu szkoleniowym. Omówienie po wyjściu z wody liczy się tak samo jak samo nurkowanie.",
+					place: "Wielka Brytania",
+				},
+				{
+					src: "/images/gallery/pool.jpg",
+					alt: "Szkolenie na basenie",
+					caption:
+						"Najpierw basen — maska, pływalność i ćwiczenia w parach, na długo przed wodami otwartymi.",
+					place: "Londyn",
+				},
+			],
+		},
 		prices: {
 			hero: {
 				eyebrow: "CENNIK",
-				title: "Kursy nurkowe",
+				title: "Cennik kursów nurkowania",
 				titleAccent: "Cennik",
 				description:
 					"Sprawdź dostępne kursy nurkowe wraz z cenami i ewentualnymi dodatkowymi kosztami.",

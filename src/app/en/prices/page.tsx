@@ -5,12 +5,12 @@ const { metadata, Page } = createLocalePage({
 	locale: "en",
 	pathname: "/prices",
 	component: <PricesPageClient />,
-	breadcrumbLabel: "Prices",
+	breadcrumbLabel: "Scuba Diving Course Prices",
 	metadata: {
 		title:
-			"Scuba Diving Course Prices | SSI Courses & Training Costs – Mariusz Ciupa",
+			"Scuba Diving Course Prices in London | SSI Courses from £75",
 		description:
-			"Check scuba diving course prices for SSI beginner, specialty, technical and professional training. Transparent costs and optional extras.",
+			"Full price list for SSI diving courses: Try Dive £75, Open Water Diver £550, Advanced £395, technical from £280. Extras listed clearly.",
 	},
 });
 

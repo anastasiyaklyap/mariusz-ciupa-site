@@ -13,6 +13,7 @@ export type CourseCardData = {
   description: string;
   imageSrc: string;
   tag?: string;
+  detailHref?: string;
   priceText?: string;
   price?: {
     amount: number;
@@ -155,7 +156,18 @@ export const CourseCardGrid = ({
                   </div>
                 ) : null}
 
-                <div className='mt-auto pt-6'>
+                <div className='mt-auto flex flex-wrap items-center gap-2 pt-6'>
+                  {course.detailHref ? (
+                    <CtaLink
+                      href={withLocaleHref(course.detailHref, locale)}
+                      variant='outline'
+                      size='sm'
+                      className='gap-2'
+                    >
+                      {copy.detailLabel} <span aria-hidden>→</span>
+                    </CtaLink>
+                  ) : null}
+
                   <CtaLink
                     href={withLocaleHref(ctaHref, locale)}
                     variant='ghost'
