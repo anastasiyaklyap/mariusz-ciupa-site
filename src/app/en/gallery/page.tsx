@@ -7,7 +7,7 @@ const { metadata, Page } = createLocalePage({
   component: <GalleryPageClient />,
   breadcrumbLabel: 'Diving with Mariusz',
   metadata: {
-    title: 'Diving Gallery | Stoney Cove, Lanzarote & Training Days',
+    title: 'Diving Gallery | Stoney Cove, Wraysbury & Training Days',
     description:
       'Photos from real training days — SSI courses at Stoney Cove, Wraysbury and Vobster Quay, plus pool sessions in London.',
   },

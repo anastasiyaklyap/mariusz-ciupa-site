@@ -7,7 +7,7 @@ const { metadata, Page } = createLocalePage({
   component: <GalleryPageClient />,
   breadcrumbLabel: 'Nurkowanie z Mariuszem',
   metadata: {
-    title: 'Galeria nurkowa | Stoney Cove, Lanzarote i szkolenia',
+    title: 'Galeria nurkowa | Stoney Cove, Wraysbury i szkolenia',
     description:
       'Zdjęcia z prawdziwych dni szkoleniowych — kursy SSI na Stoney Cove, Wraysbury i Vobster Quay oraz zajęcia basenowe w Londynie.',
   },
