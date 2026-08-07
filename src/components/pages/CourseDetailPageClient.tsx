@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { SectionSurface } from '@/components/sections/SectionSurface';
 import { ContactCta } from '@/components/sections/ContactCta';
+import { Testimonials } from '@/components/sections/Testimonials';
 import {
   CoursePractical,
   type CoursePracticalData,
@@ -134,6 +135,7 @@ export const CourseDetailPageClient = ({
         </div>
       </section>
 
+      <Testimonials locale={locale} />
       <ContactCta
         title={copy.contact.title}
         description={copy.contact.description}

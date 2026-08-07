@@ -3,6 +3,10 @@ export const siteConfig = {
   role: 'SSI DIVEMASTER INSTRUCTOR XR',
   email: 'mariuszciupa1969@gmail.com',
   formAccessKey: '79242603-4593-49b6-98e9-092aa8fb544f',
+  reviewsCheckedAt: {
+    en: 'August 2026',
+    pl: 'sierpień 2026',
+  },
   socials: {
     instagram: 'https://www.instagram.com/scubatravelmario/',
     facebook:

@@ -219,6 +219,34 @@ export const siteCopy = {
 			},
 			ctaLabel: "Book / Ask",
 		},
+		testimonials: {
+			eyebrow: "WHAT DIVERS SAY",
+			title: "Rated 5.0 on Google",
+			description:
+				"Reviews left on the Google Business Profile, quoted as written. Follow the link to read them at the source.",
+			ctaLabel: "Read all reviews on Google",
+			asOf: "Quoted as they stood in {date}. Google is the live source.",
+			items: [
+				{
+					author: "Paula Z.",
+					meta: "Local Guide · 18 reviews",
+					quote:
+						"Mariusz is an exceptional diving instructor! I completed diving classes with him in Lanzarote, and his professionalism, patience, and passion for diving made the experience unforgettable. He explained everything clearly, ensured we felt safe, and tailored the course to suit our needs.",
+				},
+				{
+					author: "Sylwia D.",
+					meta: "Google review",
+					quote:
+						"Mariusz is the diving instructor you want, knowledgeable, patient and genuinely passionate. From the first briefing to the dive itself, he made everything feel smooth and effortless. Whether you're a first-timer or an experienced diver, Mariusz makes sure you have an amazing experience.",
+				},
+				{
+					author: "Jakub U.",
+					meta: "Local Guide · 19 reviews",
+					quote:
+						"From the very beginning, you can see professionalism and great knowledge. The training is conducted in a very professional and detailed manner. I am very pleased with the training with Mariusz, I highly recommend it.",
+				},
+			],
+		},
 		home: {
 			hero: {
 				titlePrimary: "Learn to Scuba Dive in",
@@ -1224,6 +1252,34 @@ export const siteCopy = {
 				contact: "Kontakt",
 			},
 			ctaLabel: "Zarezerwuj / Zapytaj",
+		},
+		testimonials: {
+			eyebrow: "CO MÓWIĄ KURSANCI",
+			title: "Ocena 5,0 w Google",
+			description:
+				"Opinie zostawione na wizytówce Google, cytowane bez zmian. Pod linkiem można je przeczytać u źródła.",
+			ctaLabel: "Przeczytaj wszystkie opinie w Google",
+			asOf: "Cytaty według stanu na {date}. Aktualne opinie są w Google.",
+			items: [
+				{
+					author: "Paweł T.",
+					meta: "Opinia w Google",
+					quote:
+						"Profesjonalizm i doświadczenie, rzetelne przekazanie instrukcji przed nurkowaniem, duża cierpliwość, super komunikacja — Mariusz posiada wszystkie te cechy. W trakcie nurkowania czułem się pewnie i bezpiecznie. Polecam w 100%.",
+				},
+				{
+					author: "Angelika J.",
+					meta: "Opinia w Google",
+					quote:
+						"Mariusz ma wszystkie zalety dobrego instruktora — jest opanowany, rzeczowy i bardzo pomocny. Potrafi prowadzić szkolenia bez zanudzania, w miłej atmosferze. Polecam!",
+				},
+				{
+					author: "Jakub U.",
+					meta: "Lokalny przewodnik · 19 opinii",
+					quote:
+						"Od samego początku widać profesjonalizm i dużą wiedzę. Szkolenia prowadzone są bardzo profesjonalnie i szczegółowo. Jestem bardzo zadowolony ze szkoleń z Mariuszem, polecam serdecznie.",
+				},
+			],
 		},
 		home: {
 			hero: {
