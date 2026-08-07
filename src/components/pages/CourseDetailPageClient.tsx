@@ -17,7 +17,11 @@ import { assetPath } from '@/lib/assetPath';
 import type { Locale } from '@/lib/i18n';
 
 type CourseDetailPageClientProps = {
-  course: 'openWaterDiver';
+  course:
+    | 'openWaterDiver'
+    | 'divemaster'
+    | 'tryScuba'
+    | 'advancedOpenWaterDiver';
 };
 
 const formatPrice = (
