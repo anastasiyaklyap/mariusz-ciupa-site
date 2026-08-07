@@ -14,6 +14,7 @@ import {
   getHeaderCtaLink,
   getHeaderNavLinks,
   headerSectionIds,
+  isNavLinkActive,
   type HeaderSectionId,
 } from './header/headerLinks';
 import { useLocale } from '@/hooks/useLocale';
@@ -116,11 +117,12 @@ export const Header = () => {
                 key={link.id}
                 href={link.href}
                 label={link.label}
-                isActive={
-                  link.sectionId
-                    ? activeSection === link.sectionId
-                    : pathname.endsWith(link.href.split('?')[0].split('#')[0])
-                }
+                isActive={isNavLinkActive({
+                  link,
+                  pathname,
+                  locale,
+                  activeSection,
+                })}
               />
             ))}
           </nav>
@@ -154,6 +156,11 @@ export const Header = () => {
         <HeaderMobileMenu
           menuRef={menuRef}
           links={headerNavLinks}
+          activeIds={headerNavLinks
+            .filter((link) =>
+              isNavLinkActive({ link, pathname, locale, activeSection }),
+            )
+            .map((link) => link.id)}
           cta={headerCtaLink}
           onClose={() => setIsMenuOpen(false)}
         />

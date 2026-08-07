@@ -14,6 +14,7 @@ export const HeaderNavLink = ({
   return (
     <a
       href={href}
+      aria-current={isActive ? 'page' : undefined}
       className={classNames(
         'bg-[linear-gradient(#24C6D9,#24C6D9)] bg-left-bottom bg-no-repeat pb-1',
         'bg-[length:0%_2px] text-white/75 transition-[background-size,color] duration-300',

@@ -8,6 +8,7 @@ import { HomeHero } from '@/components/home/HomeHero';
 import { HomeQuote } from '@/components/home/HomeQuote';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { ContactCta } from '@/components/sections/ContactCta';
+import { Faq } from '@/components/sections/Faq';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { siteCopy } from '@/content/siteCopy';
 import { useHashScroll } from '@/hooks/useHashScroll';
@@ -32,6 +33,7 @@ const HomePageContent = ({ localeOverride }: HomePageContentProps) => {
       <HomeCourses locale={locale} />
       <HomeDiveSites locale={locale} />
       <HomeAbout locale={locale} />
+      <Faq locale={locale} tag='home' />
       <Testimonials locale={locale} />
       <ContactCta
         title={copy.contact.title}
