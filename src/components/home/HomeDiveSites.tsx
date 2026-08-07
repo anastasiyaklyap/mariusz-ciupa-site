@@ -1,5 +1,4 @@
 import { CtaLink } from '@/components/ui/CtaLink';
-import { Placeholder } from '@/components/ui/Placeholder';
 import { siteCopy } from '@/content/siteCopy';
 import { linkPath } from '@/lib/linkPath';
 import { withLocaleHref, type Locale } from '@/lib/i18n';
@@ -32,11 +31,7 @@ export const HomeDiveSites = ({ locale }: HomeDiveSitesProps) => {
                 <span className='text-xs text-[#24C6D9]'>{item.region}</span>
               </dt>
               <dd className='mt-1 text-sm leading-relaxed text-white/70'>
-                {'description' in item ? (
-                  item.description
-                ) : (
-                  <Placeholder>{item.todo}</Placeholder>
-                )}
+                {item.description}
               </dd>
             </div>
           ))}

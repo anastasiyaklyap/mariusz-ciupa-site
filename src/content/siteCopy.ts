@@ -241,7 +241,9 @@ export const siteCopy = {
 					{
 						name: "Pool sessions",
 						region: "London",
-						todo: "nazwa basenu i dzielnica Londynu",
+						description:
+							"Confined water training in London. The venue is arranged for each course, so it fits the group and the dates.",
+						confirmed: true,
 					},
 					{
 						name: "Wraysbury",
@@ -405,19 +407,22 @@ export const siteCopy = {
 					rows: [
 						{
 							label: "Theory",
-							draft: "SSI digital learning — online, at your own pace before we meet in the water.",
+							text: "SSI digital learning — online, at your own pace before we meet in the water.",
 						},
-						{ label: "Pool sessions", todo: "ile sesji, na którym basenie" },
+						{
+							label: "Pool sessions",
+							text: "In London. How many sessions depends on how quickly the skills come together — training is one to one, not on a fixed timetable.",
+						},
 						{
 							label: "Open water dives",
-							draft: "Four open water training dives, as required for SSI certification.",
+							text: "Four open water training dives, as required for SSI certification. Wraysbury, Stoney Cove or Vobster Quay, depending on the course.",
 						},
 						{ label: "How long it takes", todo: "ile dni lub weekendów" },
 						{ label: "Included in the price", todo: "sprzęt, materiały, certyfikat?" },
 						{ label: "Paid separately", todo: "wstęp na akwen, butle, transport?" },
 						{
 							label: "Available dates",
-							draft: "Scheduled course dates run through the year, and I also arrange courses individually — tell me what suits you.",
+							text: "Scheduled course dates run through the year, and I also arrange courses individually — tell me what suits you.",
 						},
 					],
 				},
@@ -1204,7 +1209,9 @@ export const siteCopy = {
 					{
 						name: "Zajęcia basenowe",
 						region: "Londyn",
-						todo: "nazwa basenu i dzielnica Londynu",
+						description:
+							"Szkolenie w wodach ograniczonych w Londynie. Obiekt ustalam pod konkretny kurs, tak żeby pasował grupie i terminom.",
+						confirmed: true,
 					},
 					{
 						name: "Wraysbury",
@@ -1368,19 +1375,22 @@ export const siteCopy = {
 					rows: [
 						{
 							label: "Teoria",
-							draft: "SSI digital learning — online, we własnym tempie, przed spotkaniem w wodzie.",
+							text: "SSI digital learning — online, we własnym tempie, przed spotkaniem w wodzie.",
 						},
-						{ label: "Sesje basenowe", todo: "ile sesji, na którym basenie" },
+						{
+							label: "Sesje basenowe",
+							text: "W Londynie. Ile sesji — zależy od tego, jak szybko wchodzą umiejętności. Szkolenie jest indywidualne, nie z góry rozpisane.",
+						},
 						{
 							label: "Nurkowania w wodach otwartych",
-							draft: "Cztery nurkowania szkoleniowe, zgodnie z wymaganiami certyfikacji SSI.",
+							text: "Cztery nurkowania szkoleniowe, zgodnie z wymaganiami certyfikacji SSI. Wraysbury, Stoney Cove albo Vobster Quay, zależnie od kursu.",
 						},
 						{ label: "Ile trwa", todo: "ile dni lub weekendów" },
 						{ label: "W cenie", todo: "sprzęt, materiały, certyfikat?" },
 						{ label: "Płatne osobno", todo: "wstęp na akwen, butle, dojazd?" },
 						{
 							label: "Terminy",
-							draft: "Kursy odbywają się w stałych terminach w ciągu roku, a poza nimi ustalam je indywidualnie — napisz, kiedy Ci pasuje.",
+							text: "Kursy odbywają się w stałych terminach w ciągu roku, a poza nimi ustalam je indywidualnie — napisz, kiedy Ci pasuje.",
 						},
 					],
 				},
