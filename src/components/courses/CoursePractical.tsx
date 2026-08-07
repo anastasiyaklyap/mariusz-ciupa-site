@@ -2,7 +2,7 @@ import { SectionSurface } from "@/components/sections/SectionSurface";
 import { Placeholder } from "@/components/ui/Placeholder";
 
 type PracticalRow =
-	| { label: string; draft: string }
+	| { label: string; text: string }
 	| { label: string; todo: string };
 
 export type CoursePracticalData = {
@@ -33,8 +33,8 @@ export const CoursePractical = ({
 							{row.label}
 						</dt>
 						<dd className="text-sm text-white/85">
-							{"draft" in row ? (
-								<Placeholder variant="draft">{row.draft}</Placeholder>
+							{"text" in row ? (
+								row.text
 							) : (
 								<Placeholder>{row.todo}</Placeholder>
 							)}
