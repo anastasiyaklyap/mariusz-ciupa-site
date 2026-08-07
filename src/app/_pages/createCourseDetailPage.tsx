@@ -7,26 +7,39 @@ import type { Locale } from '@/lib/i18n';
 
 type CreateCourseDetailPageOptions = {
   locale: Locale;
-  course: 'openWaterDiver';
+  course:
+    | 'openWaterDiver'
+    | 'divemaster'
+    | 'tryScuba'
+    | 'advancedOpenWaterDiver';
   metadata: Metadata;
+  parentCategory?: 'beginner' | null;
 };
 
 export const createCourseDetailPage = ({
   locale,
   course,
   metadata,
+  parentCategory = 'beginner',
 }: CreateCourseDetailPageOptions) => {
   const copy = siteCopy[locale].courseDetail[course];
-  const pathname = `/beginner/${copy.slug}`;
+  const pathname = parentCategory
+    ? `/${parentCategory}/${copy.slug}`
+    : `/${copy.slug}`;
 
   return createLocalePage({
     locale,
     pathname,
     component: <CourseDetailPageClient course={course} />,
     metadata,
-    breadcrumbParents: [
-      { name: siteCopy[locale].beginner.hero.title, path: '/beginner' },
-    ],
+    breadcrumbParents: parentCategory
+      ? [
+          {
+            name: siteCopy[locale][parentCategory].hero.title,
+            path: `/${parentCategory}`,
+          },
+        ]
+      : [],
     breadcrumbLabel: copy.title,
     structuredData: [
       buildCourseSchema(

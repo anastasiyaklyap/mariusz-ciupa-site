@@ -55,7 +55,7 @@ export const withLocaleHref = (href: string, locale: Locale): string => {
   const normalized = stripLocalePrefix(pathname);
   const prefixed =
     normalized === '/'
-      ? `/${locale}`
+      ? `/${locale}/`
       : `/${locale}${normalized.startsWith('/') ? '' : '/'}${normalized}`;
 
   url.pathname = `${basePath}${prefixed}`;

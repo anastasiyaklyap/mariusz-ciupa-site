@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   description:
     'Personal scuba diving training from beginner to technical level.',
   metadataBase: new URL(siteUrl ?? SITE_ORIGIN),
+  ...(basePath ? { robots: { index: false, follow: false } } : {}),
   icons: {
     icon: [
       { url: `${basePath}/favicon.ico`, type: 'image/x-icon' },

@@ -6,6 +6,7 @@ import { assetPath } from '@/lib/assetPath';
 import { CtaLink } from '@/components/ui/CtaLink';
 import { siteCopy } from '@/content/siteCopy';
 import type { Locale } from '@/lib/i18n';
+import { linkPath } from '@/lib/linkPath';
 import { withLocaleHref } from '@/lib/i18n';
 
 export type CourseCardData = {
@@ -82,7 +83,11 @@ export const CourseCardGrid = ({
           return (
             <article
               key={course.title}
-              className='group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition hover:border-white/20'
+              id={course.title
+                .toLowerCase()
+                .replace(/[^a-z0-9]+/g, '-')
+                .replace(/^-|-$/g, '')}
+              className='group flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition hover:border-white/20 scroll-mt-28'
             >
               <div className='relative'>
                 <div className='aspect-[16/10]'>
@@ -159,7 +164,7 @@ export const CourseCardGrid = ({
                 <div className='mt-auto flex flex-wrap items-center gap-2 pt-6'>
                   {course.detailHref ? (
                     <CtaLink
-                      href={withLocaleHref(course.detailHref, locale)}
+                      href={withLocaleHref(linkPath(course.detailHref), locale)}
                       variant='outline'
                       size='sm'
                       className='gap-2'
@@ -169,7 +174,7 @@ export const CourseCardGrid = ({
                   ) : null}
 
                   <CtaLink
-                    href={withLocaleHref(ctaHref, locale)}
+                    href={withLocaleHref(linkPath(ctaHref), locale)}
                     variant='ghost'
                     size='sm'
                     className='gap-2 text-white/90'

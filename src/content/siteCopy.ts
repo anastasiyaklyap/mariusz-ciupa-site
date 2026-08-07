@@ -309,6 +309,12 @@ export const siteCopy = {
 					a: "Polish or English, whichever you prefer. SSI digital learning materials exist in both, so you can do the theory and the in-water sessions in the same language.",
 				},
 				{
+					id: "other-agency",
+					tags: ["home", "beginner", "speciality", "technical"],
+					q: "I am certified with PADI or another agency — can I train here?",
+					a: "Yes. Certifications from all diving federations are accepted, so you carry on from the level you already hold rather than starting again. Say what card you have and roughly how many dives you have logged, and you will get a straight answer on which course you can join next.",
+				},
+				{
 					id: "recognition",
 					tags: ["home", "beginner"],
 					q: "Is an SSI certification recognised worldwide? How does it compare with PADI?",
@@ -355,6 +361,18 @@ export const siteCopy = {
 					tags: ["speciality"],
 					q: "Can I take specialty courses near London?",
 					a: "Most of them, yes. Pool work happens in London and the dives at Wraysbury, Stoney Cove or Vobster Quay. Dry Suit Diving is the one worth doing here in particular — it is the specialty that makes British water comfortable year round. Warm water specialties can run in Lanzarote instead.",
+				},
+				{
+					id: "become-pro",
+					tags: [],
+					q: "How do I become a diving instructor?",
+					a: "The ladder runs Open Water Diver, then specialties and Diver Stress & Rescue, then Dive Guide at 40 logged dives, then Divemaster at 60. Divemaster is the first professional rating — from there the Instructor Training Course leads to SSI Open Water Instructor. Mariusz trains up to Divemaster; the instructor course itself is run by SSI Instructor Trainers.",
+				},
+				{
+					id: "divemaster-worth",
+					tags: [],
+					q: "Is a Divemaster rating worth it if I do not want to work in diving?",
+					a: "Plenty of people take it without ever guiding professionally. The training is mostly about control of your own diving and about reading other divers — skills that make every dive afterwards calmer. It also lets you teach SSI Ecology programmes and assist on courses if you ever want to.",
 				},
 				{
 					id: "booking",
@@ -440,6 +458,41 @@ export const siteCopy = {
 						tag: "Go beyond limits",
 						imageSrc: "/images/courses-technical.jpg",
 						link: "/technical",
+					},
+				],
+			},
+			coursePicker: {
+				eyebrow: "NOT SURE WHERE TO START?",
+				title: "Pick by what you want to do",
+				description:
+					"Three different reasons people get in touch. Find the one that sounds like you.",
+				items: [
+					{
+						question: "I have never dived and want to see what it is like",
+						courseTitle: "Try Scuba",
+						priceLabel: "£75",
+						blurb:
+							"One guided session in the pool with an instructor next to you the whole time. No certification, no commitment — just find out whether breathing underwater is for you.",
+						ctaLabel: "See Try Scuba",
+						href: "/beginner/try-scuba",
+					},
+					{
+						question: "I want to dive without an instructor beside me",
+						courseTitle: "SSI Open Water Diver",
+						priceLabel: "£550",
+						blurb:
+							"The certification that makes you an independent diver: dive with a buddy, down to 18 metres, anywhere in the world. Recognised to the same international standard as the PADI course.",
+						ctaLabel: "Course details",
+						href: "/beginner/open-water-diver",
+					},
+					{
+						question: "I am certified and want to go deeper",
+						courseTitle: "Advanced Open Water Diver",
+						priceLabel: "£395",
+						blurb:
+							"Five specialties across five dives, including Deep Diving and Navigation. The usual next step once Open Water starts to feel comfortable.",
+						ctaLabel: "See Advanced",
+						href: "/beginner/advanced-open-water-diver",
 					},
 				],
 			},
@@ -553,6 +606,7 @@ export const siteCopy = {
 			courses: [
 				{
 					title: "Try Scuba",
+					detailHref: "/beginner/try-scuba",
 					description:
 						"A first, guided experience underwater. Perfect if you want to try scuba before committing to a full certification course.",
 					imageSrc: "/images/courses/try-scuba.jpg",
@@ -570,6 +624,7 @@ export const siteCopy = {
 				},
 				{
 					title: "Advanced Open Water Diver",
+					detailHref: "/beginner/advanced-open-water-diver",
 					description:
 						"If you cannot decide which specialty programs are the best choice for you, join the SSI Advanced Open Water Diver program! You will try Deep Diving and Navigation plus a variety of 3 more specialty areas of choice before committing to full specialty training. It is a great way to experience what advanced diver training is all about and how valuable it can be to your diving adventures. \nDuring the Advanced Open Water Diver Program, you will experience 5 different specialties by completing one open water training dive per specialty after a comprehensive briefing with your SSI Instructor. \nBy taking this program you will have total freedom to explore. You can complete the full Specialty trainings any time in the future and credit your Advanced Open Water Diver training towards them.",
 					imageSrc: "/images/courses/advanced-open-water.jpg",
@@ -600,6 +655,194 @@ export const siteCopy = {
 			},
 		},
 		courseDetail: {
+			tryScuba: {
+				slug: "try-scuba",
+				eyebrow: "FIRST TIME",
+				title: "Try Scuba Diving in London",
+				description:
+					"The shortest way to find out whether diving is for you. One session in a pool, breathing from a tank for the first time, with an instructor beside you the whole way.\nIt is not a certification and it commits you to nothing. If it turns out you love it, nothing is wasted — the skills carry straight into the Open Water Diver course.",
+				imageSrc: "/images/courses/try-scuba.jpg",
+				tags: ["No experience needed", "Pool only", "From age 8"],
+				priceLabel: "Session price",
+				price: { amount: 75, currency: "GBP" },
+				priceNote:
+					"One pool session. If you go on to book the Open Water Diver course, ask about it when you get in touch.",
+				practical: {
+					title: "What to expect",
+					description:
+						"A short, controlled introduction. Every limit below comes from SSI training standards.",
+					rows: [
+						{
+							label: "Minimum age",
+							text: "8 years old. For anyone under 18 a parent or guardian signs the forms.",
+						},
+						{
+							label: "Where you go",
+							text: "A pool, and no deeper than 5 metres. Try Scuba never takes place in open water.",
+						},
+						{
+							label: "Group size",
+							text: "SSI allows a maximum of eight students per instructor for this programme, and assistants may not be used to raise that limit.",
+						},
+						{
+							label: "Do you get a certification",
+							text: "No. Try Scuba is an experience programme, not an entry-level certification. The certification course is Open Water Diver.",
+						},
+						{
+							label: "Health",
+							text: "The same SSI diver medical questionnaire as any other programme. If an answer flags something, you need a doctor's approval first.",
+						},
+						{
+							label: "Swimming",
+							text: "You need to be comfortable in water. The full water fitness evaluation belongs to the certification course, not to this session.",
+						},
+						{ label: "Which pool", todo: "Nazwa basenu i dzielnica Londynu." },
+						{ label: "What is provided", todo: "Jaki sprzęt jest zapewniony na sesji." },
+					],
+				},
+				afterEyebrow: "AFTER THE SESSION",
+				afterTitle: "What it gives you",
+				afterCtaLabel: "Ask about a Try Scuba session",
+				afterItems: [
+					"You find out how you actually react to breathing underwater",
+					"The skills carry straight into the Open Water Diver course",
+					"Children from the age of 8 can join",
+					"You decide about certification having spent £75, not £550",
+				],
+				contact: {
+					title: "Want to try it first?",
+					description:
+						"Tell me roughly when suits you and whether anyone is coming with you — you will get dates back.",
+				},
+			},
+			advancedOpenWaterDiver: {
+				slug: "advanced-open-water-diver",
+				eyebrow: "NEXT STEP",
+				title: "SSI Advanced Open Water Diver Course in London",
+				description:
+					"Five specialty areas across five dives, without committing to any of them in full. Deep Diving and Navigation are fixed; the other three are your choice.\nIt is the usual next step once Open Water starts to feel comfortable and you want to know what is out there before picking a direction.",
+				imageSrc: "/images/courses/advanced-open-water.jpg",
+				tags: ["Open Water required", "Five specialties", "To 30 metres"],
+				priceLabel: "Course price",
+				price: { amount: 395, currency: "GBP" },
+				priceNote:
+					"Indicative price. Ask for a quote covering your dates and the specialties you want to try.",
+				practical: {
+					title: "How the course works",
+					description:
+						"Every number below comes from SSI training standards for the Advanced Open Water Diver programme.",
+					rows: [
+						{
+							label: "Before you start",
+							text: "An Open Water Diver certification, or the equivalent from another recognised agency.",
+						},
+						{
+							label: "Minimum age",
+							text: "12 years old.",
+						},
+						{
+							label: "Structure",
+							text: "5 academic sessions and 5 open water dives — one dive per specialty, each after a full briefing with the instructor.",
+						},
+						{
+							label: "Which specialties",
+							text: "Deep Diving and Navigation are part of every course. The remaining three you choose — Perfect Buoyancy, Night & Limited Visibility, Dry Suit, Wreck and Enriched Air Nitrox are the usual candidates.",
+						},
+						{
+							label: "Maximum training depth",
+							text: "30 metres.",
+						},
+						{
+							label: "How long it takes",
+							text: "SSI suggests 10 to 15 hours in total. The exact schedule is arranged with you.",
+						},
+						{
+							label: "It is not wasted later",
+							text: "Each dive credits towards the full specialty programme if you decide to complete it afterwards.",
+						},
+						{
+							label: "Where",
+							text: "Wraysbury, Stoney Cove or Vobster Quay, depending on the specialties and the depth you need.",
+						},
+					],
+				},
+				afterEyebrow: "AFTER CERTIFICATION",
+				afterTitle: "What changes",
+				afterCtaLabel: "Ask about Advanced training",
+				afterItems: [
+					"Dive to 30 metres within the limits of your training",
+					"Five logged dives that count towards specialty certifications",
+					"A clear idea of which kind of diving you actually enjoy",
+					"A step closer to Dive Guide and Divemaster",
+				],
+				contact: {
+					title: "Ready for the next step?",
+					description:
+						"Tell me which specialties interest you and when you can dive — you will get a plan back.",
+				},
+			},
+			divemaster: {
+				slug: "divemaster",
+				eyebrow: "PROFESSIONAL TRAINING",
+				title: "SSI Divemaster Course in London",
+				description:
+					"The Divemaster rating is the first professional level in diving — the point where you stop being a guest underwater and start being responsible for other people.\nWorking one to one with an SSI Instructor, you sharpen your own diving until it looks effortless, then learn to spot and solve other divers' problems before they become incidents. You finish able to guide certified divers, teach SSI Ecology programmes and assist an instructor during training.",
+				imageSrc: "/images/courses/divemaster.jpg",
+				tags: ["First professional level", "ISO 24801-3", "Guiding and assisting"],
+				priceLabel: "Course price",
+				price: { amount: 600, currency: "GBP" },
+				priceNote:
+					"£600 covers the training, the Dive Guide and Science of Diving theory. The bundle with Dive Guide, React Right and Science of Diving is £900. SSI professional fees are invoiced separately by SSI to your MySSI account, and the pro pack is bought separately.",
+				practical: {
+					title: "What it takes",
+					description:
+						"The Divemaster rating is reached in two steps. Every number below comes from SSI training standards.",
+					rows: [
+						{
+							label: "Step one — Dive Guide",
+							text: "40 verified or logged dives, plus certifications in Deep Diving, Navigation and Night & Limited Visibility — or at least five logged dives in each of those areas — plus Diver Stress & Rescue.",
+						},
+						{
+							label: "Step two — Divemaster",
+							text: "A minimum of 60 logged or verified dives totalling 40 hours underwater, the Dive Guide certification, and the Science of Diving programme with its digital final exam.",
+						},
+						{
+							label: "Science of Diving",
+							text: "Physics, physiology, decompression theory and the aquatic environment, studied online. SSI suggests 8 to 12 hours. Priced separately at £150 if taken on its own.",
+						},
+						{
+							label: "Programme structure",
+							text: "10 academic sessions, 4 pool sessions and 60 open water sessions. SSI suggests 43 to 57 hours in total.",
+						},
+						{
+							label: "Maximum training depth",
+							text: "40 metres.",
+						},
+						{
+							label: "Where",
+							text: "Pool work in London, open water at Stoney Cove — where Divemaster candidates put the training to use — and at Wraysbury or Vobster Quay depending on the stage.",
+						},
+						{
+							label: "Going further",
+							text: "The Instructor Training Course, which leads to SSI Open Water Instructor, is run by SSI Instructor Trainers. Mariusz trains to Divemaster level and will point you to an ITC when you are ready for it.",
+						},
+					],
+				},
+				afterEyebrow: "AFTER CERTIFICATION",
+				afterTitle: "What a Divemaster can do",
+				afterCtaLabel: "Ask about Divemaster training",
+				afterItems: [
+					"Guide certified divers as a dive professional",
+					"Teach SSI Ecology programmes in your own right",
+					"Assist an instructor during diver training",
+					"Work towards the Instructor Training Course",
+				],
+				contact: {
+					title: "Thinking about going professional?",
+					description:
+						"Tell me how many dives you have logged and which certifications you hold — you will get a straight answer on what is left before you can start.",
+				},
+			},
 			openWaterDiver: {
 				slug: "open-water-diver",
 				eyebrow: "BEGINNER COURSE",
@@ -796,6 +1039,7 @@ export const siteCopy = {
 				},
 				{
 					title: "Divemaster",
+					detailHref: "/divemaster",
 					description:
 						"Become a certified SSI Divemaster. \nThe SSI Divemaster course is your first step to professional training. Working closely with a SSI Instructor, you’ll fine-tune your dive skills, like perfecting the effortless hover, and refine your rescue skills so you anticipate and easily solve common problems. You’ll gain dive knowledge, management and supervision abilities so you become a role model to divers everywhere. As a SSI Divemaster, you’ll lead others as you supervise scuba diving activities and assist with diver training. SSI Divemasters are respected dive professionals who are aligned with one of the largest and most respected dive organization in the world – SSI. If you have already completed the PRO SSI DIVEGUIDE course you simply need to complete the add on SSI SCIENCE OF DIVING course . please call for information price includes all your training with us, your SSI dive guide and science of diving theory, your Pro fees are extra and will be invoiced from SSI to your app. you will also need to purchase the pro pack.",
 					imageSrc: "/images/courses/divemaster.jpg",
@@ -1488,6 +1732,12 @@ export const siteCopy = {
 					a: "Po polsku albo po angielsku — do wyboru. Materiały SSI są dostępne w obu językach, więc teoria i zajęcia w wodzie mogą być w tym samym.",
 				},
 				{
+					id: "other-agency",
+					tags: ["home", "beginner", "speciality", "technical"],
+					q: "Mam certyfikat PADI albo innej federacji — czy mogę tu szkolić się dalej?",
+					a: "Tak. Akceptowane są certyfikaty wszystkich federacji nurkowych, więc kontynuujesz od poziomu, który już masz, a nie zaczynasz od nowa. Napisz, jaką masz kartę i ile mniej więcej masz zalogowanych nurkowań, żeby dostać konkretną odpowiedź, na który kurs możesz wejść.",
+				},
+				{
 					id: "recognition",
 					tags: ["home", "beginner"],
 					q: "Czy certyfikat SSI jest uznawany na świecie? Jak wypada przy PADI?",
@@ -1534,6 +1784,18 @@ export const siteCopy = {
 					tags: ["speciality"],
 					q: "Czy specjalizacje da się zrobić w okolicach Londynu?",
 					a: "Większość tak. Basen w Londynie, nurkowania na Wraysbury, Stoney Cove albo Vobster Quay. Szczególnie warto zrobić tutaj suchy skafander — to ta specjalizacja, dzięki której brytyjska woda przestaje przeszkadzać przez cały rok. Specjalizacje wymagające ciepłej wody można zrealizować na Lanzarote.",
+				},
+				{
+					id: "become-pro",
+					tags: [],
+					q: "Jak zostać instruktorem nurkowania?",
+					a: "Drabina wygląda tak: Open Water Diver, potem specjalizacje i Diver Stress & Rescue, następnie Dive Guide przy 40 zalogowanych nurkowaniach i Divemaster przy 60. Divemaster to pierwszy stopień zawodowy — dalej kurs instruktorski prowadzi do stopnia SSI Open Water Instructor. Mariusz szkoli do poziomu Divemastera; sam kurs instruktorski prowadzą Instructor Trainerzy SSI.",
+				},
+				{
+					id: "divemaster-worth",
+					tags: [],
+					q: "Czy Divemaster ma sens, jeśli nie chcę pracować w nurkowaniu?",
+					a: "Sporo osób robi go bez zamiaru prowadzenia grup. Szkolenie w dużej mierze dotyczy panowania nad własnym nurkowaniem i czytania innych nurków — a to sprawia, że każde kolejne nurkowanie jest spokojniejsze. Daje też prawo do uczenia programów SSI Ecology i asystowania na kursach, gdyby przyszła ochota.",
 				},
 				{
 					id: "booking",
@@ -1619,6 +1881,41 @@ export const siteCopy = {
 						tag: "Przekrocz granice",
 						imageSrc: "/images/courses-technical.jpg",
 						link: "/technical",
+					},
+				],
+			},
+			coursePicker: {
+				eyebrow: "NIE WIESZ, OD CZEGO ZACZĄĆ?",
+				title: "Wybierz po tym, co chcesz robić",
+				description:
+					"Trzy powody, dla których ludzie się odzywają. Znajdź ten, który brzmi jak Ty.",
+				items: [
+					{
+						question: "Nigdy nie nurkowałem i chcę zobaczyć, jak to jest",
+						courseTitle: "Try Scuba",
+						priceLabel: "£75",
+						blurb:
+							"Jedno zejście na basenie, z instruktorem obok przez cały czas. Bez certyfikatu i bez zobowiązań — po prostu sprawdzasz, czy oddychanie pod wodą jest dla Ciebie.",
+						ctaLabel: "Zobacz Try Scuba",
+						href: "/beginner/try-scuba",
+					},
+					{
+						question: "Chcę nurkować bez instruktora u boku",
+						courseTitle: "SSI Open Water Diver",
+						priceLabel: "£550",
+						blurb:
+							"Certyfikat, który czyni Cię samodzielnym nurkiem: nurkowanie z partnerem, do 18 metrów, na całym świecie. Odpowiada tej samej normie międzynarodowej co kurs PADI.",
+						ctaLabel: "Szczegóły kursu",
+						href: "/beginner/open-water-diver",
+					},
+					{
+						question: "Mam już uprawnienia i chcę schodzić głębiej",
+						courseTitle: "Advanced Open Water Diver",
+						priceLabel: "£395",
+						blurb:
+							"Pięć specjalizacji w pięciu nurkowaniach, w tym nurkowanie głębokie i nawigacja. Naturalny kolejny krok, kiedy Open Water zaczyna być komfortowy.",
+						ctaLabel: "Zobacz Advanced",
+						href: "/beginner/advanced-open-water-diver",
 					},
 				],
 			},
@@ -1732,6 +2029,7 @@ export const siteCopy = {
 			courses: [
 				{
 					title: "Try Scuba",
+					detailHref: "/beginner/try-scuba",
 					description:
 						"Pierwsze, prowadzone doświadczenie pod wodą. Idealne, jeśli chcesz spróbować nurkowania, zanim zdecydujesz się na pełny kurs certyfikacyjny.",
 					imageSrc: "/images/courses/try-scuba.jpg",
@@ -1749,6 +2047,7 @@ export const siteCopy = {
 				},
 				{
 					title: "Advanced Open Water Diver",
+					detailHref: "/beginner/advanced-open-water-diver",
 					description:
 						"Jeśli nie możesz zdecydować, która specjalizacja jest dla Ciebie najlepszym wyborem, zapisz się na program SSI Advanced Open Water Diver! Zrealizujesz nurkowania z zakresu specjalizacji Deep Diving i Navigation oraz 3 innych spośród wybranych specjalizacji, zanim zdecydujesz się na realizację pełnej specjalizacji. Jest to świetny sposób, aby doświadczyć, na czym polega zaawansowane szkolenie nurkowe i jak cennym dodatkiem do Twoich przygód nurkowych może być. \nPodczas programu Advanced Open Water Diver doświadczysz 5 różnych specjalizacji, wykonując po jednym nurkowaniu szkoleniowym na wodach otwartych dla każdej specjalizacji po kompleksowym briefingu z Instruktorem SSI. Biorąc udział w tym programie będziesz miał całkowitą swobodę. Możesz ukończyć pełne specjalizacje w dowolnym momencie w przyszłości i zaliczyć swoje nurkowania z kursu Advanced Open Water Diver na ich poczet.",
 					imageSrc: "/images/courses/advanced-open-water.jpg",
@@ -1779,6 +2078,194 @@ export const siteCopy = {
 			},
 		},
 		courseDetail: {
+			tryScuba: {
+				slug: "try-scuba",
+				eyebrow: "PIERWSZY RAZ",
+				title: "Try Scuba — pierwsze nurkowanie w Londynie",
+				description:
+					"Najkrótsza droga do sprawdzenia, czy nurkowanie jest dla Ciebie. Jedna sesja na basenie, pierwszy oddech z butli, instruktor obok przez cały czas.\nTo nie jest certyfikat i do niczego nie zobowiązuje. Jeśli okaże się, że to Twoja rzecz, nic nie przepada — umiejętności przechodzą wprost do kursu Open Water Diver.",
+				imageSrc: "/images/courses/try-scuba.jpg",
+				tags: ["Bez doświadczenia", "Tylko basen", "Od 8 lat"],
+				priceLabel: "Cena sesji",
+				price: { amount: 75, currency: "GBP" },
+				priceNote:
+					"Jedna sesja basenowa. Jeśli po niej zapiszesz się na kurs Open Water Diver, zapytaj o to przy kontakcie.",
+				practical: {
+					title: "Czego się spodziewać",
+					description:
+						"Krótkie, kontrolowane wprowadzenie. Każdy limit poniżej pochodzi ze standardów szkoleniowych SSI.",
+					rows: [
+						{
+							label: "Minimalny wiek",
+							text: "8 lat. Za osoby niepełnoletnie formularze podpisuje rodzic lub opiekun.",
+						},
+						{
+							label: "Gdzie",
+							text: "Basen, nie głębiej niż 5 metrów. Try Scuba nigdy nie odbywa się na wodach otwartych.",
+						},
+						{
+							label: "Wielkość grupy",
+							text: "SSI dopuszcza przy tym programie maksymalnie ośmiu kursantów na instruktora, bez możliwości podniesienia limitu asystentami.",
+						},
+						{
+							label: "Czy dostaje się certyfikat",
+							text: "Nie. Try Scuba to program doświadczalny, nie certyfikacja. Kursem certyfikującym jest Open Water Diver.",
+						},
+						{
+							label: "Zdrowie",
+							text: "Ta sama ankieta medyczna nurka SSI co przy każdym innym programie. Jeśli któraś odpowiedź coś sygnalizuje, potrzebna jest wcześniej zgoda lekarza.",
+						},
+						{
+							label: "Pływanie",
+							text: "Trzeba czuć się w wodzie swobodnie. Pełna ocena sprawności w wodzie należy do kursu certyfikującego, nie do tej sesji.",
+						},
+						{ label: "Który basen", todo: "Nazwa basenu i dzielnica Londynu." },
+						{ label: "Co jest zapewnione", todo: "Jaki sprzęt jest zapewniony na sesji." },
+					],
+				},
+				afterEyebrow: "PO SESJI",
+				afterTitle: "Co to daje",
+				afterCtaLabel: "Zapytaj o sesję Try Scuba",
+				afterItems: [
+					"Sprawdzasz, jak naprawdę reagujesz na oddychanie pod wodą",
+					"Umiejętności przechodzą wprost do kursu Open Water Diver",
+					"Mogą wziąć udział dzieci od 8 lat",
+					"Decyzję o certyfikacji podejmujesz po wydaniu £75, a nie £550",
+				],
+				contact: {
+					title: "Chcesz najpierw spróbować?",
+					description:
+						"Napisz, kiedy mniej więcej pasuje i czy ktoś Ci towarzyszy — dostaniesz terminy.",
+				},
+			},
+			advancedOpenWaterDiver: {
+				slug: "advanced-open-water-diver",
+				eyebrow: "KOLEJNY KROK",
+				title: "Kurs SSI Advanced Open Water Diver w Londynie",
+				description:
+					"Pięć obszarów specjalizacyjnych w pięciu nurkowaniach, bez zobowiązania do żadnego z nich w całości. Nurkowanie głębokie i nawigacja są stałe, pozostałe trzy wybierasz sam.\nTo naturalny kolejny krok, kiedy Open Water zaczyna być komfortowy, a chcesz się zorientować, co jest dalej, zanim wybierzesz kierunek.",
+				imageSrc: "/images/courses/advanced-open-water.jpg",
+				tags: ["Wymagany Open Water", "Pięć specjalizacji", "Do 30 metrów"],
+				priceLabel: "Cena kursu",
+				price: { amount: 395, currency: "GBP" },
+				priceNote:
+					"Cena orientacyjna. Zapytaj o wycenę obejmującą Twoje terminy i wybrane specjalizacje.",
+				practical: {
+					title: "Jak wygląda kurs",
+					description:
+						"Każda liczba poniżej pochodzi ze standardów szkoleniowych SSI dla programu Advanced Open Water Diver.",
+					rows: [
+						{
+							label: "Zanim zaczniesz",
+							text: "Certyfikat Open Water Diver albo równoważny z innej uznanej organizacji.",
+						},
+						{
+							label: "Minimalny wiek",
+							text: "12 lat.",
+						},
+						{
+							label: "Struktura",
+							text: "5 sesji teoretycznych i 5 nurkowań na wodach otwartych — po jednym na specjalizację, każde po pełnym briefingu z instruktorem.",
+						},
+						{
+							label: "Jakie specjalizacje",
+							text: "Nurkowanie głębokie i nawigacja są w każdym kursie. Pozostałe trzy wybierasz — zwykle w grę wchodzą pływalność, nurkowanie nocne i przy ograniczonej widoczności, suchy skafander, wraki oraz nitroks.",
+						},
+						{
+							label: "Maksymalna głębokość szkolenia",
+							text: "30 metrów.",
+						},
+						{
+							label: "Ile trwa",
+							text: "SSI przewiduje łącznie 10 do 15 godzin. Konkretny rozkład ustalany indywidualnie.",
+						},
+						{
+							label: "Nic nie przepada",
+							text: "Każde nurkowanie zalicza się na poczet pełnej specjalizacji, jeśli zdecydujesz się ją później dokończyć.",
+						},
+						{
+							label: "Gdzie",
+							text: "Wraysbury, Stoney Cove albo Vobster Quay — zależnie od specjalizacji i potrzebnej głębokości.",
+						},
+					],
+				},
+				afterEyebrow: "PO CERTYFIKACJI",
+				afterTitle: "Co się zmienia",
+				afterCtaLabel: "Zapytaj o szkolenie Advanced",
+				afterItems: [
+					"Nurkujesz do 30 metrów w granicach swojego szkolenia",
+					"Pięć zalogowanych nurkowań liczących się do specjalizacji",
+					"Jasność co do tego, jakie nurkowanie naprawdę Cię kręci",
+					"Krok bliżej do Dive Guide i Divemastera",
+				],
+				contact: {
+					title: "Gotowy na kolejny krok?",
+					description:
+						"Napisz, które specjalizacje Cię interesują i kiedy możesz nurkować — dostaniesz plan.",
+				},
+			},
+			divemaster: {
+				slug: "divemaster",
+				eyebrow: "SZKOLENIE ZAWODOWE",
+				title: "Kurs SSI Divemaster w Londynie",
+				description:
+					"Divemaster to pierwszy stopień zawodowy w nurkowaniu — moment, w którym przestajesz być pod wodą gościem, a zaczynasz odpowiadać za innych.\nPracując indywidualnie z instruktorem SSI, dopracowujesz własne nurkowanie tak, żeby wyglądało na bezwysiłkowe, a potem uczysz się wychwytywać i rozwiązywać problemy innych nurków, zanim zamienią się w wypadek. Po kursie możesz prowadzić certyfikowanych nurków, uczyć programów SSI Ecology i asystować instruktorowi przy szkoleniu.",
+				imageSrc: "/images/courses/divemaster.jpg",
+				tags: ["Pierwszy stopień zawodowy", "ISO 24801-3", "Prowadzenie i asysta"],
+				priceLabel: "Cena kursu",
+				price: { amount: 600, currency: "GBP" },
+				priceNote:
+					"£600 obejmuje szkolenie oraz teorię Dive Guide i Science of Diving. Pakiet z Dive Guide, React Right i Science of Diving kosztuje £900. Opłaty zawodowe SSI są fakturowane osobno przez SSI na konto MySSI, a pakiet pro kupuje się oddzielnie.",
+				practical: {
+					title: "Czego wymaga",
+					description:
+						"Do stopnia Divemaster dochodzi się w dwóch krokach. Każda liczba poniżej pochodzi ze standardów szkoleniowych SSI.",
+					rows: [
+						{
+							label: "Krok pierwszy — Dive Guide",
+							text: "40 potwierdzonych lub zalogowanych nurkowań, do tego certyfikaty z nurkowania głębokiego, nawigacji oraz nocnego i przy ograniczonej widoczności — albo co najmniej pięć zalogowanych nurkowań w każdym z tych obszarów — plus Diver Stress & Rescue.",
+						},
+						{
+							label: "Krok drugi — Divemaster",
+							text: "Minimum 60 zalogowanych lub potwierdzonych nurkowań o łącznym czasie 40 godzin pod wodą, certyfikat Dive Guide i program Science of Diving zakończony egzaminem.",
+						},
+						{
+							label: "Science of Diving",
+							text: "Fizyka, fizjologia, teoria dekompresji i środowisko wodne — nauka online. SSI przewiduje 8 do 12 godzin. Osobno kosztuje £150.",
+						},
+						{
+							label: "Struktura programu",
+							text: "10 sesji teoretycznych, 4 basenowe i 60 sesji na wodach otwartych. SSI przewiduje łącznie 43 do 57 godzin.",
+						},
+						{
+							label: "Maksymalna głębokość szkolenia",
+							text: "40 metrów.",
+						},
+						{
+							label: "Gdzie",
+							text: "Basen w Londynie, wody otwarte na Stoney Cove — tam kandydaci na Divemastera wykorzystują szkolenie w praktyce — oraz na Wraysbury lub Vobster Quay, zależnie od etapu.",
+						},
+						{
+							label: "Co dalej",
+							text: "Kurs instruktorski (ITC), prowadzący do stopnia SSI Open Water Instructor, prowadzą Instructor Trainerzy SSI. Mariusz szkoli do poziomu Divemastera i wskaże kurs instruktorski, kiedy przyjdzie na niego czas.",
+						},
+					],
+				},
+				afterEyebrow: "PO CERTYFIKACJI",
+				afterTitle: "Co może Divemaster",
+				afterCtaLabel: "Zapytaj o szkolenie Divemaster",
+				afterItems: [
+					"Prowadzić certyfikowanych nurków jako zawodowiec",
+					"Samodzielnie uczyć programów SSI Ecology",
+					"Asystować instruktorowi przy szkoleniu nurków",
+					"Przygotowywać się do kursu instruktorskiego",
+				],
+				contact: {
+					title: "Myślisz o pójściu w zawodowstwo?",
+					description:
+						"Napisz, ile masz zalogowanych nurkowań i jakie certyfikaty — dostaniesz konkretną odpowiedź, czego jeszcze brakuje, żeby zacząć.",
+				},
+			},
 			openWaterDiver: {
 				slug: "open-water-diver",
 				eyebrow: "KURS PODSTAWOWY",
@@ -1983,6 +2470,7 @@ export const siteCopy = {
 				},
 				{
 					title: "Divemaster",
+					detailHref: "/divemaster",
 					description:
 						"Zostań certyfikowanym SSI Divemasterem. \nKurs SSI Divemaster to Twój pierwszy krok w stronę szkolenia zawodowego. W ścisłej współpracy z instruktorem SSI udoskonalisz swoje umiejętności nurkowe, takie jak perfekcyjne, swobodne zawisanie w wodzie, oraz dopracujesz umiejętności ratownicze, aby przewidywać i łatwo rozwiązywać typowe problemy. Zdobędziesz wiedzę nurkową oraz umiejętności zarządzania i nadzoru, dzięki czemu staniesz się wzorem do naśladowania dla nurków na całym świecie. Jako SSI Divemaster będziesz prowadzić innych, nadzorując aktywności nurkowe oraz pomagając w szkoleniu nurków. SSI Divemasterzy to cenieni profesjonaliści nurkowi, związani z jedną z największych i najbardziej renomowanych organizacji nurkowych na świecie – SSI. Jeśli ukończyłeś już kurs PRO SSI Dive Guide, wystarczy, że ukończysz dodatkowo kurs SSI Science of Diving. Prosimy o kontakt w celu uzyskania informacji o cenie. Cena obejmuje całe szkolenie u nas, kurs SSI Dive Guide oraz teorię SSI Science of Diving. Opłaty PRO są dodatkowe i będą fakturowane przez SSI bezpośrednio do Twojej aplikacji. Będziesz także musiał(a) zakupić pakiet PRO.",
 					imageSrc: "/images/courses/divemaster.jpg",
