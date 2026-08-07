@@ -12,6 +12,33 @@ export const siteCopy = {
 				{ key: "instagram", label: "Instagram" },
 				{ key: "facebook", label: "Facebook" },
 			],
+			contactForm: {
+				nameLabel: "Your name",
+				emailLabel: "Email",
+				levelLabel: "Current certification",
+				levelOptions: [
+					"Not certified yet",
+					"Open Water Diver",
+					"Advanced Open Water",
+					"Rescue / Divemaster",
+					"Technical diver",
+				],
+				levelPlaceholder: "Select…",
+				datesLabel: "Preferred dates",
+				datesPlaceholder: "e.g. weekends in September",
+				messageLabel: "Message",
+				messagePlaceholder:
+					"Which course are you interested in? Anything I should know?",
+				consent:
+					"I agree to my details being used to answer this enquiry.",
+				submit: "Send message",
+				sending: "Sending…",
+				success:
+					"Thanks — message sent. I usually reply within 24–48 hours.",
+				error:
+					"Something went wrong. Please email me directly at",
+				required: "required",
+			},
 			legalDisclaimer:
 				"The information provided on this website is for general information purposes only and does not constitute a contractual offer or confirmation of business activity.",
 			cookieBanner: {
@@ -104,10 +131,11 @@ export const siteCopy = {
 					{
 						heading: "2. Scope of processed data",
 						paragraphs: [
-							"The Website does not use contact forms and does not collect data directly from users.",
+							"The Website has a contact form. Data entered there is used solely to answer the enquiry and is not used for marketing.",
 							"When using the Website, the following data may be processed:",
 						],
 						list: [
+							"data provided in the contact form: name, email address, certification level, preferred dates and the content of the message,",
 							"IP address (in anonymized form),",
 							"statistical data about visits (e.g. number of visits, device type, browser),",
 							"data about how the Website is used (e.g. visited pages).",
@@ -117,6 +145,7 @@ export const siteCopy = {
 						heading: "3. Purpose of data processing",
 						paragraphs: ["Personal data is processed for the purpose of:"],
 						list: [
+							"answering enquiries sent through the contact form,",
 							"keeping visit statistics,",
 							"improving the functioning of the Website,",
 							"analyzing how the content is used.",
@@ -126,11 +155,20 @@ export const siteCopy = {
 						heading: "4. Legal basis",
 						paragraphs: ["Personal data is processed on the basis of:"],
 						list: [
-							"user’s consent (Article 6(1)(a) GDPR) – for analytical cookies.",
+							"user’s consent (Article 6(1)(a) GDPR / UK GDPR) – for analytical cookies and for data sent through the contact form,",
+							"the legitimate interest of the data controller (Article 6(1)(f)) – for answering enquiries.",
 						],
 					},
 					{
-						heading: "5. Analytical tool",
+						heading: "5. Contact form provider",
+						paragraphs: [
+							"The contact form is handled by Web3Forms, which receives the submitted data and forwards it by email.",
+							"Data may be transferred outside the European Union based on appropriate safeguards in accordance with GDPR (such as standard contractual clauses).",
+							"Submissions are stored by the provider for a limited period (currently 30 days) so that enquiries can be recovered if an email is lost. The data is not used for any purpose other than answering the enquiry.",
+						],
+					},
+					{
+						heading: "6. Analytical tool",
 						paragraphs: [
 							"The Website uses: Google Analytics (Google LLC).",
 							"Google Analytics uses cookies to analyze website traffic.",
@@ -139,13 +177,14 @@ export const siteCopy = {
 						],
 					},
 					{
-						heading: "6. Data retention period",
+						heading: "7. Data retention period",
 						paragraphs: [
+							"Contact form submissions are kept by the form provider for 30 days. Enquiries received by email are kept for as long as needed to handle them and any follow-up.",
 							"Statistical data is stored according to Google Analytics settings or until the user withdraws their consent.",
 						],
 					},
 					{
-						heading: "7. User rights",
+						heading: "8. User rights",
 						paragraphs: ["The user has the right to:"],
 						list: [
 							"access their data,",
@@ -153,17 +192,17 @@ export const siteCopy = {
 							"erase their data,",
 							"restrict processing,",
 							"withdraw consent at any time,",
-							"lodge a complaint with a data protection authority.",
+							"lodge a complaint with a supervisory authority — in the UK the Information Commissioner\u2019s Office (ICO), or the authority in the user\u2019s country of residence.",
 						],
 					},
 					{
-						heading: "8. Withdrawal of consent",
+						heading: "9. Withdrawal of consent",
 						paragraphs: [
 							"The user may withdraw consent at any time by deleting cookies in their browser or changing their browser cookie settings.",
 						],
 					},
 					{
-						heading: "9. Changes to the privacy policy",
+						heading: "10. Changes to the privacy policy",
 						paragraphs: ["This Privacy Policy may be updated when necessary."],
 					},
 				],
@@ -972,6 +1011,32 @@ export const siteCopy = {
 				{ key: "instagram", label: "Instagram" },
 				{ key: "facebook", label: "Facebook" },
 			],
+			contactForm: {
+				nameLabel: "Imię",
+				emailLabel: "E-mail",
+				levelLabel: "Obecne uprawnienia",
+				levelOptions: [
+					"Jeszcze bez certyfikatu",
+					"Open Water Diver",
+					"Advanced Open Water",
+					"Rescue / Divemaster",
+					"Nurek techniczny",
+				],
+				levelPlaceholder: "Wybierz…",
+				datesLabel: "Preferowane terminy",
+				datesPlaceholder: "np. weekendy we wrześniu",
+				messageLabel: "Wiadomość",
+				messagePlaceholder:
+					"Który kurs Cię interesuje? Coś, o czym powinienem wiedzieć?",
+				consent:
+					"Zgadzam się na wykorzystanie moich danych do odpowiedzi na to zapytanie.",
+				submit: "Wyślij wiadomość",
+				sending: "Wysyłanie…",
+				success:
+					"Dzięki — wiadomość wysłana. Zwykle odpowiadam w ciągu 24–48 godzin.",
+				error: "Coś poszło nie tak. Napisz proszę bezpośrednio na",
+				required: "wymagane",
+			},
 			legalDisclaimer:
 				"Informacje zamieszczone na stronie mają charakter informacyjny i nie stanowią oferty w rozumieniu Kodeksu cywilnego ani potwierdzenia prowadzenia działalności gospodarczej",
 			cookieBanner: {
@@ -1070,10 +1135,11 @@ export const siteCopy = {
 					{
 						heading: "2. Zakres przetwarzanych danych",
 						paragraphs: [
-							"Strona nie posiada formularzy kontaktowych i nie zbiera danych bezpośrednio od użytkowników.",
+							"Strona posiada formularz kontaktowy. Dane w nim podane służą wyłącznie do odpowiedzi na zapytanie i nie są wykorzystywane w celach marketingowych.",
 							"Podczas korzystania ze Strony mogą być przetwarzane następujące dane:",
 						],
 						list: [
+							"dane podane w formularzu kontaktowym: imię, adres e-mail, poziom uprawnień, preferowane terminy oraz treść wiadomości,",
 							"adres IP (w formie zanonimizowanej),",
 							"dane statystyczne dotyczące wizyt (np. liczba wizyt, typ urządzenia, przeglądarka),",
 							"dane dotyczące sposobu korzystania ze Strony (np. odwiedzane podstrony).",
@@ -1083,6 +1149,7 @@ export const siteCopy = {
 						heading: "3. Cel przetwarzania danych",
 						paragraphs: ["Dane osobowe są przetwarzane w celu:"],
 						list: [
+							"odpowiedzi na zapytania wysłane przez formularz kontaktowy,",
 							"prowadzenia statystyk odwiedzin,",
 							"poprawy funkcjonowania Strony,",
 							"analizy sposobu korzystania z treści.",
@@ -1092,11 +1159,20 @@ export const siteCopy = {
 						heading: "4. Podstawa prawna",
 						paragraphs: ["Dane osobowe są przetwarzane na podstawie:"],
 						list: [
-							"zgody użytkownika (art. 6 ust. 1 lit. a RODO) – w zakresie analitycznych plików cookies.",
+							"zgody użytkownika (art. 6 ust. 1 lit. a RODO) – w zakresie analitycznych plików cookies oraz danych przesłanych przez formularz kontaktowy,",
+							"prawnie uzasadnionego interesu administratora (art. 6 ust. 1 lit. f RODO) – w zakresie odpowiedzi na zapytania.",
 						],
 					},
 					{
-						heading: "5. Narzędzie analityczne",
+						heading: "5. Dostawca formularza kontaktowego",
+						paragraphs: [
+							"Formularz kontaktowy obsługiwany jest przez Web3Forms, który odbiera przesłane dane i przekazuje je e-mailem.",
+							"Dane mogą być przekazywane poza Unię Europejską w oparciu o odpowiednie zabezpieczenia zgodne z RODO (np. standardowe klauzule umowne).",
+							"Dostawca przechowuje zgłoszenia przez ograniczony czas (obecnie 30 dni), aby możliwe było odtworzenie zapytania w razie zagubienia wiadomości e-mail. Dane nie są wykorzystywane w innym celu niż odpowiedź na zapytanie.",
+						],
+					},
+					{
+						heading: "6. Narzędzie analityczne",
 						paragraphs: [
 							"Strona wykorzystuje: Google Analytics (Google LLC).",
 							"Google Analytics używa plików cookies do analizy ruchu na Stronie.",
@@ -1105,13 +1181,14 @@ export const siteCopy = {
 						],
 					},
 					{
-						heading: "6. Okres przechowywania danych",
+						heading: "7. Okres przechowywania danych",
 						paragraphs: [
+							"Zgłoszenia z formularza kontaktowego są przechowywane przez dostawcę formularza przez 30 dni. Zapytania otrzymane e-mailem są przechowywane tak długo, jak jest to potrzebne do ich obsługi i ewentualnej dalszej korespondencji.",
 							"Dane statystyczne są przechowywane zgodnie z ustawieniami Google Analytics lub do momentu cofnięcia zgody przez użytkownika.",
 						],
 					},
 					{
-						heading: "7. Prawa użytkownika",
+						heading: "8. Prawa użytkownika",
 						paragraphs: ["Użytkownik ma prawo do:"],
 						list: [
 							"dostępu do swoich danych,",
@@ -1119,17 +1196,17 @@ export const siteCopy = {
 							"ich usunięcia,",
 							"ograniczenia przetwarzania,",
 							"cofnięcia zgody w dowolnym momencie,",
-							"wniesienia skargi do organu nadzorczego ds. ochrony danych osobowych.",
+							"wniesienia skargi do organu nadzorczego — w Wielkiej Brytanii jest to Information Commissioner\u2019s Office (ICO), a w innych krajach organ właściwy dla miejsca zamieszkania użytkownika.",
 						],
 					},
 					{
-						heading: "8. Cofnięcie zgody",
+						heading: "9. Cofnięcie zgody",
 						paragraphs: [
 							"Użytkownik może w każdej chwili cofnąć zgodę poprzez usunięcie plików cookies w przeglądarce lub zmianę ustawień przeglądarki.",
 						],
 					},
 					{
-						heading: "9. Zmiany w polityce prywatności",
+						heading: "10. Zmiany w polityce prywatności",
 						paragraphs: [
 							"Niniejsza Polityka prywatności może być aktualizowana w razie potrzeby.",
 						],

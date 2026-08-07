@@ -4,6 +4,7 @@ import { siteConfig } from '@/lib/siteConfig';
 import { siteCopy } from '@/content/siteCopy';
 import type { Locale } from '@/lib/i18n';
 import { CtaLink } from '@/components/ui/CtaLink';
+import { ContactForm } from './ContactForm';
 import { SectionSurface } from './SectionSurface';
 
 type ContactCtaProps = {
@@ -38,9 +39,14 @@ export const ContactCta = ({
           {description}
         </p>
 
+        {siteConfig.formAccessKey ? (
+          <ContactForm locale={locale} />
+        ) : null}
+
         <div className='mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4'>
           <CtaLink
             href={`mailto:${siteConfig.email}`}
+            variant={siteConfig.formAccessKey ? 'ghost' : undefined}
             className='w-full text-sm sm:w-auto'
           >
             {copy.emailLabel}

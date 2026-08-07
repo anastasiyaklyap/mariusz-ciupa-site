@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 import { withLocaleHref, type Locale } from '@/lib/i18n';
 import { linkPath } from '@/lib/linkPath';
 
