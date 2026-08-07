@@ -4,6 +4,7 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { siteCopy } from '@/content/siteCopy';
 import { PageContainer } from '@/components/layout/PageContainer';
 import { ContactCta } from '@/components/sections/ContactCta';
+import { Faq } from '@/components/sections/Faq';
 import type { Locale } from '@/lib/i18n';
 
 type CoursePageHero = {
@@ -25,6 +26,7 @@ type CoursePageProps = {
   contact: CoursePageContact;
   cardCtaLabel?: string;
   cardCtaHref?: string;
+  faqTag?: 'beginner' | 'speciality' | 'technical';
   locale: Locale;
 };
 
@@ -34,6 +36,7 @@ export const CoursePage = ({
   contact,
   cardCtaLabel,
   cardCtaHref,
+  faqTag,
   locale,
 }: CoursePageProps) => {
   return (
@@ -52,6 +55,7 @@ export const CoursePage = ({
         ctaHref={cardCtaHref}
         locale={locale}
       />
+      {faqTag ? <Faq locale={locale} tag={faqTag} /> : null}
       <ContactCta
         title={contact.title}
         description={contact.description}

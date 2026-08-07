@@ -20,6 +20,36 @@ export type HeaderCtaLink = {
 
 const getHeaderLinkLabels = (locale: Locale) => siteCopy[locale].header.nav;
 
+const normalizePath = (value: string): string => {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+  let path = value.split('?')[0].split('#')[0];
+  if (basePath && path.startsWith(basePath)) {
+    path = path.slice(basePath.length) || '/';
+  }
+  if (!path.startsWith('/')) path = `/${path}`;
+  return path.endsWith('/') ? path : `${path}/`;
+};
+
+export const isHomePath = (pathname: string, locale: Locale): boolean =>
+  normalizePath(pathname) === `/${locale}/`;
+
+export const isNavLinkActive = ({
+  link,
+  pathname,
+  locale,
+  activeSection,
+}: {
+  link: HeaderNavLink;
+  pathname: string;
+  locale: Locale;
+  activeSection: HeaderSectionId | null;
+}): boolean => {
+  if (link.sectionId) {
+    return isHomePath(pathname, locale) && activeSection === link.sectionId;
+  }
+  return normalizePath(pathname) === normalizePath(link.href);
+};
+
 export const getHeaderNavLinks = (locale: Locale): HeaderNavLink[] => {
   const labels = getHeaderLinkLabels(locale);
 
@@ -39,6 +69,11 @@ export const getHeaderNavLinks = (locale: Locale): HeaderNavLink[] => {
       id: 'gallery',
       label: labels.gallery,
       href: withLocaleHref(linkPath('/gallery'), locale),
+    },
+    {
+      id: 'faq',
+      label: labels.faq,
+      href: withLocaleHref(linkPath('/faq'), locale),
     },
     {
       id: 'updates',

@@ -22,6 +22,7 @@ export const CourseCategoryPageClient = ({
       hero={{ ...copy.hero, tags: [...copy.hero.tags, common.locations] }}
       courses={copy.courses}
       contact={{ ...copy.contact, className: 'mt-16 md:mt-24' }}
+      faqTag={category}
       locale={locale}
     />
   );

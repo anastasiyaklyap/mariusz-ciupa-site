@@ -161,6 +161,16 @@ export const buildCourseListSchema = (
   })),
 });
 
+export const buildFaqSchema = (locale: Locale) => ({
+  '@type': 'FAQPage',
+  '@id': `${localeUrl(locale, '/faq')}#faq`,
+  mainEntity: siteCopy[locale].faq.items.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+});
+
 export const buildGraph = (nodes: readonly unknown[]) => ({
   '@context': 'https://schema.org',
   '@graph': nodes.filter(Boolean),
