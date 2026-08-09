@@ -241,8 +241,8 @@ export const siteCopy = {
 				{
 					id: "age",
 					tags: ["home", "beginner"],
-					q: "How old do you have to be? Can children learn to dive?",
-					a: "From 10. Divers under 15 are certified as Junior Open Water Divers and dive with a dive professional or a certified adult. Ten- and eleven-year-olds are limited to 12 metres; the full Open Water limit is 18 metres. For anyone under 18, a parent or guardian signs the training forms.",
+					q: "How old do you have to be? Can children learn to dive? Is there an upper limit?",
+					a: "From 10, and there is no upper limit — people in their sixties do Try Scuba too. Divers under 15 are certified as Junior Open Water Divers and dive with a dive professional or a certified adult. Ten- and eleven-year-olds are limited to 12 metres; the full Open Water limit is 18 metres. For anyone under 18, a parent or guardian signs the training forms.",
 				},
 				{
 					id: "health",
@@ -260,11 +260,7 @@ export const siteCopy = {
 					id: "price",
 					tags: ["home", "beginner"],
 					q: "How much does a course cost?",
-					a: "Try Scuba is £75, the SSI Open Water Diver course £550, Advanced Open Water Diver £395 and a Scuba Skills Update £95.",
-					todo: {
-						variant: "missing",
-						text: "Sprzęt jest w cenie. Czy mieszczą się w niej także materiały SSI i certyfikat — i co dochodzi osobno: wstęp na akwen, butle, dojazd.",
-					},
+					a: "Try Scuba is £75, the SSI Open Water Diver course £550, Advanced Open Water Diver £395 and a Scuba Skills Update £95. Every course price includes the SSI online learning materials and the certification. Equipment is included on Try Scuba and Open Water Diver. Site entry fees are charged separately.",
 				},
 				{
 					id: "equipment",
@@ -277,10 +273,6 @@ export const siteCopy = {
 					tags: ["home", "beginner"],
 					q: "Where do the courses take place?",
 					a: "Pool sessions run at a pool in London, or in the heated indoor training pool at Stoney Cove. Open water dives take place at the inland sites London divers use — Wraysbury, Stoney Cove and Vobster Quay. Warm water training and dive trips also run in Lanzarote.",
-					todo: {
-						variant: "missing",
-						text: "Nazwa basenu i dzielnica Londynu.",
-					},
 				},
 				{
 					id: "dates",
@@ -481,7 +473,7 @@ export const siteCopy = {
 						courseTitle: "SSI Extended Range",
 						priceLabel: "£550",
 						blurb:
-							"Planned decompression dives to 45 metres, in a twinset or Extended Range sidemount. Requires Deep and Nitrox certifications and around 50 logged dives — if you are not there yet, write anyway and we will map out the route.",
+							"Planned decompression dives to 45 metres, in a twinset or Extended Range sidemount. Requires Deep Diving and Enriched Air Nitrox — if you are not there yet, write anyway and we will map out the route.",
 						ctaLabel: "Course details",
 						href: "/technical/extended-range",
 					},
@@ -687,7 +679,10 @@ export const siteCopy = {
 							label: "Swimming",
 							text: "You need to be comfortable in water. The full water fitness evaluation belongs to the certification course, not to this session.",
 						},
-						{ label: "Which pool", todo: "Nazwa basenu i dzielnica Londynu." },
+						{
+							label: "Which pool",
+							text: "A pool in London, or the heated indoor training pool at Stoney Cove. The venue is arranged for each course.",
+						},
 						{
 							label: "What is provided",
 							text: "Everything you need for the session. You do not need any equipment of your own.",
@@ -786,11 +781,11 @@ export const siteCopy = {
 				priceLabel: "Course price",
 				price: { amount: 550, currency: "GBP" },
 				priceNote:
-					"Indicative price for the twinset course. Ask for a quote covering your dates and gas.",
+					"Indicative price, covering tuition only. Equipment is not included; rental can be arranged.",
 				practical: {
 					title: "How the course works",
 					description:
-						"The course limits below come from the SSI Extended Range programme. Entry requirements are taken from SSI's published standards and still need confirming against how this course is actually run.",
+						"The numbers below are how this course is actually run.",
 					rows: [
 						{
 							label: "Maximum training depth",
@@ -802,7 +797,7 @@ export const siteCopy = {
 						},
 						{
 							label: "Equipment",
-							text: "A full twinset or Extended Range sidemount configuration.",
+							text: "A full twinset or Extended Range sidemount configuration, plus decompression cylinders.",
 						},
 						{
 							label: "Decompression gases",
@@ -810,19 +805,15 @@ export const siteCopy = {
 						},
 						{
 							label: "Before you start",
-							todo: "SSI publishes: minimum age 18, Deep Diving and Enriched Air Nitrox certifications (or the equivalent), and around 50 logged dives. Confirm what applies here.",
-						},
-						{
-							label: "Medical and first aid",
-							todo: "SSI publishes: first aid, CPR and oxygen provider certification valid within the last 24 months, plus a diving medical signed by a doctor. Confirm.",
+							text: "Deep Diving and Enriched Air Nitrox certifications.",
 						},
 						{
 							label: "How long it takes",
-							todo: "Number of academic sessions and training dives, and how many days the course usually takes.",
+							text: "Six training dives plus the theory.",
 						},
 						{
 							label: "What the price covers",
-							todo: "Whether the twinset, stage cylinders and gases are included in £550 or charged separately.",
+							text: "The course itself, without equipment — the twinset and decompression cylinders are yours to bring. Rental can be arranged if you do not own them yet.",
 						},
 						{
 							label: "Where",
@@ -875,20 +866,8 @@ export const siteCopy = {
 							text: "Physics, physiology, decompression theory and the aquatic environment, studied online. SSI suggests 8 to 12 hours. Priced separately at £150 if taken on its own.",
 						},
 						{
-							label: "Programme structure",
-							text: "10 academic sessions, 4 pool sessions and 60 open water sessions. SSI suggests 43 to 57 hours in total.",
-						},
-						{
 							label: "Maximum training depth",
 							text: "40 metres.",
-						},
-						{
-							label: "Where",
-							text: "Pool work in London, open water at Stoney Cove — where Divemaster candidates put the training to use — and at Wraysbury or Vobster Quay depending on the stage.",
-						},
-						{
-							label: "Going further",
-							text: "The Instructor Training Course, which leads to SSI Open Water Instructor, is run by SSI Instructor Trainers. Mariusz trains to Divemaster level and will point you to an ITC when you are ready for it.",
 						},
 					],
 				},
@@ -940,8 +919,14 @@ export const siteCopy = {
 							label: "How long it takes",
 							text: "It depends on you. The in-water part takes at least three days; the theory you do online and we go through it live.",
 						},
-						{ label: "Included in the price", todo: "Equipment is included. Are the SSI materials and the certification included too?" },
-						{ label: "Paid separately", todo: "wstęp na akwen, butle, transport?" },
+						{
+							label: "Included in the price",
+							text: "The SSI online learning materials, the equipment for the course, and the certification.",
+						},
+						{
+							label: "Paid separately",
+							text: "Site entry fees.",
+						},
 						{
 							label: "Available dates",
 							text: "Scheduled course dates run through the year, and I also arrange courses individually — tell me what suits you.",
@@ -1311,38 +1296,38 @@ export const siteCopy = {
 				},
 				{
 					src: "/images/gallery/technical-wreck-deco.jpg",
-					alt: "Technical diver alongside a wreck, carrying a decompression cylinder and diving a dry suit",
+					alt: "Mariusz Ciupa at the Teti wreck off Vis, Croatia, carrying a decompression cylinder and diving a dry suit",
 					caption:
-						"A wreck dive on the technical side of the line: a deco cylinder slung on the left, dry suit, everything redundant. This is what Extended Range training is for.",
-					place: "Lanzarote",
+						"The Teti wreck off Vis. A deco cylinder slung on the left, dry suit, everything redundant — the configuration Extended Range training is built around.",
+					place: "Vis, Croatia",
 				},
 				{
 					src: "/images/gallery/warm-water-shoal.jpg",
-					alt: "Diver surrounded by a shoal of seabream in warm, clear water",
+					alt: "Try Dive student surrounded by a shoal of seabream in warm, clear water, with the instructor alongside",
 					caption:
-						"Warm water and a shoal of seabream closing in. Trip diving looks nothing like training in a British quarry — and each one makes the other better.",
+						"A Try Dive in warm water, with a shoal of seabream closing in. A first descent, with the instructor alongside the whole time.",
 					place: "Lanzarote",
 				},
 				{
 					src: "/images/gallery/wreck-blue-water.jpg",
-					alt: "Diver in trim above a wreck in warm, clear blue water",
+					alt: "Mariusz Ciupa in trim above a wreck in warm, clear blue water off Malta",
 					caption:
-						"A wreck in warm, clear water. Trip diving like this is what solid basics buy you.",
-					place: "Lanzarote",
+						"A wreck in warm, clear water off Malta. Trip diving like this is what solid basics buy you.",
+					place: "Malta",
 				},
 				{
 					src: "/images/gallery/technical-stages-team.jpg",
-					alt: "Technical diver in sidemount with stage cylinders including oxygen, a second diver behind",
+					alt: "Mariusz Ciupa in a technical configuration with stage cylinders including oxygen, a second diver behind, off Vis in Croatia",
 					caption:
 						"A full technical rig: side cylinders, an oxygen stage for decompression, and a team within reach. Nothing here is improvised.",
-					place: "Lanzarote",
+					place: "Vis, Croatia",
 				},
 				{
 					src: "/images/gallery/mariusz-technical-ok.jpg",
-					alt: "Mariusz Ciupa in a technical configuration giving the OK sign with both hands",
+					alt: "Mariusz Ciupa in a technical configuration giving the OK sign with both hands, off Vis in Croatia",
 					caption:
 						"Two OK signs before the decompression part of the dive. Checking the team is procedure, not politeness.",
-					place: "Lanzarote",
+					place: "Vis, Croatia",
 				},
 				{
 					src: "/images/gallery/uk-kitting-up.jpg",
@@ -1350,6 +1335,7 @@ export const siteCopy = {
 					caption:
 						"Dry suit, twinset and a car park by the water. That is how most UK training days actually start.",
 					place: "United Kingdom",
+					focus: "top",
 				},
 				{
 					src: "/images/gallery/stoney-cove-map.jpg",
@@ -1360,10 +1346,59 @@ export const siteCopy = {
 				},
 				{
 					src: "/images/gallery/wreck-torch.jpg",
-					alt: "Technical diver with a torch working along a wreck in low light",
+					alt: "Technical diver with a torch on the Brioni wreck off Vis in Croatia, in low light",
 					caption:
-						"A wreck in low light, a torch and a technical wing. Deeper and darker is where recreational limits stop being enough.",
-					place: "Lanzarote",
+						"The Brioni wreck off Vis, in low light. A torch and a technical wing — deeper and darker is where recreational limits stop being enough.",
+					place: "Vis, Croatia",
+				},
+				{
+					src: "/images/gallery/wreck-superstructure.jpg",
+					alt: "Wreck superstructure overgrown with marine life, shoals of fish above the deck, Malta",
+					caption:
+						"The superstructure, overgrown and busy. After a few decades a wreck stops being a ship and turns into a reef.",
+					place: "Malta",
+				},
+				{
+					src: "/images/gallery/wreck-bow-diver.jpg",
+					alt: "Diver sitting on the bow of a large wreck in clear blue water off Malta",
+					caption:
+						"A break on the bow. Diving is meant to be fun too, not only procedures.",
+					place: "Malta",
+				},
+				{
+					src: "/images/gallery/wreck-bow-approach.jpg",
+					alt: "Diver approaching the bow of a large wreck, the hull dropping away below, Malta",
+					caption:
+						"The same bow up close. In visibility like this the whole hull drops away beneath you.",
+					place: "Malta",
+				},
+				{
+					src: "/images/gallery/pool-buoyancy.jpg",
+					alt: "Diver working on buoyancy in the indoor training pool at Stoney Cove",
+					caption:
+						"Pool work: buoyancy and body position. Everything gets practised here long before open water.",
+					place: "Stoney Cove, UK",
+				},
+				{
+					src: "/images/gallery/pool-trim.jpg",
+					alt: "Diver in trim just above the bottom of the training pool at Stoney Cove",
+					caption:
+						"Level just above the bottom, without touching it. This is the skill that later decides how much you actually see underwater.",
+					place: "Stoney Cove, UK",
+				},
+				{
+					src: "/images/gallery/pool-ok-check.jpg",
+					alt: "Instructor and student exchanging the OK sign in the training pool",
+					caption:
+						"Exchanging the OK sign. You do not talk underwater — everything goes through hand signals, so they get practised from the first session.",
+					place: "Stoney Cove, UK",
+				},
+				{
+					src: "/images/gallery/pool-stoney-cove.jpg",
+					alt: "Two divers at the surface of the heated indoor training pool at Stoney Cove",
+					caption:
+						"The heated indoor training pool at Stoney Cove, 28 degrees. Last words before going down.",
+					place: "Stoney Cove, UK",
 				},
 			],
 		},
@@ -1794,8 +1829,8 @@ export const siteCopy = {
 				{
 					id: "age",
 					tags: ["home", "beginner"],
-					q: "Od jakiego wieku można nurkować? Czy dzieci mogą się uczyć?",
-					a: "Od 10 lat. Osoby poniżej 15 roku życia dostają certyfikat Junior Open Water Diver i nurkują z instruktorem lub z certyfikowanym dorosłym. Dziesięcio- i jedenastolatków obowiązuje limit 12 metrów, pełny limit Open Water to 18 metrów. Za osoby niepełnoletnie formularze podpisuje rodzic lub opiekun.",
+					q: "Od jakiego wieku można nurkować? Czy dzieci mogą się uczyć? Czy jest górna granica?",
+					a: "Od 10 lat, a górnej granicy nie ma — na Try Scuba schodzą też osoby po sześćdziesiątce. Osoby poniżej 15 roku życia dostają certyfikat Junior Open Water Diver i nurkują z instruktorem lub z certyfikowanym dorosłym. Dziesięcio- i jedenastolatków obowiązuje limit 12 metrów, pełny limit Open Water to 18 metrów. Za osoby niepełnoletnie formularze podpisuje rodzic lub opiekun.",
 				},
 				{
 					id: "health",
@@ -1813,11 +1848,7 @@ export const siteCopy = {
 					id: "price",
 					tags: ["home", "beginner"],
 					q: "Ile kosztuje kurs?",
-					a: "Try Scuba to £75, kurs SSI Open Water Diver £550, Advanced Open Water Diver £395, a odświeżenie umiejętności £95.",
-					todo: {
-						variant: "missing",
-						text: "Sprzęt jest w cenie. Czy mieszczą się w niej także materiały SSI i certyfikat — i co dochodzi osobno: wstęp na akwen, butle, dojazd.",
-					},
+					a: "Try Scuba to £75, kurs SSI Open Water Diver £550, Advanced Open Water Diver £395, a odświeżenie umiejętności £95. W cenie każdego kursu są materiały SSI online i certyfikat. Sprzęt wchodzi w cenę przy Try Scuba i Open Water Diver. Osobno płatne są wejściówki na akweny.",
 				},
 				{
 					id: "equipment",
@@ -1830,10 +1861,6 @@ export const siteCopy = {
 					tags: ["home", "beginner"],
 					q: "Gdzie odbywają się zajęcia?",
 					a: "Zajęcia basenowe odbywają się na basenie w Londynie albo w krytym, podgrzewanym basenie szkoleniowym na Stoney Cove. Nurkowania na wodach otwartych — w akwenach, z których korzystają londyńscy nurkowie: Wraysbury, Stoney Cove i Vobster Quay. Szkolenia i wyjazdy w ciepłej wodzie odbywają się też na Lanzarote.",
-					todo: {
-						variant: "missing",
-						text: "Nazwa basenu i dzielnica Londynu.",
-					},
 				},
 				{
 					id: "dates",
@@ -2035,7 +2062,7 @@ export const siteCopy = {
 						courseTitle: "SSI Extended Range",
 						priceLabel: "£550",
 						blurb:
-							"Nurkowania z planowaną dekompresją do 45 metrów, w twinsecie lub sidemouncie Extended Range. Wymaga certyfikatów Deep i Nitrox oraz około 50 zalogowanych nurkowań — jeśli jeszcze ich nie masz, napisz, ustalimy drogę.",
+							"Nurkowania z planowaną dekompresją do 45 metrów, w twinsecie lub sidemouncie Extended Range. Wymaga certyfikatów Deep Diving i Enriched Air Nitrox — jeśli jeszcze ich nie masz, napisz, ustalimy drogę.",
 						ctaLabel: "Szczegóły kursu",
 						href: "/technical/extended-range",
 					},
@@ -2241,7 +2268,10 @@ export const siteCopy = {
 							label: "Pływanie",
 							text: "Trzeba czuć się w wodzie swobodnie. Pełna ocena sprawności w wodzie należy do kursu certyfikującego, nie do tej sesji.",
 						},
-						{ label: "Który basen", todo: "Nazwa basenu i dzielnica Londynu." },
+						{
+							label: "Który basen",
+							text: "Basen w Londynie albo kryty basen szkoleniowy na Stoney Cove. Obiekt ustalam pod konkretny kurs.",
+						},
 						{
 							label: "Co jest zapewnione",
 							text: "Wszystko, czego potrzebujesz na sesję. Nie musisz mieć własnego sprzętu.",
@@ -2344,11 +2374,11 @@ export const siteCopy = {
 				priceLabel: "Cena kursu",
 				price: { amount: 550, currency: "GBP" },
 				priceNote:
-					"Cena orientacyjna, wariant twinset. Napisz po wycenę obejmującą Twoje terminy i gazy.",
+					"Cena orientacyjna, obejmuje samo szkolenie. Sprzęt nie wchodzi w cenę; można go wypożyczyć.",
 				practical: {
 					title: "Jak wygląda kurs",
 					description:
-						"Limity kursu poniżej pochodzą z programu SSI Extended Range. Wymagania wstępne są wzięte z opublikowanych standardów SSI i wymagają jeszcze potwierdzenia, jak ten kurs prowadzony jest w praktyce.",
+						"Poniższe dane to sposób, w jaki ten kurs jest prowadzony.",
 					rows: [
 						{
 							label: "Maksymalna głębokość szkoleniowa",
@@ -2360,7 +2390,7 @@ export const siteCopy = {
 						},
 						{
 							label: "Sprzęt",
-							text: "Pełny system twinset albo Extended Range sidemount.",
+							text: "Pełny system twinset albo Extended Range sidemount, plus butle dekompresyjne.",
 						},
 						{
 							label: "Gazy dekompresyjne",
@@ -2368,19 +2398,15 @@ export const siteCopy = {
 						},
 						{
 							label: "Zanim zaczniesz",
-							todo: "SSI podaje: ukończone 18 lat, certyfikaty Deep Diving i Enriched Air Nitrox (lub odpowiedniki) oraz około 50 zalogowanych nurkowań. Do potwierdzenia, co obowiązuje tutaj.",
-						},
-						{
-							label: "Medyczne i pierwsza pomoc",
-							todo: "SSI podaje: aktualne w ciągu ostatnich 24 miesięcy uprawnienia z pierwszej pomocy, RKO i podawania tlenu oraz orzeczenie lekarskie o zdolności do nurkowania. Do potwierdzenia.",
+							text: "Certyfikaty Deep Diving i Enriched Air Nitrox.",
 						},
 						{
 							label: "Ile trwa",
-							todo: "Liczba zajęć teoretycznych i nurkowań szkoleniowych oraz w ilu dniach zwykle się to mieści.",
+							text: "Sześć nurkowań szkoleniowych plus teoria.",
 						},
 						{
 							label: "Co obejmuje cena",
-							todo: "Czy twinset, butle stage i gazy wchodzą w £550, czy są liczone osobno.",
+							text: "Sam kurs, bez sprzętu — twinset i butle dekompresyjne kursant powinien mieć swoje. Jeśli ich nie masz, można je wypożyczyć.",
 						},
 						{
 							label: "Gdzie",
@@ -2433,20 +2459,8 @@ export const siteCopy = {
 							text: "Fizyka, fizjologia, teoria dekompresji i środowisko wodne — nauka online. SSI przewiduje 8 do 12 godzin. Osobno kosztuje £150.",
 						},
 						{
-							label: "Struktura programu",
-							text: "10 sesji teoretycznych, 4 basenowe i 60 sesji na wodach otwartych. SSI przewiduje łącznie 43 do 57 godzin.",
-						},
-						{
 							label: "Maksymalna głębokość szkolenia",
 							text: "40 metrów.",
-						},
-						{
-							label: "Gdzie",
-							text: "Basen w Londynie, wody otwarte na Stoney Cove — tam kandydaci na Divemastera wykorzystują szkolenie w praktyce — oraz na Wraysbury lub Vobster Quay, zależnie od etapu.",
-						},
-						{
-							label: "Co dalej",
-							text: "Kurs instruktorski (ITC), prowadzący do stopnia SSI Open Water Instructor, prowadzą Instructor Trainerzy SSI. Mariusz szkoli do poziomu Divemastera i wskaże kurs instruktorski, kiedy przyjdzie na niego czas.",
 						},
 					],
 				},
@@ -2498,8 +2512,14 @@ export const siteCopy = {
 							label: "Ile trwa",
 							text: "Zależy od Ciebie. Zajęcia praktyczne w wodzie to minimum trzy dni; teorię robisz online i omawiamy ją na żywo.",
 						},
-						{ label: "W cenie", todo: "Sprzęt jest w cenie. Czy materiały SSI i certyfikat też?" },
-						{ label: "Płatne osobno", todo: "wstęp na akwen, butle, dojazd?" },
+						{
+							label: "W cenie",
+							text: "Materiały SSI online, sprzęt na czas kursu i certyfikat.",
+						},
+						{
+							label: "Płatne osobno",
+							text: "Wejściówki na akweny.",
+						},
 						{
 							label: "Terminy",
 							text: "Kursy odbywają się w stałych terminach w ciągu roku, a poza nimi ustalam je indywidualnie — napisz, kiedy Ci pasuje.",
@@ -2871,9 +2891,9 @@ export const siteCopy = {
 				},
 				{
 					src: "/images/gallery/slipper-lobster.jpg",
-					alt: "Cykada morska na dnie, zdjęcie z nurkowania na Lanzarote",
+					alt: "Lobster łopatkowaty na dnie, zdjęcie z nurkowania na Lanzarote",
 					caption:
-						"Cykada morska tuż nad dnem. Takie spotkania trafiają się tym, którzy potrafią zawisnąć nieruchomo i nie wzbijać mułu.",
+						"Lobster łopatkowaty tuż nad dnem. Takie spotkania trafiają się tym, którzy potrafią zawisnąć nieruchomo i nie wzbijać mułu.",
 					place: "Lanzarote",
 				},
 				{
@@ -2885,38 +2905,38 @@ export const siteCopy = {
 				},
 				{
 					src: "/images/gallery/technical-wreck-deco.jpg",
-					alt: "Nurek techniczny przy wraku, z butlą dekompresyjną i w suchym skafandrze",
+					alt: "Mariusz Ciupa przy wraku Teti u wyspy Vis w Chorwacji, z butlą dekompresyjną i w suchym skafandrze",
 					caption:
-						"Wrak po technicznej stronie granicy: butla dekompresyjna z boku, suchy skafander, wszystko zdublowane. Do tego właśnie przygotowuje szkolenie Extended Range.",
-					place: "Lanzarote",
+						"Wrak Teti przy wyspie Vis. Butla dekompresyjna z boku, suchy skafander, wszystko zdublowane — konfiguracja, do której przygotowuje szkolenie Extended Range.",
+					place: "Wyspa Vis, Chorwacja",
 				},
 				{
 					src: "/images/gallery/warm-water-shoal.jpg",
-					alt: "Nurek w ławicy sargusów w ciepłej, przejrzystej wodzie",
+					alt: "Kursantka na Try Dive w ławicy sargusów, instruktor tuż obok",
 					caption:
-						"Ciepła woda i ławica sargusów dookoła. Nurkowanie wyjazdowe wygląda zupełnie inaczej niż szkolenie w brytyjskim kamieniołomie — i jedno drugiemu dobrze robi.",
+						"Try Dive w ciepłej wodzie, w środku ławicy sargusów. Pierwsze zejście, przez cały czas pod okiem instruktora.",
 					place: "Lanzarote",
 				},
 				{
 					src: "/images/gallery/wreck-blue-water.jpg",
-					alt: "Nurek w trymie nad wrakiem w ciepłej, przejrzystej wodzie",
+					alt: "Mariusz Ciupa w trymie nad wrakiem w ciepłej, przejrzystej wodzie na Malcie",
 					caption:
-						"Wrak w ciepłej, przejrzystej wodzie. Takie nurkowanie wyjazdowe to nagroda za solidnie zrobione podstawy.",
-					place: "Lanzarote",
+						"Wrak w ciepłej, przejrzystej wodzie u wybrzeży Malty. Takie nurkowanie wyjazdowe to nagroda za solidnie zrobione podstawy.",
+					place: "Malta",
 				},
 				{
 					src: "/images/gallery/technical-stages-team.jpg",
-					alt: "Nurek techniczny w sidemouncie z butlami stage, w tym tlenową, drugi nurek w tle",
+					alt: "Mariusz Ciupa w konfiguracji technicznej z butlami stage, w tym tlenową, drugi nurek w tle, przy wyspie Vis w Chorwacji",
 					caption:
 						"Konfiguracja techniczna w komplecie: butle boczne, stage z tlenem do dekompresji, zespół w zasięgu ręki. Nic tu nie jest przypadkowe.",
-					place: "Lanzarote",
+					place: "Wyspa Vis, Chorwacja",
 				},
 				{
 					src: "/images/gallery/mariusz-technical-ok.jpg",
 					alt: "Mariusz Ciupa w konfiguracji technicznej pokazujący znak OK obiema rękami",
 					caption:
 						"Dwa razy OK przed dekompresyjną częścią nurkowania. Sprawdzenie zespołu to procedura, nie uprzejmość.",
-					place: "Lanzarote",
+					place: "Wyspa Vis, Chorwacja",
 				},
 				{
 					src: "/images/gallery/uk-kitting-up.jpg",
@@ -2924,6 +2944,7 @@ export const siteCopy = {
 					caption:
 						"Suchy skafander, twinset i parking przy wodzie. Tak zaczyna się większość dni szkoleniowych w Wielkiej Brytanii.",
 					place: "Wielka Brytania",
+					focus: "top",
 				},
 				{
 					src: "/images/gallery/stoney-cove-map.jpg",
@@ -2934,10 +2955,59 @@ export const siteCopy = {
 				},
 				{
 					src: "/images/gallery/wreck-torch.jpg",
-					alt: "Nurek techniczny z latarką przy wraku w słabym świetle",
+					alt: "Nurek techniczny z latarką przy wraku Brioni u wyspy Vis w Chorwacji, w słabym świetle",
 					caption:
-						"Wrak w słabym świetle, latarka i skrzydło techniczne. Głębiej i ciemniej — tam limity rekreacyjne przestają wystarczać.",
-					place: "Lanzarote",
+						"Wrak Brioni przy wyspie Vis, w słabym świetle. Latarka i skrzydło techniczne — głębiej i ciemniej, tam limity rekreacyjne przestają wystarczać.",
+					place: "Wyspa Vis, Chorwacja",
+				},
+				{
+					src: "/images/gallery/wreck-superstructure.jpg",
+					alt: "Nadbudówka wraku obrośnięta życiem, ławice ryb nad pokładem, Malta",
+					caption:
+						"Nadbudówka obrośnięta życiem, ławice nad pokładem. Po kilkudziesięciu latach wrak przestaje być statkiem i robi się z niego rafa.",
+					place: "Malta",
+				},
+				{
+					src: "/images/gallery/wreck-bow-diver.jpg",
+					alt: "Nurek siedzący na dziobie dużego wraku w przejrzystej wodzie u wybrzeży Malty",
+					caption:
+						"Przerwa na dziobie. Nurkowanie to też zabawa, nie same procedury.",
+					place: "Malta",
+				},
+				{
+					src: "/images/gallery/wreck-bow-approach.jpg",
+					alt: "Nurek przy dziobie dużego wraku, kadłub schodzący w głąb, Malta",
+					caption:
+						"Ten sam dziób z bliska. Przy takiej przejrzystości widać cały kadłub schodzący w dół.",
+					place: "Malta",
+				},
+				{
+					src: "/images/gallery/pool-buoyancy.jpg",
+					alt: "Nurek ćwiczący pływalność w krytym basenie szkoleniowym na Stoney Cove",
+					caption:
+						"Basen: pływalność i ułożenie ciała. Wszystko ćwiczy się tutaj, na długo przed wodami otwartymi.",
+					place: "Stoney Cove, Wielka Brytania",
+				},
+				{
+					src: "/images/gallery/pool-trim.jpg",
+					alt: "Nurek wypoziomowany tuż nad dnem basenu szkoleniowego na Stoney Cove",
+					caption:
+						"Wypoziomowany tuż nad dnem, bez dotykania. To ta umiejętność, która później decyduje o tym, ile pod wodą naprawdę widzisz.",
+					place: "Stoney Cove, Wielka Brytania",
+				},
+				{
+					src: "/images/gallery/pool-ok-check.jpg",
+					alt: "Instruktor i kursant wymieniający znak OK w basenie szkoleniowym",
+					caption:
+						"Wymiana znaku OK. Pod wodą się nie rozmawia — wszystko idzie znakami, więc ćwiczy się je od pierwszej sesji.",
+					place: "Stoney Cove, Wielka Brytania",
+				},
+				{
+					src: "/images/gallery/pool-stoney-cove.jpg",
+					alt: "Dwóch nurków na powierzchni krytego basenu szkoleniowego na Stoney Cove",
+					caption:
+						"Kryty basen szkoleniowy na Stoney Cove, 28 stopni. Ostatnie ustalenia przed zejściem.",
+					place: "Stoney Cove, Wielka Brytania",
 				},
 			],
 		},

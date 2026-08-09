@@ -7,6 +7,8 @@ import { withLocaleHref, type Locale } from "@/lib/i18n";
 
 type FaqTag = "home" | "beginner" | "speciality" | "technical";
 
+type FaqTodo = { variant?: "draft" | "missing"; text: string };
+
 type FaqProps = {
 	locale: Locale;
 	tag?: FaqTag;
@@ -50,13 +52,14 @@ export const Faq = ({ locale, tag, showCta = true, className }: FaqProps) => {
 						</summary>
 						<div className="pb-5 pr-8 text-sm leading-relaxed text-white/70">
 							<p>{item.a}</p>
-							{"todo" in item && item.todo ? (
-								<p className="mt-3">
-									<Placeholder variant={item.todo.variant}>
-										{item.todo.text}
-									</Placeholder>
-								</p>
-							) : null}
+							{(() => {
+								const todo = (item as { todo?: FaqTodo }).todo;
+								return todo ? (
+									<p className="mt-3">
+										<Placeholder variant={todo.variant}>{todo.text}</Placeholder>
+									</p>
+								) : null;
+							})()}
 						</div>
 					</details>
 				))}

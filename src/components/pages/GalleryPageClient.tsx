@@ -74,7 +74,9 @@ export const GalleryPageClient = () => {
                   src={assetPath(item.src)}
                   alt={item.alt}
                   fill
-                  className='object-cover transition duration-500 group-hover:scale-[1.03]'
+                  className={`object-cover transition duration-500 group-hover:scale-[1.03] ${
+                    'focus' in item && item.focus === 'top' ? 'object-top' : ''
+                  }`}
                 />
               </div>
               <div className='p-4 text-sm text-white/75'>
