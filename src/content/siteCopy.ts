@@ -125,7 +125,7 @@ export const siteCopy = {
 						paragraphs: [
 							"The controller of personal data is:",
 							"Mariusz Ciupa",
-							"Email: mariuszciupa1969@gmail.com",
+							"Email: info@scubadivinginstructor.co.uk",
 						],
 					},
 					{
@@ -1711,7 +1711,7 @@ export const siteCopy = {
 						paragraphs: [
 							"Administratorem danych osobowych jest:",
 							"Mariusz Ciupa",
-							"Email: mariuszciupa1969@gmail.com",
+							"Email: info@scubadivinginstructor.co.uk",
 						],
 					},
 					{

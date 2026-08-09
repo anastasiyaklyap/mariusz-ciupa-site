@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'Mariusz Ciupa',
   role: 'SSI DIVEMASTER INSTRUCTOR XR',
-  email: 'mariuszciupa1969@gmail.com',
+  email: 'info@scubadivinginstructor.co.uk',
   formAccessKey: '79242603-4593-49b6-98e9-092aa8fb544f',
   reviewsCheckedAt: {
     en: 'August 2026',
