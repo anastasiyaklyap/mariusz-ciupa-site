@@ -1262,9 +1262,9 @@ export const siteCopy = {
 			items: [
 				{
 					src: "/images/gallery/stoney-cove-divemaster.jpg",
-					alt: "SSI Divemaster candidates in drysuits at Stoney Cove Quarry",
+					alt: "SSI Divemaster training in dry suits at Stoney Cove Quarry",
 					caption:
-						"SSI Divemaster candidates at Stoney Cove Quarry, one of the UK's best known inland dive sites.",
+						"SSI Divemaster training at Stoney Cove Quarry, one of the UK's best known inland dive sites.",
 					place: "Stoney Cove, Leicestershire",
 				},
 				{
@@ -2836,9 +2836,9 @@ export const siteCopy = {
 			items: [
 				{
 					src: "/images/gallery/stoney-cove-divemaster.jpg",
-					alt: "Kandydaci na SSI Divemastera w suchych skafandrach na Stoney Cove",
+					alt: "Szkolenie SSI Divemaster w suchych skafandrach na Stoney Cove",
 					caption:
-						"Kandydaci na SSI Divemastera na kamieniołomie Stoney Cove — jednym z najbardziej znanych akwenów w Wielkiej Brytanii.",
+						"Szkolenie SSI Divemaster na kamieniołomie Stoney Cove — jednym z najbardziej znanych akwenów w Wielkiej Brytanii.",
 					place: "Stoney Cove, Leicestershire",
 				},
 				{
