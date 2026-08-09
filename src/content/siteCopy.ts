@@ -337,7 +337,7 @@ export const siteCopy = {
 				{
 					id: "become-pro",
 					tags: [],
-					q: "How do I become a diving instructor?",
+					q: "How do I become a divemaster?",
 					a: "The ladder runs Open Water Diver, then specialties and Diver Stress & Rescue, then Dive Guide at 40 logged dives, then Divemaster at 60. Divemaster is the first professional rating — from there the Instructor Training Course leads to SSI Open Water Instructor. Mariusz trains up to Divemaster.",
 				},
 				{
@@ -518,7 +518,7 @@ export const siteCopy = {
 						name: "Lanzarote",
 						region: "Canary Islands, Spain",
 						description:
-							"Warm water training and dive trips, run together with Bonito Diving Center.",
+							"Warm water training and dive trips, run together with Bonito Diving Lanzarote.",
 						confirmed: true,
 					},
 				],
@@ -1243,7 +1243,7 @@ export const siteCopy = {
 			eyebrow: "GALLERY",
 			title: "Diving with Mariusz",
 			description:
-				"Training days at UK dive sites — kit, cold water and the moments in between.",
+				"Training days and dive trips — from UK quarries to wrecks off Malta and Croatia. Kit, warm water, cold water and the moments in between.",
 			items: [
 				{
 					src: "/images/gallery/stoney-cove-divemaster.jpg",
@@ -1261,24 +1261,24 @@ export const siteCopy = {
 				},
 				{
 					src: "/images/gallery/waterline.jpg",
-					alt: "Diver at the surface, mask above the waterline",
+					alt: "Diver at the surface at Vobster Quay, mask above the waterline",
 					caption:
 						"That instant when your eyes meet the waterline. One breath, one final check, one last look at the world above.",
-					place: "",
+					place: "Vobster Quay, UK",
 				},
 				{
 					src: "/images/gallery/drysuit-team.jpg",
-					alt: "Two divers in drysuits at a UK quarry",
+					alt: "Two divers in dry suits at Vobster Quay",
 					caption:
 						"Drysuits, twinsets and cold water — how most UK training days actually look.",
-					place: "United Kingdom",
+					place: "Vobster Quay, UK",
 				},
 				{
 					src: "/images/gallery/surfacing.jpg",
-					alt: "Diver surfacing after a training dive",
+					alt: "Diver surfacing after a training dive at Stoney Cove",
 					caption:
 						"Back on the surface after a training dive. The debrief matters as much as the dive itself.",
-					place: "United Kingdom",
+					place: "Stoney Cove, UK",
 				},
 				{
 					src: "/images/gallery/slipper-lobster.jpg",
@@ -1925,7 +1925,7 @@ export const siteCopy = {
 				{
 					id: "become-pro",
 					tags: [],
-					q: "Jak zostać instruktorem nurkowania?",
+					q: "Jak zostać divemasterem?",
 					a: "Drabina wygląda tak: Open Water Diver, potem specjalizacje i Diver Stress & Rescue, następnie Dive Guide przy 40 zalogowanych nurkowaniach i Divemaster przy 60. Divemaster to pierwszy stopień zawodowy — dalej kurs instruktorski prowadzi do stopnia SSI Open Water Instructor. Mariusz szkoli do poziomu Divemastera.",
 				},
 				{
@@ -2107,7 +2107,7 @@ export const siteCopy = {
 						name: "Lanzarote",
 						region: "Wyspy Kanaryjskie, Hiszpania",
 						description:
-							"Szkolenia i wyjazdy nurkowe w ciepłej wodzie, prowadzone razem z Bonito Diving Center.",
+							"Szkolenia i wyjazdy nurkowe w ciepłej wodzie, prowadzone razem z Bonito Diving Lanzarote.",
 						confirmed: true,
 					},
 				],
@@ -2852,7 +2852,7 @@ export const siteCopy = {
 			eyebrow: "GALERIA",
 			title: "Nurkowanie z Mariuszem",
 			description:
-				"Dni szkoleniowe na brytyjskich akwenach — sprzęt, zimna woda i chwile pomiędzy.",
+				"Dni szkoleniowe i wyjazdy — od brytyjskich kamieniołomów po wraki na Malcie i w Chorwacji. Sprzęt, woda ciepła i zimna, i chwile pomiędzy.",
 			items: [
 				{
 					src: "/images/gallery/stoney-cove-divemaster.jpg",
@@ -2870,24 +2870,24 @@ export const siteCopy = {
 				},
 				{
 					src: "/images/gallery/waterline.jpg",
-					alt: "Nurek na powierzchni, maska nad lustrem wody",
+					alt: "Nurek na powierzchni na Vobster Quay, maska nad lustrem wody",
 					caption:
 						"Ta chwila, gdy oczy zrównują się z lustrem wody. Jeden oddech, ostatnie sprawdzenie, ostatnie spojrzenie na świat powyżej.",
-					place: "",
+					place: "Vobster Quay, Wielka Brytania",
 				},
 				{
 					src: "/images/gallery/drysuit-team.jpg",
-					alt: "Dwóch nurków w suchych skafandrach na brytyjskim akwenie",
+					alt: "Dwóch nurków w suchych skafandrach na Vobster Quay",
 					caption:
 						"Suche skafandry, twinsety i zimna woda — tak naprawdę wygląda większość dni szkoleniowych w UK.",
-					place: "Wielka Brytania",
+					place: "Vobster Quay, Wielka Brytania",
 				},
 				{
 					src: "/images/gallery/surfacing.jpg",
-					alt: "Nurek wynurzający się po nurkowaniu szkoleniowym",
+					alt: "Nurek wynurzający się po nurkowaniu szkoleniowym na Stoney Cove",
 					caption:
 						"Powrót na powierzchnię po nurkowaniu szkoleniowym. Omówienie po wyjściu z wody liczy się tak samo jak samo nurkowanie.",
-					place: "Wielka Brytania",
+					place: "Stoney Cove, Wielka Brytania",
 				},
 				{
 					src: "/images/gallery/slipper-lobster.jpg",

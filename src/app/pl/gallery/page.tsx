@@ -7,9 +7,9 @@ const { metadata, Page } = createLocalePage({
   component: <GalleryPageClient />,
   breadcrumbLabel: 'Nurkowanie z Mariuszem',
   metadata: {
-    title: 'Galeria nurkowa | Stoney Cove, Wraysbury i szkolenia',
+    title: 'Galeria nurkowa | Stoney Cove, Vobster, Malta i Chorwacja',
     description:
-      'Zdjęcia z prawdziwych dni szkoleniowych — kursy SSI na Stoney Cove, Wraysbury i Vobster Quay oraz zajęcia basenowe w Londynie.',
+      'Zdjęcia z prawdziwych dni szkoleniowych — kursy SSI na Stoney Cove, Wraysbury i Vobster Quay, zajęcia basenowe oraz nurkowania wyjazdowe na Malcie, w Chorwacji i na Lanzarote.',
   },
 });
 
