@@ -22,7 +22,7 @@ export const HomeCoursePicker = ({ locale }: HomeCoursePickerProps) => {
         {copy.description}
       </p>
 
-      <div className='mt-8 grid gap-4 md:grid-cols-3'>
+      <div className='mt-8 grid gap-4 sm:grid-cols-2'>
         {copy.items.map((item) => (
           <div
             key={item.courseTitle}
