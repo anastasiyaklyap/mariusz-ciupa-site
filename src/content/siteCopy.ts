@@ -273,10 +273,6 @@ export const siteCopy = {
 					tags: ["home", "beginner"],
 					q: "Where do the courses take place?",
 					a: "Pool sessions run at a pool in London, or in the heated indoor training pool at Stoney Cove. Open water dives take place at the inland sites London divers use — Wraysbury, Stoney Cove and Vobster Quay. Warm water training and dive trips also run in Lanzarote.",
-					todo: {
-						variant: "missing",
-						text: "Nazwa basenu i dzielnica Londynu.",
-					},
 				},
 				{
 					id: "dates",
@@ -683,7 +679,10 @@ export const siteCopy = {
 							label: "Swimming",
 							text: "You need to be comfortable in water. The full water fitness evaluation belongs to the certification course, not to this session.",
 						},
-						{ label: "Which pool", todo: "Nazwa basenu i dzielnica Londynu." },
+						{
+							label: "Which pool",
+							text: "A pool in London, or the heated indoor training pool at Stoney Cove. The venue is arranged for each course.",
+						},
 						{
 							label: "What is provided",
 							text: "Everything you need for the session. You do not need any equipment of your own.",
@@ -1862,10 +1861,6 @@ export const siteCopy = {
 					tags: ["home", "beginner"],
 					q: "Gdzie odbywają się zajęcia?",
 					a: "Zajęcia basenowe odbywają się na basenie w Londynie albo w krytym, podgrzewanym basenie szkoleniowym na Stoney Cove. Nurkowania na wodach otwartych — w akwenach, z których korzystają londyńscy nurkowie: Wraysbury, Stoney Cove i Vobster Quay. Szkolenia i wyjazdy w ciepłej wodzie odbywają się też na Lanzarote.",
-					todo: {
-						variant: "missing",
-						text: "Nazwa basenu i dzielnica Londynu.",
-					},
 				},
 				{
 					id: "dates",
@@ -2273,7 +2268,10 @@ export const siteCopy = {
 							label: "Pływanie",
 							text: "Trzeba czuć się w wodzie swobodnie. Pełna ocena sprawności w wodzie należy do kursu certyfikującego, nie do tej sesji.",
 						},
-						{ label: "Który basen", todo: "Nazwa basenu i dzielnica Londynu." },
+						{
+							label: "Który basen",
+							text: "Basen w Londynie albo kryty basen szkoleniowy na Stoney Cove. Obiekt ustalam pod konkretny kurs.",
+						},
 						{
 							label: "Co jest zapewnione",
 							text: "Wszystko, czego potrzebujesz na sesję. Nie musisz mieć własnego sprzętu.",
