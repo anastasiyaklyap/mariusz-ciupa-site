@@ -11,9 +11,10 @@ type CreateCourseDetailPageOptions = {
     | 'openWaterDiver'
     | 'divemaster'
     | 'tryScuba'
-    | 'advancedOpenWaterDiver';
+    | 'advancedOpenWaterDiver'
+    | 'extendedRange';
   metadata: Metadata;
-  parentCategory?: 'beginner' | null;
+  parentCategory?: 'beginner' | 'technical' | null;
 };
 
 export const createCourseDetailPage = ({
@@ -30,7 +31,9 @@ export const createCourseDetailPage = ({
   return createLocalePage({
     locale,
     pathname,
-    component: <CourseDetailPageClient course={course} />,
+    component: (
+      <CourseDetailPageClient course={course} parentCategory={parentCategory} />
+    ),
     metadata,
     breadcrumbParents: parentCategory
       ? [

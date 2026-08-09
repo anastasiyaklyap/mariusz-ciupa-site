@@ -21,7 +21,9 @@ type CourseDetailPageClientProps = {
     | 'openWaterDiver'
     | 'divemaster'
     | 'tryScuba'
-    | 'advancedOpenWaterDiver';
+    | 'advancedOpenWaterDiver'
+    | 'extendedRange';
+  parentCategory?: 'beginner' | 'technical' | null;
 };
 
 const formatPrice = (
@@ -37,6 +39,7 @@ const formatPrice = (
 
 export const CourseDetailPageClient = ({
   course,
+  parentCategory = 'beginner',
 }: CourseDetailPageClientProps) => {
   const locale = useLocale();
   const copy = siteCopy[locale].courseDetail[course];
@@ -47,7 +50,14 @@ export const CourseDetailPageClient = ({
         locale={locale}
         items={[
           { name: siteCopy[locale].common.breadcrumbHome, path: '/' },
-          { name: siteCopy[locale].beginner.hero.title, path: '/beginner' },
+          ...(parentCategory
+            ? [
+                {
+                  name: siteCopy[locale][parentCategory].hero.title,
+                  path: `/${parentCategory}`,
+                },
+              ]
+            : []),
           { name: copy.title },
         ]}
       />

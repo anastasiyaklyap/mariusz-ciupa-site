@@ -14,7 +14,6 @@ type HomeHeroProps = {
 
 export const HomeHero = ({ locale }: HomeHeroProps) => {
   const copy = siteCopy[locale].home.hero;
-  const common = siteCopy[locale].common;
   return (
     <section className='relative overflow-hidden rounded-3xl'>
       <div className='relative grid gap-8 p-6 md:grid-cols-2 md:items-center md:gap-10 md:p-12'>
@@ -25,6 +24,9 @@ export const HomeHero = ({ locale }: HomeHeroProps) => {
             <span className='mt-2 block text-xl font-medium text-white/85 sm:text-2xl md:text-3xl'>
               {copy.withInstructor}
             </span>
+            <span className='mt-3 block text-sm font-normal tracking-tight text-white/60 sm:text-base'>
+              {copy.titleTagline}
+            </span>
           </h1>
 
           <p className='mt-5 inline-flex items-center rounded-full border border-[#24C6D9]/40 bg-[#24C6D9]/10 px-4 py-1.5 text-xs font-semibold tracking-[0.16em] text-[#24C6D9]'>
@@ -34,7 +36,6 @@ export const HomeHero = ({ locale }: HomeHeroProps) => {
           <p className='mt-4 max-w-xl text-sm text-white/75 sm:text-base'>
             {copy.subtitle}
           </p>
-          <p className='mt-6 text-sm text-white/60'>{common.locations}</p>
 
           <div className='mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4'>
             <CtaLink
