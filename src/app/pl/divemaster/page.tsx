@@ -7,7 +7,7 @@ const { metadata, Page } = createCourseDetailPage({
   metadata: {
     title: 'Kurs SSI Divemaster w Londynie | Nurkowanie zawodowo',
     description:
-      'Szkolenie na SSI Divemaster w Londynie — pierwszy stopień zawodowy w nurkowaniu. Wymagania wstępne, przebieg programu, £600 i co dalej na ścieżce instruktorskiej.',
+      'Szkolenie na SSI Divemaster w Londynie — pierwszy stopień zawodowy. Wymagania wstępne, przebieg programu, £600 i ścieżka instruktorska.',
   },
 });
 

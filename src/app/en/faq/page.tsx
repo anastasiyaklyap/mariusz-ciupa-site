@@ -11,7 +11,7 @@ const { metadata, Page } = createLocalePage({
   metadata: {
     title: 'Scuba Diving Course FAQ | Cost, Age Limits & Certification',
     description:
-      'How much an SSI course costs in London, the minimum age of 10, health and swimming requirements, how long Open Water Diver takes and whether the certification expires.',
+      'How much an SSI course costs in London, the minimum age of 10, health and swimming requirements, and how long Open Water Diver takes.',
   },
 });
 

@@ -142,6 +142,7 @@ export const buildCourseSchema = (
       courseMode: 'Onsite',
       location: areaServed,
       instructor: { '@id': PERSON_ID },
+      ...(offers ? { offers } : {}),
       // `courseWorkload` deliberately omitted — durations are not published on
       // the site, and markup must match visible content. Do not invent one.
     },
@@ -161,15 +162,32 @@ export const buildCourseListSchema = (
   })),
 });
 
-export const buildFaqSchema = (locale: Locale) => ({
-  '@type': 'FAQPage',
-  '@id': `${localeUrl(locale, '/faq')}#faq`,
-  mainEntity: siteCopy[locale].faq.items.map((item) => ({
-    '@type': 'Question',
-    name: item.q,
-    acceptedAnswer: { '@type': 'Answer', text: item.a },
-  })),
-});
+type FaqTag = 'home' | 'beginner' | 'speciality' | 'technical';
+
+// `tag` must match the FAQ subset actually rendered on `pagePath` — markup
+// has to mirror visible content. Omit both to mark up the full 22-question
+// set on `/faq/`.
+export const buildFaqSchema = (
+  locale: Locale,
+  tag?: FaqTag,
+  pagePath = '/faq',
+) => {
+  const items = tag
+    ? siteCopy[locale].faq.items.filter((item) =>
+        (item.tags as readonly string[]).includes(tag),
+      )
+    : siteCopy[locale].faq.items;
+
+  return {
+    '@type': 'FAQPage',
+    '@id': `${localeUrl(locale, pagePath)}#faq`,
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  };
+};
 
 export const buildGraph = (nodes: readonly unknown[]) => ({
   '@context': 'https://schema.org',
