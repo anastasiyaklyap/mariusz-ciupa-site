@@ -30,7 +30,7 @@ export const ContactCta = ({
     >
       <SectionSurface withGlow>
         <p className='text-xs font-medium tracking-[0.2em] text-white/50'>
-          CONTACT
+          {copy.contactEyebrow}
         </p>
         <h2 className='mt-3 text-2xl font-semibold tracking-tight md:text-3xl'>
           {title}

@@ -7,7 +7,7 @@ const { metadata, Page } = createCourseDetailPage({
   metadata: {
     title: 'SSI Divemaster Course London | Become a Dive Professional',
     description:
-      'Train to SSI Divemaster in London — the first professional rating in diving. Entry requirements, what the programme involves, £600, and where the instructor pathway goes next.',
+      'Train to SSI Divemaster in London — the first professional diving rating. Entry requirements, what the programme involves, £600, and next steps.',
   },
 });
 

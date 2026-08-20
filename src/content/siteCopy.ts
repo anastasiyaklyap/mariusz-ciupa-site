@@ -2,6 +2,7 @@ export const siteCopy = {
 	en: {
 		common: {
 			locations: "UK · Lanzarote · Poland",
+			contactEyebrow: "CONTACT",
 			breadcrumbHome: "Home",
 			responseTime: "Typical response time: 24–48h",
 			emailLabel: "Email me",
@@ -1228,6 +1229,18 @@ export const siteCopy = {
 					linkLabel: "Check availability",
 					linkHref: "#updates-contact",
 				},
+				{
+					eyebrow: "EQUIPMENT SERVICE",
+					title: "Scuba Tech — Dive Equipment Servicing",
+					description:
+						"Professional dive equipment servicing means safety, reliability and full confidence underwater. \nAt SCUBA TECH we carry out inspections, diagnostics and repairs for regulators, cylinders, valves and dry suits. \nWe work with precision, using specialist tools and experience with many well-known brands. \nLook after your equipment before your next dive and know it works exactly as it should.",
+					imageSrc: "/images/updates/scuba-tech-service.jpg",
+					imageAlt: "Scuba Tech — dive equipment servicing",
+					learnMoreLabel: "Learn more",
+					learnMoreHref: "https://www.scuba-tech.co.uk/",
+					linkLabel: "Get in Touch",
+					linkHref: "#updates-contact",
+				},
 			],
 			contact: {
 				sectionId: "updates-contact",
@@ -1583,6 +1596,7 @@ export const siteCopy = {
 	pl: {
 		common: {
 			locations: "Wielka Brytania · Lanzarote · Polska",
+			contactEyebrow: "KONTAKT",
 			breadcrumbHome: "Strona główna",
 			responseTime: "Zwykle odpowiadam w ciągu 24–48 h",
 			emailLabel: "Napisz do mnie",
@@ -2835,6 +2849,18 @@ export const siteCopy = {
 					learnMoreHref:
 						"https://scubaelite.pl/free/basic-freediver-podstawy-nurkowania-swobodnego/",
 					linkLabel: "Sprawdź dostępność",
+					linkHref: "#updates-contact",
+				},
+				{
+					eyebrow: "SERWIS SPRZĘTU",
+					title: "Scuba Tech — Serwis sprzętu nurkowego",
+					description:
+						"Profesjonalny serwis sprzętu nurkowego to bezpieczeństwo, niezawodność i pełne zaufanie pod wodą. \nW SCUBA TECH wykonujemy przeglądy, diagnostykę i naprawy automatów oddechowych, butli, zaworów oraz suchego skafandra. \nPracujemy precyzyjnie, wykorzystując specjalistyczne narzędzia i doświadczenie w obsłudze wielu renomowanych marek. \nZadbaj o swój sprzęt przed kolejnym nurkowaniem i miej pewność, że działa dokładnie tak, jak powinien.",
+					imageSrc: "/images/updates/scuba-tech-service.jpg",
+					imageAlt: "Scuba Tech — serwis sprzętu nurkowego",
+					learnMoreLabel: "Dowiedz się więcej",
+					learnMoreHref: "https://www.scuba-tech.co.uk/",
+					linkLabel: "Skontaktuj się",
 					linkHref: "#updates-contact",
 				},
 			],

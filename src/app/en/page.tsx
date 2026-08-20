@@ -1,5 +1,6 @@
 import HomePageClient from "@/app/HomePageClient";
 import { createLocalePage } from "@/app/_pages/createLocalePage";
+import { buildFaqSchema } from "@/lib/structuredData";
 
 const { metadata, Page } = createLocalePage({
 	locale: "en",
@@ -11,6 +12,7 @@ const { metadata, Page } = createLocalePage({
 		description:
 			"Learn to dive with a personal SSI instructor in London. Courses from beginner to technical level, plus freediving. Prices from £75 — ask about availability.",
 	},
+	structuredData: [buildFaqSchema("en", "home", "/")],
 });
 
 export { metadata };

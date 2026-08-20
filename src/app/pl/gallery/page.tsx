@@ -9,7 +9,7 @@ const { metadata, Page } = createLocalePage({
   metadata: {
     title: 'Galeria nurkowa | Stoney Cove, Vobster, Malta i Chorwacja',
     description:
-      'Zdjęcia z prawdziwych dni szkoleniowych — kursy SSI na Stoney Cove, Wraysbury i Vobster Quay, zajęcia basenowe oraz nurkowania wyjazdowe na Malcie, w Chorwacji i na Lanzarote.',
+      'Zdjęcia z dni szkoleniowych — kursy SSI na Stoney Cove, Wraysbury i Vobster Quay, zajęcia basenowe oraz wyjazdy na Maltę, do Chorwacji i na Lanzarote.',
   },
 });
 
